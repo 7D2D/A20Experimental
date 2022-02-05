@@ -357,7 +357,7 @@
             <effect_group name="SetFactionCVars">
                 <triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="respawn" operation="set" value="1"/>
                 <triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="varFactionBandit" operation="set" value="1">
-                    <requirement name="EntityTagCompare" target="self" tags="bandit,whisperer"/>
+                    <requirement name="EntityTagCompare" target="self" tags="bandit,whisperer,mech"/>
                 </triggered_effect>
             </effect_group>  
 			<effect_group name="EntityDamageKillCount">
@@ -476,31 +476,100 @@
             </effect_group> 
 
 			 <!-- DAMAGE RESISTANCE BASED ON LEADER LEVEL -->
-			 <!--<effect_group name="PhysicalResistanceLeaderLevel1">
-                <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="20"/>
-                <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="40"/>
-                <passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
-            </effect_group> 
-            <effect_group name="PhysicalResistanceLeaderLevel2">
-                <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="40"/>
-                <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="60"/>
-                <passive_effect name="PhysicalDamageResist" operation="base_add" value="20"/>
-            </effect_group> 
-            <effect_group name="PhysicalResistanceLeaderLevel3">
-                <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="60"/>
-                <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="80"/>
-                <passive_effect name="PhysicalDamageResist" operation="base_add" value="30"/>
-            </effect_group> 
-            <effect_group name="PhysicalResistanceLeaderLevel4">
-                <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="80"/>
-                <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="100"/>
-                <passive_effect name="PhysicalDamageResist" operation="base_add" value="40"/>
-            </effect_group> 
-            <effect_group name="PhysicalResistanceLeaderLevel5">
-                <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="100"/>
-                <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="120"/>
-                <passive_effect name="PhysicalDamageResist" operation="base_add" value="50"/>
-            </effect_group> -->
+			 <!-- LOW DR LEVELING -->
+			<effect_group name="PhysicalResistanceLeaderLevel1DRLow">
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="20"/>
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="40"/>
+				<requirement name="EntityTagCompare" tags="DRLow"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_set" value="2.5"/>
+			</effect_group>
+			<effect_group name="PhysicalResistanceLeaderLevel2DRLow">
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="40"/>
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="60"/>
+				<requirement name="EntityTagCompare" target="self" tags="DRLow"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="5"/>
+			</effect_group> 
+			<effect_group name="PhysicalResistanceLeaderLevel3DRLow">
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="60"/>
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="80"/>
+				<requirement name="EntityTagCompare" target="self" tags="DRLow"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.5"/>
+			</effect_group> 
+			<effect_group name="PhysicalResistanceLeaderLevel4DRLow">
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="80"/>
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="100"/>
+				<requirement name="EntityTagCompare" target="self" tags="DRLow"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
+			</effect_group> 
+			<effect_group name="PhysicalResistanceLeaderLevel5DRLow">
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="100"/>
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="120"/>
+				<requirement name="EntityTagCompare" target="self" tags="DRLow"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="15"/>
+			</effect_group>	 
+			<!-- MID DR LEVELING -->
+			<effect_group name="PhysicalResistanceLeaderLevel1DRMid">
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="20"/>
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="40"/>
+				<requirement name="EntityTagCompare" target="self" tags="DRMid"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="5"/>
+			</effect_group> 
+			<effect_group name="PhysicalResistanceLeaderLevel2DRMid">
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="40"/>
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="60"/>
+				<requirement name="EntityTagCompare" target="self" tags="DRMid"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
+			</effect_group> 	 
+			<effect_group name="PhysicalResistanceLeaderLevel3DRMid">
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="60"/>
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="80"/>
+				<requirement name="EntityTagCompare" target="self" tags="DRMid"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="15"/>
+			</effect_group> 
+			<effect_group name="PhysicalResistanceLeaderLevel4DRMid">
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="80"/>
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="100"/>
+				<requirement name="EntityTagCompare" target="self" tags="DRMid"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="20"/>
+			</effect_group> 
+			<effect_group name="PhysicalResistanceLeaderLevel5DRMid">
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="100"/>
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="120"/>
+				<requirement name="EntityTagCompare" target="self" tags="DRMid"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="25"/>
+			</effect_group>	 
+			<!-- HIGH DR LEVELING -->
+			<effect_group name="PhysicalResistanceLeaderLevel1DRHigh">
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="20"/>
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="40"/>
+				<requirement name="EntityTagCompare" target="self" tags="DRHigh"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.5"/>
+			</effect_group> 
+			<effect_group name="PhysicalResistanceLeaderLevel2DRHigh">
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="40"/>
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="60"/>
+				<requirement name="EntityTagCompare" target="self" tags="DRHigh"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="15"/>
+			</effect_group> 
+			<effect_group name="PhysicalResistanceLeaderLevel3DRHigh">
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="60"/>
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="80"/>
+				<requirement name="EntityTagCompare" target="self" tags="DRHigh"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="22.5"/>
+			</effect_group> 
+			<effect_group name="PhysicalResistanceLeaderLevel4DRHigh">
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="80"/>
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="100"/>
+				<requirement name="EntityTagCompare" target="self" tags="DRHigh"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="30"/>
+			</effect_group> 
+			<effect_group name="PhysicalResistanceLeaderLevel5DRHigh">
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="100"/>
+				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="120"/>
+				<requirement name="EntityTagCompare" target="self" tags="DRHigh"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="37.5"/>
+			</effect_group>
+	
 	 
 			<!-- REDUCE NPC DAMAGE TO PLAYER -->
 			<effect_group name="ReduceDamageToPlayers">
@@ -2747,10 +2816,10 @@
 			<property name="MoveSpeedPanic" value="1.2"/>
 			<property name="PainResistPerHit" value=".5"/>			
 			<property name="WalkType" value="7"/>
-			<property name="RightHandJointName" value="RightHand" />  	
+			<property name="RightHandJointName" value="GunJoint" />  	
 			<property name="AIPathCostScale" value=".9, 1"/>
 			<property name="AINoiseSeekDist" value="20"/>
-			<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired"/>
+			<property name="AIPackages" value="NPCMechBasic, NPCMelee, NPCHired"/>
 			<!--<property name="AITask-1" value="ApproachAndAttackSDX, SCore" data="class=EntityAlive,0"/>
 			<property name="AITask-2" value="ApproachAndFollowTargetSDX, SCore" data="incentives=Leader"/>
 			<property name="AITask-3" value="Look"/>
@@ -2806,7 +2875,7 @@
 			<property name="HireCost" value="1000" />
 		</entity_class> 
 
-		<entity_class name="NPCMechRangedTemplate" extends="npcRangedTemplate"> 	
+		<entity_class name="NPCMechRangedTemplate" extends="NPCMechMeleeTemplate"> 	
 			<property name="AvatarController" value="AvatarAnimalControllerSDX, SCore"/> 
 			<property name='Class' value='EntityAliveSDX, SCore' />
 			<property name="Tags" value="entity,mech,ranged"/>
@@ -2816,7 +2885,7 @@
 			<property name="LegCrippleScale" value="0"/>
 			<property name="RightHandJointName" value="Gunjoint" /> 
 			<property name="HandItem" value="gunNPCPistolHidden"/> 
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired"/>
+			<property name="AIPackages" value="NPCMechBasic, NPCMechRanged, NPCHired"/>
 			<!--<property name="AITask-1" value="RangedAttackTargetSDX, SCore" data="itemType=0;attackPeriod=10"/> 
 			<property name="AITask-2" value="ApproachAndAttackSDX, SCore" data="class=EntityAlive,0"/>
 			<property name="AITask-3" value="Look"/>	
