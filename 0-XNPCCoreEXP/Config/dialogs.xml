@@ -34,10 +34,10 @@
         <action type="AddBuffSDX, SCore" value="Self" id="buffOrderFollow" />
       </response>
 
-      <response id="TellMe" text="Tell me about yourself" >
+     <!-- <response id="TellMe" text="Tell me about yourself" >
         <requirement type="Leader, SCore" requirementtype="Hide"/>
         <action type="ExecuteCommandSDX, SCore" id="TellMe" />
-      </response>
+      </response> -->
 	  
       <response id="ShowMe" text="Show Me your inventory" >
         <requirement type="Leader, SCore" requirementtype="Hide" />
@@ -49,7 +49,7 @@
         <action type="AddBuffSDX, SCore" value="Self" id="buffOrderStay" />
       </response>
 	  
-	  <response id="Wander" text="Wander around here" >
+	  <response id="Wander" text="Patrol around here" >
         <requirement type="Leader, SCore" requirementtype="Hide" />
         <action type="AddBuffSDX, SCore" value="Self" id="buffOrderWander" />
       </response>

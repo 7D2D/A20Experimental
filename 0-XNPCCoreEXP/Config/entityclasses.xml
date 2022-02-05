@@ -476,7 +476,7 @@
             </effect_group> 
 
 			 <!-- DAMAGE RESISTANCE BASED ON LEADER LEVEL -->
-			 <effect_group name="PhysicalResistanceLeaderLevel1">
+			 <!--<effect_group name="PhysicalResistanceLeaderLevel1">
                 <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="20"/>
                 <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="40"/>
                 <passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
@@ -500,7 +500,7 @@
                 <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="100"/>
                 <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="120"/>
                 <passive_effect name="PhysicalDamageResist" operation="base_add" value="50"/>
-            </effect_group>
+            </effect_group> -->
 	 
 			<!-- REDUCE NPC DAMAGE TO PLAYER -->
 			<effect_group name="ReduceDamageToPlayers">
