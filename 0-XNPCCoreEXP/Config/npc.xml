@@ -138,8 +138,8 @@
 	</append>
 		
 	<append xpath="/npc/factions/faction[@name='undead']" >		
-		<relationship name="whisperers" value="like"/>
-		<relationship name="zombieanimals" value="like"/>
+		<relationship name="whisperers" value="love"/>
+		<relationship name="zombieanimals" value="love"/>
 	</append>
 		
 	<append xpath="/npc/factions/faction[@name='bandits']" >		
@@ -160,8 +160,8 @@
 	<append xpath="/npc/factions" >	
 		<faction name="whisperers">
 			<relationship name="trader" value="neutral"/>
-			<relationship name="undead" value="like"/>
-			<relationship name="zombieanimals" value="like"/>
+			<relationship name="undead" value="love"/>
+			<relationship name="zombieanimals" value="love"/>
 			<relationship name="passiveanimalssmall" value="neutral"/>
 			<relationship name="passiveanimalsmedium" value="neutral"/>
 			<relationship name="passiveanimalslarge" value="neutral"/>
@@ -179,6 +179,17 @@
             <relationship name="aggressiveanimalssmall" value="hate"/>
             <relationship name="aggressiveanimalsmedium" value="hate"/>
         </faction>
+        <!-- Generic military faction - see below to see how it might be broken up into other factions -->
+        <faction name="military">
+			<relationship name="*" value="neutral"/>
+			<relationship name="undead" value="hate"/>
+			<relationship name="whisperers" value="hate"/>
+			<relationship name="bandits" value="hate"/>
+			<relationship name="aggressiveanimalssmall" value="hate"/>
+			<relationship name="aggressiveanimalsmedium" value="hate"/>
+			<relationship name="aggressiveanimalslarge" value="hate"/>
+            <relationship name="zombieanimals" value="hate" />
+		</faction>
 			
 <!--  How you might seperate soldiers into factions  -->
 		
