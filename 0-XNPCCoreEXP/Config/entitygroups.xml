@@ -353,14 +353,15 @@
 			<entity name="npcHarleyBat" prob="1" />
 			<entity name="npcHarleyClub" prob="1" />
 			<entity name="npcHarleyDPistol" prob="0.5" />
+			<entity name="npcHarleyEmptyHand" prob="1" />
 			<entity name="npcHarleyHRifle" prob="0.6" />
 			<entity name="npcHarleyKnife" prob="1" />
-			<entity name="npcHarleyLBow" prob="0.8" />
+			<entity name="npcHarleyLBow" prob="0.7" />
 			<entity name="npcHarleyM60" prob="0.4" />
 			<entity name="npcHarleyMachete" prob="1" />
 			<entity name="npcHarleyPipeMG" prob="0.6" />
 			<entity name="npcHarleyPipePistol" prob="0.7" />
-			<entity name="npcHarleyPipeRifle" prob="0.8" />
+			<entity name="npcHarleyPipeRifle" prob="0.7" />
 			<entity name="npcHarleyPipeShotgun" prob="0.8" />
 			<entity name="npcHarleyPistol" prob="0.6" />
 			<entity name="npcHarleyPShotgun" prob="0.6" />
@@ -377,14 +378,15 @@
 			<entity name="npcHarleyBat" prob="0.8" />
 			<entity name="npcHarleyClub" prob="0.8" />
 			<entity name="npcHarleyDPistol" prob="0.5" />
+			<entity name="npcHarleyEmptyHand" prob="0.8" />
 			<entity name="npcHarleyHRifle" prob="0.6" />
 			<entity name="npcHarleyKnife" prob="0.8" />
-			<entity name="npcHarleyLBow" prob="0.7" />
+			<entity name="npcHarleyLBow" prob="0.6" />
 			<entity name="npcHarleyM60" prob="0.4" />
 			<entity name="npcHarleyMachete" prob="0.8" />
 			<entity name="npcHarleyPipeMG" prob="0.6" />
 			<entity name="npcHarleyPipePistol" prob="0.6" />
-			<entity name="npcHarleyPipeRifle" prob="0.7" />
+			<entity name="npcHarleyPipeRifle" prob="0.6" />
 			<entity name="npcHarleyPipeShotgun" prob="0.7" />
 			<entity name="npcHarleyPistol" prob="0.5" />
 			<entity name="npcHarleyPShotgun" prob="0.5" />
@@ -402,14 +404,15 @@
 			<entity name="npcHarleyBat" prob="0.6" />
 			<entity name="npcHarleyClub" prob="0.6" />
 			<entity name="npcHarleyDPistol" prob="0.5" />
+			<entity name="npcHarleyEmptyHand" prob="0.6" />
 			<entity name="npcHarleyHRifle" prob="0.5" />
 			<entity name="npcHarleyKnife" prob="0.6" />
-			<entity name="npcHarleyLBow" prob="0.6" />
+			<entity name="npcHarleyLBow" prob="0.5" />
 			<entity name="npcHarleyM60" prob="0.5" />
 			<entity name="npcHarleyMachete" prob="0.6" />
 			<entity name="npcHarleyPipeMG" prob="0.5" />
 			<entity name="npcHarleyPipePistol" prob="0.5" />
-			<entity name="npcHarleyPipeRifle" prob="0.6" />
+			<entity name="npcHarleyPipeRifle" prob="0.5" />
 			<entity name="npcHarleyPipeShotgun" prob="0.6" />
 			<entity name="npcHarleyPistol" prob="0.5" />
 			<entity name="npcHarleyPShotgun" prob="0.5" />
@@ -427,6 +430,7 @@
 			<entity name="npcHarleyBat" prob="0.4" />
 			<entity name="npcHarleyClub" prob="0.4" />
 			<entity name="npcHarleyDPistol" prob="0.5" />
+			<entity name="npcHarleyEmptyHand" prob="0.4" />
 			<entity name="npcHarleyHRifle" prob="0.5" />
 			<entity name="npcHarleyKnife" prob="0.4" />
 			<entity name="npcHarleyLBow" prob="0.5" />
@@ -452,14 +456,15 @@
 			<entity name="npcHarleyBat" prob="0.2" />
 			<entity name="npcHarleyClub" prob="0.2" />
 			<entity name="npcHarleyDPistol" prob="0.5" />
+			<entity name="npcHarleyEmptyHand" prob="0.2" />
 			<entity name="npcHarleyHRifle" prob="0.4" />
 			<entity name="npcHarleyKnife" prob="0.2" />
-			<entity name="npcHarleyLBow" prob="0.3" />
+			<entity name="npcHarleyLBow" prob="0.4" />
 			<entity name="npcHarleyM60" prob="0.6" />
 			<entity name="npcHarleyMachete" prob="0.2" />
 			<entity name="npcHarleyPipeMG" prob="0.4" />
 			<entity name="npcHarleyPipePistol" prob="0.4" />
-			<entity name="npcHarleyPipeRifle" prob="0.3" />
+			<entity name="npcHarleyPipeRifle" prob="0.4" />
 			<entity name="npcHarleyPipeShotgun" prob="0.3" />
 			<entity name="npcHarleyPistol" prob="0.5" />
 			<entity name="npcHarleyPShotgun" prob="0.5" />
@@ -490,22 +495,25 @@
 			<entity name="npcHarleyXBow" prob="0.4" />
 		</entitygroup>
 		<entitygroup name="npcBanditsMeleeGroupGS01">
-			<entity name="npcHarleyClub" prob="1" />
-			<entity name="npcHarleyKnife" prob="0.5" />
-			<entity name="npcHarleySpear" prob="0.5" />
+			<entity name="npcHarleyClub" prob="0.8" />
+			<entity name="npcHarleyEmptyHand" prob="1" />
+			<entity name="npcHarleyKnife" prob="0.4" />
+			<entity name="npcHarleySpear" prob="0.4" />
 		</entitygroup>
 		<entitygroup name="npcBanditsMeleeGroupGS50">
 			<entity name="npcHarleyAxe" prob="0.2" />
 			<entity name="npcHarleyBat" prob="0.2" />
-			<entity name="npcHarleyClub" prob="0.8" />
-			<entity name="npcHarleyKnife" prob="0.5" />
+			<entity name="npcHarleyClub" prob="0.7" />
+			<entity name="npcHarleyEmptyHand" prob="0.8" />
+			<entity name="npcHarleyKnife" prob="0.4" />
 			<entity name="npcHarleyMachete" prob="0.2" />
-			<entity name="npcHarleySpear" prob="0.5" />
+			<entity name="npcHarleySpear" prob="0.4" />
 		</entitygroup>
 		<entitygroup name="npcBanditsMeleeGroupGS100">
 			<entity name="npcHarleyAxe" prob="0.4" />
 			<entity name="npcHarleyBat" prob="0.4" />
 			<entity name="npcHarleyClub" prob="0.6" />
+			<entity name="npcHarleyEmptyHand" prob="0.6" />
 			<entity name="npcHarleyKnife" prob="0.5" />
 			<entity name="npcHarleyMachete" prob="0.4" />
 			<entity name="npcHarleySpear" prob="0.5" />
@@ -514,6 +522,7 @@
 			<entity name="npcHarleyAxe" prob="0.6" />
 			<entity name="npcHarleyBat" prob="0.6" />
 			<entity name="npcHarleyClub" prob="0.4" />
+			<entity name="npcHarleyEmptyHand" prob="0.4" />
 			<entity name="npcHarleyKnife" prob="0.5" />
 			<entity name="npcHarleyMachete" prob="0.6" />
 			<entity name="npcHarleySpear" prob="0.5" />
@@ -521,17 +530,19 @@
 		<entitygroup name="npcBanditsMeleeGroupGS400">
 			<entity name="npcHarleyAxe" prob="0.8" />
 			<entity name="npcHarleyBat" prob="0.8" />
-			<entity name="npcHarleyClub" prob="0.2" />
-			<entity name="npcHarleyKnife" prob="0.5" />
+			<entity name="npcHarleyClub" prob="0.3" />
+			<entity name="npcHarleyEmptyHand" prob="0.2" />
+			<entity name="npcHarleyKnife" prob="0.6" />
 			<entity name="npcHarleyMachete" prob="0.8" />
-			<entity name="npcHarleySpear" prob="0.5" />
+			<entity name="npcHarleySpear" prob="0.6" />
 		</entitygroup>
 		<entitygroup name="npcBanditsMeleeGroupGS800">
 			<entity name="npcHarleyAxe" prob="1" />
 			<entity name="npcHarleyBat" prob="1" />
-			<entity name="npcHarleyKnife" prob="0.5" />
+			<entity name="npcHarleyClub" prob="0.2" />
+			<entity name="npcHarleyKnife" prob="0.6" />
 			<entity name="npcHarleyMachete" prob="1" />
-			<entity name="npcHarleySpear" prob="0.5" />
+			<entity name="npcHarleySpear" prob="0.6" />
 		</entitygroup>
 		<entitygroup name="npcBanditsRangedGroupGS01">
 			<entity name="npcHarleyAK47" prob="0.6" />
@@ -721,14 +732,15 @@
 			<entity name="npcHarleyBat" prob="0.01" />
 			<entity name="npcHarleyClub" prob="0.01" />
 			<entity name="npcHarleyDPistol" prob="0.005" />
+			<entity name="npcHarleyEmptyHand" prob="0.01" />
 			<entity name="npcHarleyHRifle" prob="0.006" />
 			<entity name="npcHarleyKnife" prob="0.01" />
-			<entity name="npcHarleyLBow" prob="0.008" />
+			<entity name="npcHarleyLBow" prob="0.007" />
 			<entity name="npcHarleyM60" prob="0.004" />
 			<entity name="npcHarleyMachete" prob="0.01" />
 			<entity name="npcHarleyPipeMG" prob="0.006" />
 			<entity name="npcHarleyPipePistol" prob="0.007" />
-			<entity name="npcHarleyPipeRifle" prob="0.008" />
+			<entity name="npcHarleyPipeRifle" prob="0.007" />
 			<entity name="npcHarleyPipeShotgun" prob="0.008" />
 			<entity name="npcHarleyPistol" prob="0.006" />
 			<entity name="npcHarleyPShotgun" prob="0.006" />
@@ -745,14 +757,15 @@
 			<entity name="npcHarleyBat" prob="0.008" />
 			<entity name="npcHarleyClub" prob="0.008" />
 			<entity name="npcHarleyDPistol" prob="0.005" />
+			<entity name="npcHarleyEmptyHand" prob="0.008" />
 			<entity name="npcHarleyHRifle" prob="0.006" />
 			<entity name="npcHarleyKnife" prob="0.008" />
-			<entity name="npcHarleyLBow" prob="0.007" />
+			<entity name="npcHarleyLBow" prob="0.006" />
 			<entity name="npcHarleyM60" prob="0.004" />
 			<entity name="npcHarleyMachete" prob="0.008" />
 			<entity name="npcHarleyPipeMG" prob="0.006" />
 			<entity name="npcHarleyPipePistol" prob="0.006" />
-			<entity name="npcHarleyPipeRifle" prob="0.007" />
+			<entity name="npcHarleyPipeRifle" prob="0.006" />
 			<entity name="npcHarleyPipeShotgun" prob="0.007" />
 			<entity name="npcHarleyPistol" prob="0.005" />
 			<entity name="npcHarleyPShotgun" prob="0.005" />
@@ -770,14 +783,15 @@
 			<entity name="npcHarleyBat" prob="0.006" />
 			<entity name="npcHarleyClub" prob="0.006" />
 			<entity name="npcHarleyDPistol" prob="0.005" />
+			<entity name="npcHarleyEmptyHand" prob="0.006" />
 			<entity name="npcHarleyHRifle" prob="0.005" />
 			<entity name="npcHarleyKnife" prob="0.006" />
-			<entity name="npcHarleyLBow" prob="0.006" />
+			<entity name="npcHarleyLBow" prob="0.005" />
 			<entity name="npcHarleyM60" prob="0.005" />
 			<entity name="npcHarleyMachete" prob="0.006" />
 			<entity name="npcHarleyPipeMG" prob="0.005" />
 			<entity name="npcHarleyPipePistol" prob="0.005" />
-			<entity name="npcHarleyPipeRifle" prob="0.006" />
+			<entity name="npcHarleyPipeRifle" prob="0.005" />
 			<entity name="npcHarleyPipeShotgun" prob="0.006" />
 			<entity name="npcHarleyPistol" prob="0.005" />
 			<entity name="npcHarleyPShotgun" prob="0.005" />
@@ -795,6 +809,7 @@
 			<entity name="npcHarleyBat" prob="0.004" />
 			<entity name="npcHarleyClub" prob="0.004" />
 			<entity name="npcHarleyDPistol" prob="0.005" />
+			<entity name="npcHarleyEmptyHand" prob="0.004" />
 			<entity name="npcHarleyHRifle" prob="0.005" />
 			<entity name="npcHarleyKnife" prob="0.004" />
 			<entity name="npcHarleyLBow" prob="0.005" />
@@ -820,14 +835,15 @@
 			<entity name="npcHarleyBat" prob="0.002" />
 			<entity name="npcHarleyClub" prob="0.002" />
 			<entity name="npcHarleyDPistol" prob="0.005" />
+			<entity name="npcHarleyEmptyHand" prob="0.002" />
 			<entity name="npcHarleyHRifle" prob="0.004" />
 			<entity name="npcHarleyKnife" prob="0.002" />
-			<entity name="npcHarleyLBow" prob="0.003" />
+			<entity name="npcHarleyLBow" prob="0.004" />
 			<entity name="npcHarleyM60" prob="0.006" />
 			<entity name="npcHarleyMachete" prob="0.002" />
 			<entity name="npcHarleyPipeMG" prob="0.004" />
 			<entity name="npcHarleyPipePistol" prob="0.004" />
-			<entity name="npcHarleyPipeRifle" prob="0.003" />
+			<entity name="npcHarleyPipeRifle" prob="0.004" />
 			<entity name="npcHarleyPipeShotgun" prob="0.003" />
 			<entity name="npcHarleyPistol" prob="0.005" />
 			<entity name="npcHarleyPShotgun" prob="0.005" />
@@ -858,22 +874,25 @@
 			<entity name="npcHarleyXBow" prob="0.004" />
 		</entitygroup>
 		<entitygroup name="npcDukeMeleeGroupGS01">
-			<entity name="npcHarleyClub" prob="0.01" />
-			<entity name="npcHarleyKnife" prob="0.005" />
-			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="npcHarleyClub" prob="0.008" />
+			<entity name="npcHarleyEmptyHand" prob="0.01" />
+			<entity name="npcHarleyKnife" prob="0.004" />
+			<entity name="npcHarleySpear" prob="0.004" />
 		</entitygroup>
 		<entitygroup name="npcDukeMeleeGroupGS50">
 			<entity name="npcHarleyAxe" prob="0.002" />
 			<entity name="npcHarleyBat" prob="0.002" />
-			<entity name="npcHarleyClub" prob="0.008" />
-			<entity name="npcHarleyKnife" prob="0.005" />
+			<entity name="npcHarleyClub" prob="0.007" />
+			<entity name="npcHarleyEmptyHand" prob="0.008" />
+			<entity name="npcHarleyKnife" prob="0.004" />
 			<entity name="npcHarleyMachete" prob="0.002" />
-			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="npcHarleySpear" prob="0.004" />
 		</entitygroup>
 		<entitygroup name="npcDukeMeleeGroupGS100">
 			<entity name="npcHarleyAxe" prob="0.004" />
 			<entity name="npcHarleyBat" prob="0.004" />
 			<entity name="npcHarleyClub" prob="0.006" />
+			<entity name="npcHarleyEmptyHand" prob="0.006" />
 			<entity name="npcHarleyKnife" prob="0.005" />
 			<entity name="npcHarleyMachete" prob="0.004" />
 			<entity name="npcHarleySpear" prob="0.005" />
@@ -882,6 +901,7 @@
 			<entity name="npcHarleyAxe" prob="0.006" />
 			<entity name="npcHarleyBat" prob="0.006" />
 			<entity name="npcHarleyClub" prob="0.004" />
+			<entity name="npcHarleyEmptyHand" prob="0.004" />
 			<entity name="npcHarleyKnife" prob="0.005" />
 			<entity name="npcHarleyMachete" prob="0.006" />
 			<entity name="npcHarleySpear" prob="0.005" />
@@ -889,17 +909,19 @@
 		<entitygroup name="npcDukeMeleeGroupGS400">
 			<entity name="npcHarleyAxe" prob="0.008" />
 			<entity name="npcHarleyBat" prob="0.008" />
-			<entity name="npcHarleyClub" prob="0.002" />
-			<entity name="npcHarleyKnife" prob="0.005" />
+			<entity name="npcHarleyClub" prob="0.003" />
+			<entity name="npcHarleyEmptyHand" prob="0.002" />
+			<entity name="npcHarleyKnife" prob="0.006" />
 			<entity name="npcHarleyMachete" prob="0.008" />
-			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="npcHarleySpear" prob="0.006" />
 		</entitygroup>
 		<entitygroup name="npcDukeMeleeGroupGS800">
 			<entity name="npcHarleyAxe" prob="0.01" />
 			<entity name="npcHarleyBat" prob="0.01" />
-			<entity name="npcHarleyKnife" prob="0.005" />
+			<entity name="npcHarleyClub" prob="0.002" />
+			<entity name="npcHarleyKnife" prob="0.006" />
 			<entity name="npcHarleyMachete" prob="0.01" />
-			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="npcHarleySpear" prob="0.006" />
 		</entitygroup>
 		<entitygroup name="npcDukeRangedGroupGS01">
 			<entity name="npcHarleyAK47" prob="0.006" />
@@ -1089,14 +1111,15 @@
 			<entity name="npcNurseBat" prob="0.01" />
 			<entity name="npcNurseClub" prob="0.01" />
 			<entity name="npcNurseDPistol" prob="0.005" />
+			<entity name="npcNurseEmptyHand" prob="0.01" />
 			<entity name="npcNurseHRifle" prob="0.006" />
 			<entity name="npcNurseKnife" prob="0.01" />
-			<entity name="npcNurseLBow" prob="0.008" />
+			<entity name="npcNurseLBow" prob="0.007" />
 			<entity name="npcNurseM60" prob="0.004" />
 			<entity name="npcNurseMachete" prob="0.01" />
 			<entity name="npcNursePipeMG" prob="0.006" />
 			<entity name="npcNursePipePistol" prob="0.007" />
-			<entity name="npcNursePipeRifle" prob="0.008" />
+			<entity name="npcNursePipeRifle" prob="0.007" />
 			<entity name="npcNursePipeShotgun" prob="0.008" />
 			<entity name="npcNursePistol" prob="0.006" />
 			<entity name="npcNursePShotgun" prob="0.006" />
@@ -1113,14 +1136,15 @@
 			<entity name="npcNurseBat" prob="0.008" />
 			<entity name="npcNurseClub" prob="0.008" />
 			<entity name="npcNurseDPistol" prob="0.005" />
+			<entity name="npcNurseEmptyHand" prob="0.008" />
 			<entity name="npcNurseHRifle" prob="0.006" />
 			<entity name="npcNurseKnife" prob="0.008" />
-			<entity name="npcNurseLBow" prob="0.007" />
+			<entity name="npcNurseLBow" prob="0.006" />
 			<entity name="npcNurseM60" prob="0.004" />
 			<entity name="npcNurseMachete" prob="0.008" />
 			<entity name="npcNursePipeMG" prob="0.006" />
 			<entity name="npcNursePipePistol" prob="0.006" />
-			<entity name="npcNursePipeRifle" prob="0.007" />
+			<entity name="npcNursePipeRifle" prob="0.006" />
 			<entity name="npcNursePipeShotgun" prob="0.007" />
 			<entity name="npcNursePistol" prob="0.005" />
 			<entity name="npcNursePShotgun" prob="0.005" />
@@ -1138,14 +1162,15 @@
 			<entity name="npcNurseBat" prob="0.006" />
 			<entity name="npcNurseClub" prob="0.006" />
 			<entity name="npcNurseDPistol" prob="0.005" />
+			<entity name="npcNurseEmptyHand" prob="0.006" />
 			<entity name="npcNurseHRifle" prob="0.005" />
 			<entity name="npcNurseKnife" prob="0.006" />
-			<entity name="npcNurseLBow" prob="0.006" />
+			<entity name="npcNurseLBow" prob="0.005" />
 			<entity name="npcNurseM60" prob="0.005" />
 			<entity name="npcNurseMachete" prob="0.006" />
 			<entity name="npcNursePipeMG" prob="0.005" />
 			<entity name="npcNursePipePistol" prob="0.005" />
-			<entity name="npcNursePipeRifle" prob="0.006" />
+			<entity name="npcNursePipeRifle" prob="0.005" />
 			<entity name="npcNursePipeShotgun" prob="0.006" />
 			<entity name="npcNursePistol" prob="0.005" />
 			<entity name="npcNursePShotgun" prob="0.005" />
@@ -1163,6 +1188,7 @@
 			<entity name="npcNurseBat" prob="0.004" />
 			<entity name="npcNurseClub" prob="0.004" />
 			<entity name="npcNurseDPistol" prob="0.005" />
+			<entity name="npcNurseEmptyHand" prob="0.004" />
 			<entity name="npcNurseHRifle" prob="0.005" />
 			<entity name="npcNurseKnife" prob="0.004" />
 			<entity name="npcNurseLBow" prob="0.005" />
@@ -1188,14 +1214,15 @@
 			<entity name="npcNurseBat" prob="0.002" />
 			<entity name="npcNurseClub" prob="0.002" />
 			<entity name="npcNurseDPistol" prob="0.005" />
+			<entity name="npcNurseEmptyHand" prob="0.002" />
 			<entity name="npcNurseHRifle" prob="0.004" />
 			<entity name="npcNurseKnife" prob="0.002" />
-			<entity name="npcNurseLBow" prob="0.003" />
+			<entity name="npcNurseLBow" prob="0.004" />
 			<entity name="npcNurseM60" prob="0.006" />
 			<entity name="npcNurseMachete" prob="0.002" />
 			<entity name="npcNursePipeMG" prob="0.004" />
 			<entity name="npcNursePipePistol" prob="0.004" />
-			<entity name="npcNursePipeRifle" prob="0.003" />
+			<entity name="npcNursePipeRifle" prob="0.004" />
 			<entity name="npcNursePipeShotgun" prob="0.003" />
 			<entity name="npcNursePistol" prob="0.005" />
 			<entity name="npcNursePShotgun" prob="0.005" />
@@ -1226,22 +1253,25 @@
 			<entity name="npcNurseXBow" prob="0.004" />
 		</entitygroup>
 		<entitygroup name="npcMilitaryMeleeGroupGS01">
-			<entity name="npcNurseClub" prob="0.01" />
-			<entity name="npcNurseKnife" prob="0.005" />
-			<entity name="npcNurseSpear" prob="0.005" />
+			<entity name="npcNurseClub" prob="0.008" />
+			<entity name="npcNurseEmptyHand" prob="0.01" />
+			<entity name="npcNurseKnife" prob="0.004" />
+			<entity name="npcNurseSpear" prob="0.004" />
 		</entitygroup>
 		<entitygroup name="npcMilitaryMeleeGroupGS50">
 			<entity name="npcNurseAxe" prob="0.002" />
 			<entity name="npcNurseBat" prob="0.002" />
-			<entity name="npcNurseClub" prob="0.008" />
-			<entity name="npcNurseKnife" prob="0.005" />
+			<entity name="npcNurseClub" prob="0.007" />
+			<entity name="npcNurseEmptyHand" prob="0.008" />
+			<entity name="npcNurseKnife" prob="0.004" />
 			<entity name="npcNurseMachete" prob="0.002" />
-			<entity name="npcNurseSpear" prob="0.005" />
+			<entity name="npcNurseSpear" prob="0.004" />
 		</entitygroup>
 		<entitygroup name="npcMilitaryMeleeGroupGS100">
 			<entity name="npcNurseAxe" prob="0.004" />
 			<entity name="npcNurseBat" prob="0.004" />
 			<entity name="npcNurseClub" prob="0.006" />
+			<entity name="npcNurseEmptyHand" prob="0.006" />
 			<entity name="npcNurseKnife" prob="0.005" />
 			<entity name="npcNurseMachete" prob="0.004" />
 			<entity name="npcNurseSpear" prob="0.005" />
@@ -1250,6 +1280,7 @@
 			<entity name="npcNurseAxe" prob="0.006" />
 			<entity name="npcNurseBat" prob="0.006" />
 			<entity name="npcNurseClub" prob="0.004" />
+			<entity name="npcNurseEmptyHand" prob="0.004" />
 			<entity name="npcNurseKnife" prob="0.005" />
 			<entity name="npcNurseMachete" prob="0.006" />
 			<entity name="npcNurseSpear" prob="0.005" />
@@ -1257,17 +1288,19 @@
 		<entitygroup name="npcMilitaryMeleeGroupGS400">
 			<entity name="npcNurseAxe" prob="0.008" />
 			<entity name="npcNurseBat" prob="0.008" />
-			<entity name="npcNurseClub" prob="0.002" />
-			<entity name="npcNurseKnife" prob="0.005" />
+			<entity name="npcNurseClub" prob="0.003" />
+			<entity name="npcNurseEmptyHand" prob="0.002" />
+			<entity name="npcNurseKnife" prob="0.006" />
 			<entity name="npcNurseMachete" prob="0.008" />
-			<entity name="npcNurseSpear" prob="0.005" />
+			<entity name="npcNurseSpear" prob="0.006" />
 		</entitygroup>
 		<entitygroup name="npcMilitaryMeleeGroupGS800">
 			<entity name="npcNurseAxe" prob="0.01" />
 			<entity name="npcNurseBat" prob="0.01" />
-			<entity name="npcNurseKnife" prob="0.005" />
+			<entity name="npcNurseClub" prob="0.002" />
+			<entity name="npcNurseKnife" prob="0.006" />
 			<entity name="npcNurseMachete" prob="0.01" />
-			<entity name="npcNurseSpear" prob="0.005" />
+			<entity name="npcNurseSpear" prob="0.006" />
 		</entitygroup>
 		<entitygroup name="npcMilitaryRangedGroupGS01">
 			<entity name="npcNurseAK47" prob="0.006" />
@@ -1457,14 +1490,15 @@
 			<entity name="npcNurseBat" prob="0.01" />
 			<entity name="npcNurseClub" prob="0.01" />
 			<entity name="npcNurseDPistol" prob="0.005" />
+			<entity name="npcNurseEmptyHand" prob="0.01" />
 			<entity name="npcNurseHRifle" prob="0.006" />
 			<entity name="npcNurseKnife" prob="0.01" />
-			<entity name="npcNurseLBow" prob="0.008" />
+			<entity name="npcNurseLBow" prob="0.007" />
 			<entity name="npcNurseM60" prob="0.004" />
 			<entity name="npcNurseMachete" prob="0.01" />
 			<entity name="npcNursePipeMG" prob="0.006" />
 			<entity name="npcNursePipePistol" prob="0.007" />
-			<entity name="npcNursePipeRifle" prob="0.008" />
+			<entity name="npcNursePipeRifle" prob="0.007" />
 			<entity name="npcNursePipeShotgun" prob="0.008" />
 			<entity name="npcNursePistol" prob="0.006" />
 			<entity name="npcNursePShotgun" prob="0.006" />
@@ -1481,14 +1515,15 @@
 			<entity name="npcNurseBat" prob="0.008" />
 			<entity name="npcNurseClub" prob="0.008" />
 			<entity name="npcNurseDPistol" prob="0.005" />
+			<entity name="npcNurseEmptyHand" prob="0.008" />
 			<entity name="npcNurseHRifle" prob="0.006" />
 			<entity name="npcNurseKnife" prob="0.008" />
-			<entity name="npcNurseLBow" prob="0.007" />
+			<entity name="npcNurseLBow" prob="0.006" />
 			<entity name="npcNurseM60" prob="0.004" />
 			<entity name="npcNurseMachete" prob="0.008" />
 			<entity name="npcNursePipeMG" prob="0.006" />
 			<entity name="npcNursePipePistol" prob="0.006" />
-			<entity name="npcNursePipeRifle" prob="0.007" />
+			<entity name="npcNursePipeRifle" prob="0.006" />
 			<entity name="npcNursePipeShotgun" prob="0.007" />
 			<entity name="npcNursePistol" prob="0.005" />
 			<entity name="npcNursePShotgun" prob="0.005" />
@@ -1506,14 +1541,15 @@
 			<entity name="npcNurseBat" prob="0.006" />
 			<entity name="npcNurseClub" prob="0.006" />
 			<entity name="npcNurseDPistol" prob="0.005" />
+			<entity name="npcNurseEmptyHand" prob="0.006" />
 			<entity name="npcNurseHRifle" prob="0.005" />
 			<entity name="npcNurseKnife" prob="0.006" />
-			<entity name="npcNurseLBow" prob="0.006" />
+			<entity name="npcNurseLBow" prob="0.005" />
 			<entity name="npcNurseM60" prob="0.005" />
 			<entity name="npcNurseMachete" prob="0.006" />
 			<entity name="npcNursePipeMG" prob="0.005" />
 			<entity name="npcNursePipePistol" prob="0.005" />
-			<entity name="npcNursePipeRifle" prob="0.006" />
+			<entity name="npcNursePipeRifle" prob="0.005" />
 			<entity name="npcNursePipeShotgun" prob="0.006" />
 			<entity name="npcNursePistol" prob="0.005" />
 			<entity name="npcNursePShotgun" prob="0.005" />
@@ -1531,6 +1567,7 @@
 			<entity name="npcNurseBat" prob="0.004" />
 			<entity name="npcNurseClub" prob="0.004" />
 			<entity name="npcNurseDPistol" prob="0.005" />
+			<entity name="npcNurseEmptyHand" prob="0.004" />
 			<entity name="npcNurseHRifle" prob="0.005" />
 			<entity name="npcNurseKnife" prob="0.004" />
 			<entity name="npcNurseLBow" prob="0.005" />
@@ -1556,14 +1593,15 @@
 			<entity name="npcNurseBat" prob="0.002" />
 			<entity name="npcNurseClub" prob="0.002" />
 			<entity name="npcNurseDPistol" prob="0.005" />
+			<entity name="npcNurseEmptyHand" prob="0.002" />
 			<entity name="npcNurseHRifle" prob="0.004" />
 			<entity name="npcNurseKnife" prob="0.002" />
-			<entity name="npcNurseLBow" prob="0.003" />
+			<entity name="npcNurseLBow" prob="0.004" />
 			<entity name="npcNurseM60" prob="0.006" />
 			<entity name="npcNurseMachete" prob="0.002" />
 			<entity name="npcNursePipeMG" prob="0.004" />
 			<entity name="npcNursePipePistol" prob="0.004" />
-			<entity name="npcNursePipeRifle" prob="0.003" />
+			<entity name="npcNursePipeRifle" prob="0.004" />
 			<entity name="npcNursePipeShotgun" prob="0.003" />
 			<entity name="npcNursePistol" prob="0.005" />
 			<entity name="npcNursePShotgun" prob="0.005" />
@@ -1594,22 +1632,25 @@
 			<entity name="npcNurseXBow" prob="0.004" />
 		</entitygroup>
 		<entitygroup name="npcVaultMeleeGroupGS01">
-			<entity name="npcNurseClub" prob="0.01" />
-			<entity name="npcNurseKnife" prob="0.005" />
-			<entity name="npcNurseSpear" prob="0.005" />
+			<entity name="npcNurseClub" prob="0.008" />
+			<entity name="npcNurseEmptyHand" prob="0.01" />
+			<entity name="npcNurseKnife" prob="0.004" />
+			<entity name="npcNurseSpear" prob="0.004" />
 		</entitygroup>
 		<entitygroup name="npcVaultMeleeGroupGS50">
 			<entity name="npcNurseAxe" prob="0.002" />
 			<entity name="npcNurseBat" prob="0.002" />
-			<entity name="npcNurseClub" prob="0.008" />
-			<entity name="npcNurseKnife" prob="0.005" />
+			<entity name="npcNurseClub" prob="0.007" />
+			<entity name="npcNurseEmptyHand" prob="0.008" />
+			<entity name="npcNurseKnife" prob="0.004" />
 			<entity name="npcNurseMachete" prob="0.002" />
-			<entity name="npcNurseSpear" prob="0.005" />
+			<entity name="npcNurseSpear" prob="0.004" />
 		</entitygroup>
 		<entitygroup name="npcVaultMeleeGroupGS100">
 			<entity name="npcNurseAxe" prob="0.004" />
 			<entity name="npcNurseBat" prob="0.004" />
 			<entity name="npcNurseClub" prob="0.006" />
+			<entity name="npcNurseEmptyHand" prob="0.006" />
 			<entity name="npcNurseKnife" prob="0.005" />
 			<entity name="npcNurseMachete" prob="0.004" />
 			<entity name="npcNurseSpear" prob="0.005" />
@@ -1618,6 +1659,7 @@
 			<entity name="npcNurseAxe" prob="0.006" />
 			<entity name="npcNurseBat" prob="0.006" />
 			<entity name="npcNurseClub" prob="0.004" />
+			<entity name="npcNurseEmptyHand" prob="0.004" />
 			<entity name="npcNurseKnife" prob="0.005" />
 			<entity name="npcNurseMachete" prob="0.006" />
 			<entity name="npcNurseSpear" prob="0.005" />
@@ -1625,17 +1667,19 @@
 		<entitygroup name="npcVaultMeleeGroupGS400">
 			<entity name="npcNurseAxe" prob="0.008" />
 			<entity name="npcNurseBat" prob="0.008" />
-			<entity name="npcNurseClub" prob="0.002" />
-			<entity name="npcNurseKnife" prob="0.005" />
+			<entity name="npcNurseClub" prob="0.003" />
+			<entity name="npcNurseEmptyHand" prob="0.002" />
+			<entity name="npcNurseKnife" prob="0.006" />
 			<entity name="npcNurseMachete" prob="0.008" />
-			<entity name="npcNurseSpear" prob="0.005" />
+			<entity name="npcNurseSpear" prob="0.006" />
 		</entitygroup>
 		<entitygroup name="npcVaultMeleeGroupGS800">
 			<entity name="npcNurseAxe" prob="0.01" />
 			<entity name="npcNurseBat" prob="0.01" />
-			<entity name="npcNurseKnife" prob="0.005" />
+			<entity name="npcNurseClub" prob="0.002" />
+			<entity name="npcNurseKnife" prob="0.006" />
 			<entity name="npcNurseMachete" prob="0.01" />
-			<entity name="npcNurseSpear" prob="0.005" />
+			<entity name="npcNurseSpear" prob="0.006" />
 		</entitygroup>
 		<entitygroup name="npcVaultRangedGroupGS01">
 			<entity name="npcNurseAK47" prob="0.006" />
@@ -1825,14 +1869,15 @@
 			<entity name="npcHarleyBat" prob="0.01" />
 			<entity name="npcHarleyClub" prob="0.01" />
 			<entity name="npcHarleyDPistol" prob="0.005" />
+			<entity name="npcHarleyEmptyHand" prob="0.01" />
 			<entity name="npcHarleyHRifle" prob="0.006" />
 			<entity name="npcHarleyKnife" prob="0.01" />
-			<entity name="npcHarleyLBow" prob="0.008" />
+			<entity name="npcHarleyLBow" prob="0.007" />
 			<entity name="npcHarleyM60" prob="0.004" />
 			<entity name="npcHarleyMachete" prob="0.01" />
 			<entity name="npcHarleyPipeMG" prob="0.006" />
 			<entity name="npcHarleyPipePistol" prob="0.007" />
-			<entity name="npcHarleyPipeRifle" prob="0.008" />
+			<entity name="npcHarleyPipeRifle" prob="0.007" />
 			<entity name="npcHarleyPipeShotgun" prob="0.008" />
 			<entity name="npcHarleyPistol" prob="0.006" />
 			<entity name="npcHarleyPShotgun" prob="0.006" />
@@ -1849,14 +1894,15 @@
 			<entity name="npcHarleyBat" prob="0.008" />
 			<entity name="npcHarleyClub" prob="0.008" />
 			<entity name="npcHarleyDPistol" prob="0.005" />
+			<entity name="npcHarleyEmptyHand" prob="0.008" />
 			<entity name="npcHarleyHRifle" prob="0.006" />
 			<entity name="npcHarleyKnife" prob="0.008" />
-			<entity name="npcHarleyLBow" prob="0.007" />
+			<entity name="npcHarleyLBow" prob="0.006" />
 			<entity name="npcHarleyM60" prob="0.004" />
 			<entity name="npcHarleyMachete" prob="0.008" />
 			<entity name="npcHarleyPipeMG" prob="0.006" />
 			<entity name="npcHarleyPipePistol" prob="0.006" />
-			<entity name="npcHarleyPipeRifle" prob="0.007" />
+			<entity name="npcHarleyPipeRifle" prob="0.006" />
 			<entity name="npcHarleyPipeShotgun" prob="0.007" />
 			<entity name="npcHarleyPistol" prob="0.005" />
 			<entity name="npcHarleyPShotgun" prob="0.005" />
@@ -1874,14 +1920,15 @@
 			<entity name="npcHarleyBat" prob="0.006" />
 			<entity name="npcHarleyClub" prob="0.006" />
 			<entity name="npcHarleyDPistol" prob="0.005" />
+			<entity name="npcHarleyEmptyHand" prob="0.006" />
 			<entity name="npcHarleyHRifle" prob="0.005" />
 			<entity name="npcHarleyKnife" prob="0.006" />
-			<entity name="npcHarleyLBow" prob="0.006" />
+			<entity name="npcHarleyLBow" prob="0.005" />
 			<entity name="npcHarleyM60" prob="0.005" />
 			<entity name="npcHarleyMachete" prob="0.006" />
 			<entity name="npcHarleyPipeMG" prob="0.005" />
 			<entity name="npcHarleyPipePistol" prob="0.005" />
-			<entity name="npcHarleyPipeRifle" prob="0.006" />
+			<entity name="npcHarleyPipeRifle" prob="0.005" />
 			<entity name="npcHarleyPipeShotgun" prob="0.006" />
 			<entity name="npcHarleyPistol" prob="0.005" />
 			<entity name="npcHarleyPShotgun" prob="0.005" />
@@ -1899,6 +1946,7 @@
 			<entity name="npcHarleyBat" prob="0.004" />
 			<entity name="npcHarleyClub" prob="0.004" />
 			<entity name="npcHarleyDPistol" prob="0.005" />
+			<entity name="npcHarleyEmptyHand" prob="0.004" />
 			<entity name="npcHarleyHRifle" prob="0.005" />
 			<entity name="npcHarleyKnife" prob="0.004" />
 			<entity name="npcHarleyLBow" prob="0.005" />
@@ -1924,14 +1972,15 @@
 			<entity name="npcHarleyBat" prob="0.002" />
 			<entity name="npcHarleyClub" prob="0.002" />
 			<entity name="npcHarleyDPistol" prob="0.005" />
+			<entity name="npcHarleyEmptyHand" prob="0.002" />
 			<entity name="npcHarleyHRifle" prob="0.004" />
 			<entity name="npcHarleyKnife" prob="0.002" />
-			<entity name="npcHarleyLBow" prob="0.003" />
+			<entity name="npcHarleyLBow" prob="0.004" />
 			<entity name="npcHarleyM60" prob="0.006" />
 			<entity name="npcHarleyMachete" prob="0.002" />
 			<entity name="npcHarleyPipeMG" prob="0.004" />
 			<entity name="npcHarleyPipePistol" prob="0.004" />
-			<entity name="npcHarleyPipeRifle" prob="0.003" />
+			<entity name="npcHarleyPipeRifle" prob="0.004" />
 			<entity name="npcHarleyPipeShotgun" prob="0.003" />
 			<entity name="npcHarleyPistol" prob="0.005" />
 			<entity name="npcHarleyPShotgun" prob="0.005" />
@@ -1962,22 +2011,25 @@
 			<entity name="npcHarleyXBow" prob="0.004" />
 		</entitygroup>
 		<entitygroup name="npcWhisperersMeleeGroupGS01">
-			<entity name="npcHarleyClub" prob="0.01" />
-			<entity name="npcHarleyKnife" prob="0.005" />
-			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="npcHarleyClub" prob="0.008" />
+			<entity name="npcHarleyEmptyHand" prob="0.01" />
+			<entity name="npcHarleyKnife" prob="0.004" />
+			<entity name="npcHarleySpear" prob="0.004" />
 		</entitygroup>
 		<entitygroup name="npcWhisperersMeleeGroupGS50">
 			<entity name="npcHarleyAxe" prob="0.002" />
 			<entity name="npcHarleyBat" prob="0.002" />
-			<entity name="npcHarleyClub" prob="0.008" />
-			<entity name="npcHarleyKnife" prob="0.005" />
+			<entity name="npcHarleyClub" prob="0.007" />
+			<entity name="npcHarleyEmptyHand" prob="0.008" />
+			<entity name="npcHarleyKnife" prob="0.004" />
 			<entity name="npcHarleyMachete" prob="0.002" />
-			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="npcHarleySpear" prob="0.004" />
 		</entitygroup>
 		<entitygroup name="npcWhisperersMeleeGroupGS100">
 			<entity name="npcHarleyAxe" prob="0.004" />
 			<entity name="npcHarleyBat" prob="0.004" />
 			<entity name="npcHarleyClub" prob="0.006" />
+			<entity name="npcHarleyEmptyHand" prob="0.006" />
 			<entity name="npcHarleyKnife" prob="0.005" />
 			<entity name="npcHarleyMachete" prob="0.004" />
 			<entity name="npcHarleySpear" prob="0.005" />
@@ -1986,6 +2038,7 @@
 			<entity name="npcHarleyAxe" prob="0.006" />
 			<entity name="npcHarleyBat" prob="0.006" />
 			<entity name="npcHarleyClub" prob="0.004" />
+			<entity name="npcHarleyEmptyHand" prob="0.004" />
 			<entity name="npcHarleyKnife" prob="0.005" />
 			<entity name="npcHarleyMachete" prob="0.006" />
 			<entity name="npcHarleySpear" prob="0.005" />
@@ -1993,17 +2046,19 @@
 		<entitygroup name="npcWhisperersMeleeGroupGS400">
 			<entity name="npcHarleyAxe" prob="0.008" />
 			<entity name="npcHarleyBat" prob="0.008" />
-			<entity name="npcHarleyClub" prob="0.002" />
-			<entity name="npcHarleyKnife" prob="0.005" />
+			<entity name="npcHarleyClub" prob="0.003" />
+			<entity name="npcHarleyEmptyHand" prob="0.002" />
+			<entity name="npcHarleyKnife" prob="0.006" />
 			<entity name="npcHarleyMachete" prob="0.008" />
-			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="npcHarleySpear" prob="0.006" />
 		</entitygroup>
 		<entitygroup name="npcWhisperersMeleeGroupGS800">
 			<entity name="npcHarleyAxe" prob="0.01" />
 			<entity name="npcHarleyBat" prob="0.01" />
-			<entity name="npcHarleyKnife" prob="0.005" />
+			<entity name="npcHarleyClub" prob="0.002" />
+			<entity name="npcHarleyKnife" prob="0.006" />
 			<entity name="npcHarleyMachete" prob="0.01" />
-			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="npcHarleySpear" prob="0.006" />
 		</entitygroup>
 		<entitygroup name="npcWhisperersRangedGroupGS01">
 			<entity name="npcHarleyAK47" prob="0.006" />
@@ -2879,14 +2934,15 @@
 			<entity name="npcHarleyBat" prob="1" />
 			<entity name="npcHarleyClub" prob="1" />
 			<entity name="npcHarleyDPistol" prob="0.5" />
+			<entity name="npcHarleyEmptyHand" prob="1" />
 			<entity name="npcHarleyHRifle" prob="0.6" />
 			<entity name="npcHarleyKnife" prob="1" />
-			<entity name="npcHarleyLBow" prob="0.8" />
+			<entity name="npcHarleyLBow" prob="0.7" />
 			<entity name="npcHarleyM60" prob="0.4" />
 			<entity name="npcHarleyMachete" prob="1" />
 			<entity name="npcHarleyPipeMG" prob="0.6" />
 			<entity name="npcHarleyPipePistol" prob="0.7" />
-			<entity name="npcHarleyPipeRifle" prob="0.8" />
+			<entity name="npcHarleyPipeRifle" prob="0.7" />
 			<entity name="npcHarleyPipeShotgun" prob="0.8" />
 			<entity name="npcHarleyPistol" prob="0.6" />
 			<entity name="npcHarleyPShotgun" prob="0.6" />
@@ -2903,14 +2959,15 @@
 			<entity name="npcHarleyBat" prob="0.8" />
 			<entity name="npcHarleyClub" prob="0.8" />
 			<entity name="npcHarleyDPistol" prob="0.5" />
+			<entity name="npcHarleyEmptyHand" prob="0.8" />
 			<entity name="npcHarleyHRifle" prob="0.6" />
 			<entity name="npcHarleyKnife" prob="0.8" />
-			<entity name="npcHarleyLBow" prob="0.7" />
+			<entity name="npcHarleyLBow" prob="0.6" />
 			<entity name="npcHarleyM60" prob="0.4" />
 			<entity name="npcHarleyMachete" prob="0.8" />
 			<entity name="npcHarleyPipeMG" prob="0.6" />
 			<entity name="npcHarleyPipePistol" prob="0.6" />
-			<entity name="npcHarleyPipeRifle" prob="0.7" />
+			<entity name="npcHarleyPipeRifle" prob="0.6" />
 			<entity name="npcHarleyPipeShotgun" prob="0.7" />
 			<entity name="npcHarleyPistol" prob="0.5" />
 			<entity name="npcHarleyPShotgun" prob="0.5" />
@@ -2928,14 +2985,15 @@
 			<entity name="npcHarleyBat" prob="0.6" />
 			<entity name="npcHarleyClub" prob="0.6" />
 			<entity name="npcHarleyDPistol" prob="0.5" />
+			<entity name="npcHarleyEmptyHand" prob="0.6" />
 			<entity name="npcHarleyHRifle" prob="0.5" />
 			<entity name="npcHarleyKnife" prob="0.6" />
-			<entity name="npcHarleyLBow" prob="0.6" />
+			<entity name="npcHarleyLBow" prob="0.5" />
 			<entity name="npcHarleyM60" prob="0.5" />
 			<entity name="npcHarleyMachete" prob="0.6" />
 			<entity name="npcHarleyPipeMG" prob="0.5" />
 			<entity name="npcHarleyPipePistol" prob="0.5" />
-			<entity name="npcHarleyPipeRifle" prob="0.6" />
+			<entity name="npcHarleyPipeRifle" prob="0.5" />
 			<entity name="npcHarleyPipeShotgun" prob="0.6" />
 			<entity name="npcHarleyPistol" prob="0.5" />
 			<entity name="npcHarleyPShotgun" prob="0.5" />
@@ -2953,6 +3011,7 @@
 			<entity name="npcHarleyBat" prob="0.4" />
 			<entity name="npcHarleyClub" prob="0.4" />
 			<entity name="npcHarleyDPistol" prob="0.5" />
+			<entity name="npcHarleyEmptyHand" prob="0.4" />
 			<entity name="npcHarleyHRifle" prob="0.5" />
 			<entity name="npcHarleyKnife" prob="0.4" />
 			<entity name="npcHarleyLBow" prob="0.5" />
@@ -2978,14 +3037,15 @@
 			<entity name="npcHarleyBat" prob="0.2" />
 			<entity name="npcHarleyClub" prob="0.2" />
 			<entity name="npcHarleyDPistol" prob="0.5" />
+			<entity name="npcHarleyEmptyHand" prob="0.2" />
 			<entity name="npcHarleyHRifle" prob="0.4" />
 			<entity name="npcHarleyKnife" prob="0.2" />
-			<entity name="npcHarleyLBow" prob="0.3" />
+			<entity name="npcHarleyLBow" prob="0.4" />
 			<entity name="npcHarleyM60" prob="0.6" />
 			<entity name="npcHarleyMachete" prob="0.2" />
 			<entity name="npcHarleyPipeMG" prob="0.4" />
 			<entity name="npcHarleyPipePistol" prob="0.4" />
-			<entity name="npcHarleyPipeRifle" prob="0.3" />
+			<entity name="npcHarleyPipeRifle" prob="0.4" />
 			<entity name="npcHarleyPipeShotgun" prob="0.3" />
 			<entity name="npcHarleyPistol" prob="0.5" />
 			<entity name="npcHarleyPShotgun" prob="0.5" />
@@ -3016,22 +3076,25 @@
 			<entity name="npcHarleyXBow" prob="0.4" />
 		</entitygroup>
 		<entitygroup name="npcEnemyMeleeGroupGS01">
-			<entity name="npcHarleyClub" prob="1" />
-			<entity name="npcHarleyKnife" prob="0.5" />
-			<entity name="npcHarleySpear" prob="0.5" />
+			<entity name="npcHarleyClub" prob="0.8" />
+			<entity name="npcHarleyEmptyHand" prob="1" />
+			<entity name="npcHarleyKnife" prob="0.4" />
+			<entity name="npcHarleySpear" prob="0.4" />
 		</entitygroup>
 		<entitygroup name="npcEnemyMeleeGroupGS50">
 			<entity name="npcHarleyAxe" prob="0.2" />
 			<entity name="npcHarleyBat" prob="0.2" />
-			<entity name="npcHarleyClub" prob="0.8" />
-			<entity name="npcHarleyKnife" prob="0.5" />
+			<entity name="npcHarleyClub" prob="0.7" />
+			<entity name="npcHarleyEmptyHand" prob="0.8" />
+			<entity name="npcHarleyKnife" prob="0.4" />
 			<entity name="npcHarleyMachete" prob="0.2" />
-			<entity name="npcHarleySpear" prob="0.5" />
+			<entity name="npcHarleySpear" prob="0.4" />
 		</entitygroup>
 		<entitygroup name="npcEnemyMeleeGroupGS100">
 			<entity name="npcHarleyAxe" prob="0.4" />
 			<entity name="npcHarleyBat" prob="0.4" />
 			<entity name="npcHarleyClub" prob="0.6" />
+			<entity name="npcHarleyEmptyHand" prob="0.6" />
 			<entity name="npcHarleyKnife" prob="0.5" />
 			<entity name="npcHarleyMachete" prob="0.4" />
 			<entity name="npcHarleySpear" prob="0.5" />
@@ -3040,6 +3103,7 @@
 			<entity name="npcHarleyAxe" prob="0.6" />
 			<entity name="npcHarleyBat" prob="0.6" />
 			<entity name="npcHarleyClub" prob="0.4" />
+			<entity name="npcHarleyEmptyHand" prob="0.4" />
 			<entity name="npcHarleyKnife" prob="0.5" />
 			<entity name="npcHarleyMachete" prob="0.6" />
 			<entity name="npcHarleySpear" prob="0.5" />
@@ -3047,17 +3111,19 @@
 		<entitygroup name="npcEnemyMeleeGroupGS400">
 			<entity name="npcHarleyAxe" prob="0.8" />
 			<entity name="npcHarleyBat" prob="0.8" />
-			<entity name="npcHarleyClub" prob="0.2" />
-			<entity name="npcHarleyKnife" prob="0.5" />
+			<entity name="npcHarleyClub" prob="0.3" />
+			<entity name="npcHarleyEmptyHand" prob="0.2" />
+			<entity name="npcHarleyKnife" prob="0.6" />
 			<entity name="npcHarleyMachete" prob="0.8" />
-			<entity name="npcHarleySpear" prob="0.5" />
+			<entity name="npcHarleySpear" prob="0.6" />
 		</entitygroup>
 		<entitygroup name="npcEnemyMeleeGroupGS800">
 			<entity name="npcHarleyAxe" prob="1" />
 			<entity name="npcHarleyBat" prob="1" />
-			<entity name="npcHarleyKnife" prob="0.5" />
+			<entity name="npcHarleyClub" prob="0.2" />
+			<entity name="npcHarleyKnife" prob="0.6" />
 			<entity name="npcHarleyMachete" prob="1" />
-			<entity name="npcHarleySpear" prob="0.5" />
+			<entity name="npcHarleySpear" prob="0.6" />
 		</entitygroup>
 		<entitygroup name="npcEnemyRangedGroupGS01">
 			<entity name="npcHarleyAK47" prob="0.6" />
@@ -3247,14 +3313,15 @@
 			<entity name="npcBakerBat" prob="1" />
 			<entity name="npcBakerClub" prob="1" />
 			<entity name="npcBakerDPistol" prob="0.5" />
+			<entity name="npcBakerEmptyHand" prob="1" />
 			<entity name="npcBakerHRifle" prob="0.6" />
 			<entity name="npcBakerKnife" prob="1" />
-			<entity name="npcBakerLBow" prob="0.8" />
+			<entity name="npcBakerLBow" prob="0.7" />
 			<entity name="npcBakerM60" prob="0.4" />
 			<entity name="npcBakerMachete" prob="1" />
 			<entity name="npcBakerPipeMG" prob="0.6" />
 			<entity name="npcBakerPipePistol" prob="0.7" />
-			<entity name="npcBakerPipeRifle" prob="0.8" />
+			<entity name="npcBakerPipeRifle" prob="0.7" />
 			<entity name="npcBakerPipeShotgun" prob="0.8" />
 			<entity name="npcBakerPistol" prob="0.6" />
 			<entity name="npcBakerPShotgun" prob="0.6" />
@@ -3269,14 +3336,15 @@
 			<entity name="npcNurseBat" prob="1" />
 			<entity name="npcNurseClub" prob="1" />
 			<entity name="npcNurseDPistol" prob="0.5" />
+			<entity name="npcNurseEmptyHand" prob="1" />
 			<entity name="npcNurseHRifle" prob="0.6" />
 			<entity name="npcNurseKnife" prob="1" />
-			<entity name="npcNurseLBow" prob="0.8" />
+			<entity name="npcNurseLBow" prob="0.7" />
 			<entity name="npcNurseM60" prob="0.4" />
 			<entity name="npcNurseMachete" prob="1" />
 			<entity name="npcNursePipeMG" prob="0.6" />
 			<entity name="npcNursePipePistol" prob="0.7" />
-			<entity name="npcNursePipeRifle" prob="0.8" />
+			<entity name="npcNursePipeRifle" prob="0.7" />
 			<entity name="npcNursePipeShotgun" prob="0.8" />
 			<entity name="npcNursePistol" prob="0.6" />
 			<entity name="npcNursePShotgun" prob="0.6" />
@@ -3293,14 +3361,15 @@
 			<entity name="npcBakerBat" prob="0.8" />
 			<entity name="npcBakerClub" prob="0.8" />
 			<entity name="npcBakerDPistol" prob="0.5" />
+			<entity name="npcBakerEmptyHand" prob="0.8" />
 			<entity name="npcBakerHRifle" prob="0.6" />
 			<entity name="npcBakerKnife" prob="0.8" />
-			<entity name="npcBakerLBow" prob="0.7" />
+			<entity name="npcBakerLBow" prob="0.6" />
 			<entity name="npcBakerM60" prob="0.4" />
 			<entity name="npcBakerMachete" prob="0.8" />
 			<entity name="npcBakerPipeMG" prob="0.6" />
 			<entity name="npcBakerPipePistol" prob="0.6" />
-			<entity name="npcBakerPipeRifle" prob="0.7" />
+			<entity name="npcBakerPipeRifle" prob="0.6" />
 			<entity name="npcBakerPipeShotgun" prob="0.7" />
 			<entity name="npcBakerPistol" prob="0.5" />
 			<entity name="npcBakerPShotgun" prob="0.5" />
@@ -3316,14 +3385,15 @@
 			<entity name="npcNurseBat" prob="0.8" />
 			<entity name="npcNurseClub" prob="0.8" />
 			<entity name="npcNurseDPistol" prob="0.5" />
+			<entity name="npcNurseEmptyHand" prob="0.8" />
 			<entity name="npcNurseHRifle" prob="0.6" />
 			<entity name="npcNurseKnife" prob="0.8" />
-			<entity name="npcNurseLBow" prob="0.7" />
+			<entity name="npcNurseLBow" prob="0.6" />
 			<entity name="npcNurseM60" prob="0.4" />
 			<entity name="npcNurseMachete" prob="0.8" />
 			<entity name="npcNursePipeMG" prob="0.6" />
 			<entity name="npcNursePipePistol" prob="0.6" />
-			<entity name="npcNursePipeRifle" prob="0.7" />
+			<entity name="npcNursePipeRifle" prob="0.6" />
 			<entity name="npcNursePipeShotgun" prob="0.7" />
 			<entity name="npcNursePistol" prob="0.5" />
 			<entity name="npcNursePShotgun" prob="0.5" />
@@ -3341,14 +3411,15 @@
 			<entity name="npcBakerBat" prob="0.6" />
 			<entity name="npcBakerClub" prob="0.6" />
 			<entity name="npcBakerDPistol" prob="0.5" />
+			<entity name="npcBakerEmptyHand" prob="0.6" />
 			<entity name="npcBakerHRifle" prob="0.5" />
 			<entity name="npcBakerKnife" prob="0.6" />
-			<entity name="npcBakerLBow" prob="0.6" />
+			<entity name="npcBakerLBow" prob="0.5" />
 			<entity name="npcBakerM60" prob="0.5" />
 			<entity name="npcBakerMachete" prob="0.6" />
 			<entity name="npcBakerPipeMG" prob="0.5" />
 			<entity name="npcBakerPipePistol" prob="0.5" />
-			<entity name="npcBakerPipeRifle" prob="0.6" />
+			<entity name="npcBakerPipeRifle" prob="0.5" />
 			<entity name="npcBakerPipeShotgun" prob="0.6" />
 			<entity name="npcBakerPistol" prob="0.5" />
 			<entity name="npcBakerPShotgun" prob="0.5" />
@@ -3364,14 +3435,15 @@
 			<entity name="npcNurseBat" prob="0.6" />
 			<entity name="npcNurseClub" prob="0.6" />
 			<entity name="npcNurseDPistol" prob="0.5" />
+			<entity name="npcNurseEmptyHand" prob="0.6" />
 			<entity name="npcNurseHRifle" prob="0.5" />
 			<entity name="npcNurseKnife" prob="0.6" />
-			<entity name="npcNurseLBow" prob="0.6" />
+			<entity name="npcNurseLBow" prob="0.5" />
 			<entity name="npcNurseM60" prob="0.5" />
 			<entity name="npcNurseMachete" prob="0.6" />
 			<entity name="npcNursePipeMG" prob="0.5" />
 			<entity name="npcNursePipePistol" prob="0.5" />
-			<entity name="npcNursePipeRifle" prob="0.6" />
+			<entity name="npcNursePipeRifle" prob="0.5" />
 			<entity name="npcNursePipeShotgun" prob="0.6" />
 			<entity name="npcNursePistol" prob="0.5" />
 			<entity name="npcNursePShotgun" prob="0.5" />
@@ -3389,6 +3461,7 @@
 			<entity name="npcBakerBat" prob="0.4" />
 			<entity name="npcBakerClub" prob="0.4" />
 			<entity name="npcBakerDPistol" prob="0.5" />
+			<entity name="npcBakerEmptyHand" prob="0.4" />
 			<entity name="npcBakerHRifle" prob="0.5" />
 			<entity name="npcBakerKnife" prob="0.4" />
 			<entity name="npcBakerLBow" prob="0.5" />
@@ -3412,6 +3485,7 @@
 			<entity name="npcNurseBat" prob="0.4" />
 			<entity name="npcNurseClub" prob="0.4" />
 			<entity name="npcNurseDPistol" prob="0.5" />
+			<entity name="npcNurseEmptyHand" prob="0.4" />
 			<entity name="npcNurseHRifle" prob="0.5" />
 			<entity name="npcNurseKnife" prob="0.4" />
 			<entity name="npcNurseLBow" prob="0.5" />
@@ -3437,14 +3511,15 @@
 			<entity name="npcBakerBat" prob="0.2" />
 			<entity name="npcBakerClub" prob="0.2" />
 			<entity name="npcBakerDPistol" prob="0.5" />
+			<entity name="npcBakerEmptyHand" prob="0.2" />
 			<entity name="npcBakerHRifle" prob="0.4" />
 			<entity name="npcBakerKnife" prob="0.2" />
-			<entity name="npcBakerLBow" prob="0.3" />
+			<entity name="npcBakerLBow" prob="0.4" />
 			<entity name="npcBakerM60" prob="0.6" />
 			<entity name="npcBakerMachete" prob="0.2" />
 			<entity name="npcBakerPipeMG" prob="0.4" />
 			<entity name="npcBakerPipePistol" prob="0.4" />
-			<entity name="npcBakerPipeRifle" prob="0.3" />
+			<entity name="npcBakerPipeRifle" prob="0.4" />
 			<entity name="npcBakerPipeShotgun" prob="0.3" />
 			<entity name="npcBakerPistol" prob="0.5" />
 			<entity name="npcBakerPShotgun" prob="0.5" />
@@ -3460,14 +3535,15 @@
 			<entity name="npcNurseBat" prob="0.2" />
 			<entity name="npcNurseClub" prob="0.2" />
 			<entity name="npcNurseDPistol" prob="0.5" />
+			<entity name="npcNurseEmptyHand" prob="0.2" />
 			<entity name="npcNurseHRifle" prob="0.4" />
 			<entity name="npcNurseKnife" prob="0.2" />
-			<entity name="npcNurseLBow" prob="0.3" />
+			<entity name="npcNurseLBow" prob="0.4" />
 			<entity name="npcNurseM60" prob="0.6" />
 			<entity name="npcNurseMachete" prob="0.2" />
 			<entity name="npcNursePipeMG" prob="0.4" />
 			<entity name="npcNursePipePistol" prob="0.4" />
-			<entity name="npcNursePipeRifle" prob="0.3" />
+			<entity name="npcNursePipeRifle" prob="0.4" />
 			<entity name="npcNursePipeShotgun" prob="0.3" />
 			<entity name="npcNursePistol" prob="0.5" />
 			<entity name="npcNursePShotgun" prob="0.5" />
@@ -3515,37 +3591,43 @@
 			<entity name="npcNurseXBow" prob="0.4" />
 		</entitygroup>
 		<entitygroup name="npcFriendlyMeleeGroupGS01">
-			<entity name="npcBakerClub" prob="1" />
-			<entity name="npcBakerKnife" prob="0.5" />
-			<entity name="npcBakerSpear" prob="0.5" />
-			<entity name="npcNurseClub" prob="1" />
-			<entity name="npcNurseKnife" prob="0.5" />
-			<entity name="npcNurseSpear" prob="0.5" />
+			<entity name="npcBakerClub" prob="0.8" />
+			<entity name="npcBakerEmptyHand" prob="1" />
+			<entity name="npcBakerKnife" prob="0.4" />
+			<entity name="npcBakerSpear" prob="0.4" />
+			<entity name="npcNurseClub" prob="0.8" />
+			<entity name="npcNurseEmptyHand" prob="1" />
+			<entity name="npcNurseKnife" prob="0.4" />
+			<entity name="npcNurseSpear" prob="0.4" />
 		</entitygroup>
 		<entitygroup name="npcFriendlyMeleeGroupGS50">
 			<entity name="npcBakerAxe" prob="0.2" />
 			<entity name="npcBakerBat" prob="0.2" />
-			<entity name="npcBakerClub" prob="0.8" />
-			<entity name="npcBakerKnife" prob="0.5" />
+			<entity name="npcBakerClub" prob="0.7" />
+			<entity name="npcBakerEmptyHand" prob="0.8" />
+			<entity name="npcBakerKnife" prob="0.4" />
 			<entity name="npcBakerMachete" prob="0.2" />
-			<entity name="npcBakerSpear" prob="0.5" />
+			<entity name="npcBakerSpear" prob="0.4" />
 			<entity name="npcNurseAxe" prob="0.2" />
 			<entity name="npcNurseBat" prob="0.2" />
-			<entity name="npcNurseClub" prob="0.8" />
-			<entity name="npcNurseKnife" prob="0.5" />
+			<entity name="npcNurseClub" prob="0.7" />
+			<entity name="npcNurseEmptyHand" prob="0.8" />
+			<entity name="npcNurseKnife" prob="0.4" />
 			<entity name="npcNurseMachete" prob="0.2" />
-			<entity name="npcNurseSpear" prob="0.5" />
+			<entity name="npcNurseSpear" prob="0.4" />
 		</entitygroup>
 		<entitygroup name="npcFriendlyMeleeGroupGS100">
 			<entity name="npcBakerAxe" prob="0.4" />
 			<entity name="npcBakerBat" prob="0.4" />
 			<entity name="npcBakerClub" prob="0.6" />
+			<entity name="npcBakerEmptyHand" prob="0.6" />
 			<entity name="npcBakerKnife" prob="0.5" />
 			<entity name="npcBakerMachete" prob="0.4" />
 			<entity name="npcBakerSpear" prob="0.5" />
 			<entity name="npcNurseAxe" prob="0.4" />
 			<entity name="npcNurseBat" prob="0.4" />
 			<entity name="npcNurseClub" prob="0.6" />
+			<entity name="npcNurseEmptyHand" prob="0.6" />
 			<entity name="npcNurseKnife" prob="0.5" />
 			<entity name="npcNurseMachete" prob="0.4" />
 			<entity name="npcNurseSpear" prob="0.5" />
@@ -3554,12 +3636,14 @@
 			<entity name="npcBakerAxe" prob="0.6" />
 			<entity name="npcBakerBat" prob="0.6" />
 			<entity name="npcBakerClub" prob="0.4" />
+			<entity name="npcBakerEmptyHand" prob="0.4" />
 			<entity name="npcBakerKnife" prob="0.5" />
 			<entity name="npcBakerMachete" prob="0.6" />
 			<entity name="npcBakerSpear" prob="0.5" />
 			<entity name="npcNurseAxe" prob="0.6" />
 			<entity name="npcNurseBat" prob="0.6" />
 			<entity name="npcNurseClub" prob="0.4" />
+			<entity name="npcNurseEmptyHand" prob="0.4" />
 			<entity name="npcNurseKnife" prob="0.5" />
 			<entity name="npcNurseMachete" prob="0.6" />
 			<entity name="npcNurseSpear" prob="0.5" />
@@ -3567,28 +3651,32 @@
 		<entitygroup name="npcFriendlyMeleeGroupGS400">
 			<entity name="npcBakerAxe" prob="0.8" />
 			<entity name="npcBakerBat" prob="0.8" />
-			<entity name="npcBakerClub" prob="0.2" />
-			<entity name="npcBakerKnife" prob="0.5" />
+			<entity name="npcBakerClub" prob="0.3" />
+			<entity name="npcBakerEmptyHand" prob="0.2" />
+			<entity name="npcBakerKnife" prob="0.6" />
 			<entity name="npcBakerMachete" prob="0.8" />
-			<entity name="npcBakerSpear" prob="0.5" />
+			<entity name="npcBakerSpear" prob="0.6" />
 			<entity name="npcNurseAxe" prob="0.8" />
 			<entity name="npcNurseBat" prob="0.8" />
-			<entity name="npcNurseClub" prob="0.2" />
-			<entity name="npcNurseKnife" prob="0.5" />
+			<entity name="npcNurseClub" prob="0.3" />
+			<entity name="npcNurseEmptyHand" prob="0.2" />
+			<entity name="npcNurseKnife" prob="0.6" />
 			<entity name="npcNurseMachete" prob="0.8" />
-			<entity name="npcNurseSpear" prob="0.5" />
+			<entity name="npcNurseSpear" prob="0.6" />
 		</entitygroup>
 		<entitygroup name="npcFriendlyMeleeGroupGS800">
 			<entity name="npcBakerAxe" prob="1" />
 			<entity name="npcBakerBat" prob="1" />
-			<entity name="npcBakerKnife" prob="0.5" />
+			<entity name="npcBakerClub" prob="0.2" />
+			<entity name="npcBakerKnife" prob="0.6" />
 			<entity name="npcBakerMachete" prob="1" />
-			<entity name="npcBakerSpear" prob="0.5" />
+			<entity name="npcBakerSpear" prob="0.6" />
 			<entity name="npcNurseAxe" prob="1" />
 			<entity name="npcNurseBat" prob="1" />
-			<entity name="npcNurseKnife" prob="0.5" />
+			<entity name="npcNurseClub" prob="0.2" />
+			<entity name="npcNurseKnife" prob="0.6" />
 			<entity name="npcNurseMachete" prob="1" />
-			<entity name="npcNurseSpear" prob="0.5" />
+			<entity name="npcNurseSpear" prob="0.6" />
 		</entitygroup>
 		<entitygroup name="npcFriendlyRangedGroupGS01">
 			<entity name="npcBakerAK47" prob="0.6" />
@@ -3933,14 +4021,15 @@
 			<entity name="npcHarleyBat" prob="0.01" />
 			<entity name="npcHarleyClub" prob="0.01" />
 			<entity name="npcHarleyDPistol" prob="0.005" />
+			<entity name="npcHarleyEmptyHand" prob="0.01" />
 			<entity name="npcHarleyHRifle" prob="0.006" />
 			<entity name="npcHarleyKnife" prob="0.01" />
-			<entity name="npcHarleyLBow" prob="0.008" />
+			<entity name="npcHarleyLBow" prob="0.007" />
 			<entity name="npcHarleyM60" prob="0.004" />
 			<entity name="npcHarleyMachete" prob="0.01" />
 			<entity name="npcHarleyPipeMG" prob="0.006" />
 			<entity name="npcHarleyPipePistol" prob="0.007" />
-			<entity name="npcHarleyPipeRifle" prob="0.008" />
+			<entity name="npcHarleyPipeRifle" prob="0.007" />
 			<entity name="npcHarleyPipeShotgun" prob="0.008" />
 			<entity name="npcHarleyPistol" prob="0.006" />
 			<entity name="npcHarleyPShotgun" prob="0.006" />
@@ -3957,14 +4046,15 @@
 			<entity name="npcHarleyBat" prob="0.008" />
 			<entity name="npcHarleyClub" prob="0.008" />
 			<entity name="npcHarleyDPistol" prob="0.005" />
+			<entity name="npcHarleyEmptyHand" prob="0.008" />
 			<entity name="npcHarleyHRifle" prob="0.006" />
 			<entity name="npcHarleyKnife" prob="0.008" />
-			<entity name="npcHarleyLBow" prob="0.007" />
+			<entity name="npcHarleyLBow" prob="0.006" />
 			<entity name="npcHarleyM60" prob="0.004" />
 			<entity name="npcHarleyMachete" prob="0.008" />
 			<entity name="npcHarleyPipeMG" prob="0.006" />
 			<entity name="npcHarleyPipePistol" prob="0.006" />
-			<entity name="npcHarleyPipeRifle" prob="0.007" />
+			<entity name="npcHarleyPipeRifle" prob="0.006" />
 			<entity name="npcHarleyPipeShotgun" prob="0.007" />
 			<entity name="npcHarleyPistol" prob="0.005" />
 			<entity name="npcHarleyPShotgun" prob="0.005" />
@@ -3982,14 +4072,15 @@
 			<entity name="npcHarleyBat" prob="0.006" />
 			<entity name="npcHarleyClub" prob="0.006" />
 			<entity name="npcHarleyDPistol" prob="0.005" />
+			<entity name="npcHarleyEmptyHand" prob="0.006" />
 			<entity name="npcHarleyHRifle" prob="0.005" />
 			<entity name="npcHarleyKnife" prob="0.006" />
-			<entity name="npcHarleyLBow" prob="0.006" />
+			<entity name="npcHarleyLBow" prob="0.005" />
 			<entity name="npcHarleyM60" prob="0.005" />
 			<entity name="npcHarleyMachete" prob="0.006" />
 			<entity name="npcHarleyPipeMG" prob="0.005" />
 			<entity name="npcHarleyPipePistol" prob="0.005" />
-			<entity name="npcHarleyPipeRifle" prob="0.006" />
+			<entity name="npcHarleyPipeRifle" prob="0.005" />
 			<entity name="npcHarleyPipeShotgun" prob="0.006" />
 			<entity name="npcHarleyPistol" prob="0.005" />
 			<entity name="npcHarleyPShotgun" prob="0.005" />
@@ -4007,6 +4098,7 @@
 			<entity name="npcHarleyBat" prob="0.004" />
 			<entity name="npcHarleyClub" prob="0.004" />
 			<entity name="npcHarleyDPistol" prob="0.005" />
+			<entity name="npcHarleyEmptyHand" prob="0.004" />
 			<entity name="npcHarleyHRifle" prob="0.005" />
 			<entity name="npcHarleyKnife" prob="0.004" />
 			<entity name="npcHarleyLBow" prob="0.005" />
@@ -4032,14 +4124,15 @@
 			<entity name="npcHarleyBat" prob="0.002" />
 			<entity name="npcHarleyClub" prob="0.002" />
 			<entity name="npcHarleyDPistol" prob="0.005" />
+			<entity name="npcHarleyEmptyHand" prob="0.002" />
 			<entity name="npcHarleyHRifle" prob="0.004" />
 			<entity name="npcHarleyKnife" prob="0.002" />
-			<entity name="npcHarleyLBow" prob="0.003" />
+			<entity name="npcHarleyLBow" prob="0.004" />
 			<entity name="npcHarleyM60" prob="0.006" />
 			<entity name="npcHarleyMachete" prob="0.002" />
 			<entity name="npcHarleyPipeMG" prob="0.004" />
 			<entity name="npcHarleyPipePistol" prob="0.004" />
-			<entity name="npcHarleyPipeRifle" prob="0.003" />
+			<entity name="npcHarleyPipeRifle" prob="0.004" />
 			<entity name="npcHarleyPipeShotgun" prob="0.003" />
 			<entity name="npcHarleyPistol" prob="0.005" />
 			<entity name="npcHarleyPShotgun" prob="0.005" />
@@ -4070,22 +4163,25 @@
 			<entity name="npcHarleyXBow" prob="0.004" />
 		</entitygroup>
 		<entitygroup name="npcMechMeleeGroupGS01">
-			<entity name="npcHarleyClub" prob="0.01" />
-			<entity name="npcHarleyKnife" prob="0.005" />
-			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="npcHarleyClub" prob="0.008" />
+			<entity name="npcHarleyEmptyHand" prob="0.01" />
+			<entity name="npcHarleyKnife" prob="0.004" />
+			<entity name="npcHarleySpear" prob="0.004" />
 		</entitygroup>
 		<entitygroup name="npcMechMeleeGroupGS50">
 			<entity name="npcHarleyAxe" prob="0.002" />
 			<entity name="npcHarleyBat" prob="0.002" />
-			<entity name="npcHarleyClub" prob="0.008" />
-			<entity name="npcHarleyKnife" prob="0.005" />
+			<entity name="npcHarleyClub" prob="0.007" />
+			<entity name="npcHarleyEmptyHand" prob="0.008" />
+			<entity name="npcHarleyKnife" prob="0.004" />
 			<entity name="npcHarleyMachete" prob="0.002" />
-			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="npcHarleySpear" prob="0.004" />
 		</entitygroup>
 		<entitygroup name="npcMechMeleeGroupGS100">
 			<entity name="npcHarleyAxe" prob="0.004" />
 			<entity name="npcHarleyBat" prob="0.004" />
 			<entity name="npcHarleyClub" prob="0.006" />
+			<entity name="npcHarleyEmptyHand" prob="0.006" />
 			<entity name="npcHarleyKnife" prob="0.005" />
 			<entity name="npcHarleyMachete" prob="0.004" />
 			<entity name="npcHarleySpear" prob="0.005" />
@@ -4094,6 +4190,7 @@
 			<entity name="npcHarleyAxe" prob="0.006" />
 			<entity name="npcHarleyBat" prob="0.006" />
 			<entity name="npcHarleyClub" prob="0.004" />
+			<entity name="npcHarleyEmptyHand" prob="0.004" />
 			<entity name="npcHarleyKnife" prob="0.005" />
 			<entity name="npcHarleyMachete" prob="0.006" />
 			<entity name="npcHarleySpear" prob="0.005" />
@@ -4101,17 +4198,19 @@
 		<entitygroup name="npcMechMeleeGroupGS400">
 			<entity name="npcHarleyAxe" prob="0.008" />
 			<entity name="npcHarleyBat" prob="0.008" />
-			<entity name="npcHarleyClub" prob="0.002" />
-			<entity name="npcHarleyKnife" prob="0.005" />
+			<entity name="npcHarleyClub" prob="0.003" />
+			<entity name="npcHarleyEmptyHand" prob="0.002" />
+			<entity name="npcHarleyKnife" prob="0.006" />
 			<entity name="npcHarleyMachete" prob="0.008" />
-			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="npcHarleySpear" prob="0.006" />
 		</entitygroup>
 		<entitygroup name="npcMechMeleeGroupGS800">
 			<entity name="npcHarleyAxe" prob="0.01" />
 			<entity name="npcHarleyBat" prob="0.01" />
-			<entity name="npcHarleyKnife" prob="0.005" />
+			<entity name="npcHarleyClub" prob="0.002" />
+			<entity name="npcHarleyKnife" prob="0.006" />
 			<entity name="npcHarleyMachete" prob="0.01" />
-			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="npcHarleySpear" prob="0.006" />
 		</entitygroup>
 		<entitygroup name="npcMechRangedGroupGS01">
 			<entity name="npcHarleyAK47" prob="0.006" />
@@ -4301,14 +4400,15 @@
 			<entity name="npcHarleyBat" prob="0.01" />
 			<entity name="npcHarleyClub" prob="0.01" />
 			<entity name="npcHarleyDPistol" prob="0.005" />
+			<entity name="npcHarleyEmptyHand" prob="0.01" />
 			<entity name="npcHarleyHRifle" prob="0.006" />
 			<entity name="npcHarleyKnife" prob="0.01" />
-			<entity name="npcHarleyLBow" prob="0.008" />
+			<entity name="npcHarleyLBow" prob="0.007" />
 			<entity name="npcHarleyM60" prob="0.004" />
 			<entity name="npcHarleyMachete" prob="0.01" />
 			<entity name="npcHarleyPipeMG" prob="0.006" />
 			<entity name="npcHarleyPipePistol" prob="0.007" />
-			<entity name="npcHarleyPipeRifle" prob="0.008" />
+			<entity name="npcHarleyPipeRifle" prob="0.007" />
 			<entity name="npcHarleyPipeShotgun" prob="0.008" />
 			<entity name="npcHarleyPistol" prob="0.006" />
 			<entity name="npcHarleyPShotgun" prob="0.006" />
@@ -4325,14 +4425,15 @@
 			<entity name="npcHarleyBat" prob="0.008" />
 			<entity name="npcHarleyClub" prob="0.008" />
 			<entity name="npcHarleyDPistol" prob="0.005" />
+			<entity name="npcHarleyEmptyHand" prob="0.008" />
 			<entity name="npcHarleyHRifle" prob="0.006" />
 			<entity name="npcHarleyKnife" prob="0.008" />
-			<entity name="npcHarleyLBow" prob="0.007" />
+			<entity name="npcHarleyLBow" prob="0.006" />
 			<entity name="npcHarleyM60" prob="0.004" />
 			<entity name="npcHarleyMachete" prob="0.008" />
 			<entity name="npcHarleyPipeMG" prob="0.006" />
 			<entity name="npcHarleyPipePistol" prob="0.006" />
-			<entity name="npcHarleyPipeRifle" prob="0.007" />
+			<entity name="npcHarleyPipeRifle" prob="0.006" />
 			<entity name="npcHarleyPipeShotgun" prob="0.007" />
 			<entity name="npcHarleyPistol" prob="0.005" />
 			<entity name="npcHarleyPShotgun" prob="0.005" />
@@ -4350,14 +4451,15 @@
 			<entity name="npcHarleyBat" prob="0.006" />
 			<entity name="npcHarleyClub" prob="0.006" />
 			<entity name="npcHarleyDPistol" prob="0.005" />
+			<entity name="npcHarleyEmptyHand" prob="0.006" />
 			<entity name="npcHarleyHRifle" prob="0.005" />
 			<entity name="npcHarleyKnife" prob="0.006" />
-			<entity name="npcHarleyLBow" prob="0.006" />
+			<entity name="npcHarleyLBow" prob="0.005" />
 			<entity name="npcHarleyM60" prob="0.005" />
 			<entity name="npcHarleyMachete" prob="0.006" />
 			<entity name="npcHarleyPipeMG" prob="0.005" />
 			<entity name="npcHarleyPipePistol" prob="0.005" />
-			<entity name="npcHarleyPipeRifle" prob="0.006" />
+			<entity name="npcHarleyPipeRifle" prob="0.005" />
 			<entity name="npcHarleyPipeShotgun" prob="0.006" />
 			<entity name="npcHarleyPistol" prob="0.005" />
 			<entity name="npcHarleyPShotgun" prob="0.005" />
@@ -4375,6 +4477,7 @@
 			<entity name="npcHarleyBat" prob="0.004" />
 			<entity name="npcHarleyClub" prob="0.004" />
 			<entity name="npcHarleyDPistol" prob="0.005" />
+			<entity name="npcHarleyEmptyHand" prob="0.004" />
 			<entity name="npcHarleyHRifle" prob="0.005" />
 			<entity name="npcHarleyKnife" prob="0.004" />
 			<entity name="npcHarleyLBow" prob="0.005" />
@@ -4400,14 +4503,15 @@
 			<entity name="npcHarleyBat" prob="0.002" />
 			<entity name="npcHarleyClub" prob="0.002" />
 			<entity name="npcHarleyDPistol" prob="0.005" />
+			<entity name="npcHarleyEmptyHand" prob="0.002" />
 			<entity name="npcHarleyHRifle" prob="0.004" />
 			<entity name="npcHarleyKnife" prob="0.002" />
-			<entity name="npcHarleyLBow" prob="0.003" />
+			<entity name="npcHarleyLBow" prob="0.004" />
 			<entity name="npcHarleyM60" prob="0.006" />
 			<entity name="npcHarleyMachete" prob="0.002" />
 			<entity name="npcHarleyPipeMG" prob="0.004" />
 			<entity name="npcHarleyPipePistol" prob="0.004" />
-			<entity name="npcHarleyPipeRifle" prob="0.003" />
+			<entity name="npcHarleyPipeRifle" prob="0.004" />
 			<entity name="npcHarleyPipeShotgun" prob="0.003" />
 			<entity name="npcHarleyPistol" prob="0.005" />
 			<entity name="npcHarleyPShotgun" prob="0.005" />
@@ -4438,22 +4542,25 @@
 			<entity name="npcHarleyXBow" prob="0.004" />
 		</entitygroup>
 		<entitygroup name="npcFantasyMeleeGroupGS01">
-			<entity name="npcHarleyClub" prob="0.01" />
-			<entity name="npcHarleyKnife" prob="0.005" />
-			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="npcHarleyClub" prob="0.008" />
+			<entity name="npcHarleyEmptyHand" prob="0.01" />
+			<entity name="npcHarleyKnife" prob="0.004" />
+			<entity name="npcHarleySpear" prob="0.004" />
 		</entitygroup>
 		<entitygroup name="npcFantasyMeleeGroupGS50">
 			<entity name="npcHarleyAxe" prob="0.002" />
 			<entity name="npcHarleyBat" prob="0.002" />
-			<entity name="npcHarleyClub" prob="0.008" />
-			<entity name="npcHarleyKnife" prob="0.005" />
+			<entity name="npcHarleyClub" prob="0.007" />
+			<entity name="npcHarleyEmptyHand" prob="0.008" />
+			<entity name="npcHarleyKnife" prob="0.004" />
 			<entity name="npcHarleyMachete" prob="0.002" />
-			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="npcHarleySpear" prob="0.004" />
 		</entitygroup>
 		<entitygroup name="npcFantasyMeleeGroupGS100">
 			<entity name="npcHarleyAxe" prob="0.004" />
 			<entity name="npcHarleyBat" prob="0.004" />
 			<entity name="npcHarleyClub" prob="0.006" />
+			<entity name="npcHarleyEmptyHand" prob="0.006" />
 			<entity name="npcHarleyKnife" prob="0.005" />
 			<entity name="npcHarleyMachete" prob="0.004" />
 			<entity name="npcHarleySpear" prob="0.005" />
@@ -4462,6 +4569,7 @@
 			<entity name="npcHarleyAxe" prob="0.006" />
 			<entity name="npcHarleyBat" prob="0.006" />
 			<entity name="npcHarleyClub" prob="0.004" />
+			<entity name="npcHarleyEmptyHand" prob="0.004" />
 			<entity name="npcHarleyKnife" prob="0.005" />
 			<entity name="npcHarleyMachete" prob="0.006" />
 			<entity name="npcHarleySpear" prob="0.005" />
@@ -4469,17 +4577,19 @@
 		<entitygroup name="npcFantasyMeleeGroupGS400">
 			<entity name="npcHarleyAxe" prob="0.008" />
 			<entity name="npcHarleyBat" prob="0.008" />
-			<entity name="npcHarleyClub" prob="0.002" />
-			<entity name="npcHarleyKnife" prob="0.005" />
+			<entity name="npcHarleyClub" prob="0.003" />
+			<entity name="npcHarleyEmptyHand" prob="0.002" />
+			<entity name="npcHarleyKnife" prob="0.006" />
 			<entity name="npcHarleyMachete" prob="0.008" />
-			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="npcHarleySpear" prob="0.006" />
 		</entitygroup>
 		<entitygroup name="npcFantasyMeleeGroupGS800">
 			<entity name="npcHarleyAxe" prob="0.01" />
 			<entity name="npcHarleyBat" prob="0.01" />
-			<entity name="npcHarleyKnife" prob="0.005" />
+			<entity name="npcHarleyClub" prob="0.002" />
+			<entity name="npcHarleyKnife" prob="0.006" />
 			<entity name="npcHarleyMachete" prob="0.01" />
-			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="npcHarleySpear" prob="0.006" />
 		</entitygroup>
 		<entitygroup name="npcFantasyRangedGroupGS01">
 			<entity name="npcHarleyAK47" prob="0.006" />
@@ -4995,14 +5105,15 @@
 			<entity name="npcHarleyBat" prob="1" />
 			<entity name="npcHarleyClub" prob="1" />
 			<entity name="npcHarleyDPistol" prob="0.5" />
+			<entity name="npcHarleyEmptyHand" prob="1" />
 			<entity name="npcHarleyHRifle" prob="0.6" />
 			<entity name="npcHarleyKnife" prob="1" />
-			<entity name="npcHarleyLBow" prob="0.8" />
+			<entity name="npcHarleyLBow" prob="0.7" />
 			<entity name="npcHarleyM60" prob="0.4" />
 			<entity name="npcHarleyMachete" prob="1" />
 			<entity name="npcHarleyPipeMG" prob="0.6" />
 			<entity name="npcHarleyPipePistol" prob="0.7" />
-			<entity name="npcHarleyPipeRifle" prob="0.8" />
+			<entity name="npcHarleyPipeRifle" prob="0.7" />
 			<entity name="npcHarleyPipeShotgun" prob="0.8" />
 			<entity name="npcHarleyPistol" prob="0.6" />
 			<entity name="npcHarleyPShotgun" prob="0.6" />
@@ -5019,14 +5130,15 @@
 			<entity name="npcHarleyBat" prob="0.8" />
 			<entity name="npcHarleyClub" prob="0.8" />
 			<entity name="npcHarleyDPistol" prob="0.5" />
+			<entity name="npcHarleyEmptyHand" prob="0.8" />
 			<entity name="npcHarleyHRifle" prob="0.6" />
 			<entity name="npcHarleyKnife" prob="0.8" />
-			<entity name="npcHarleyLBow" prob="0.7" />
+			<entity name="npcHarleyLBow" prob="0.6" />
 			<entity name="npcHarleyM60" prob="0.4" />
 			<entity name="npcHarleyMachete" prob="0.8" />
 			<entity name="npcHarleyPipeMG" prob="0.6" />
 			<entity name="npcHarleyPipePistol" prob="0.6" />
-			<entity name="npcHarleyPipeRifle" prob="0.7" />
+			<entity name="npcHarleyPipeRifle" prob="0.6" />
 			<entity name="npcHarleyPipeShotgun" prob="0.7" />
 			<entity name="npcHarleyPistol" prob="0.5" />
 			<entity name="npcHarleyPShotgun" prob="0.5" />
@@ -5044,14 +5156,15 @@
 			<entity name="npcHarleyBat" prob="0.6" />
 			<entity name="npcHarleyClub" prob="0.6" />
 			<entity name="npcHarleyDPistol" prob="0.5" />
+			<entity name="npcHarleyEmptyHand" prob="0.6" />
 			<entity name="npcHarleyHRifle" prob="0.5" />
 			<entity name="npcHarleyKnife" prob="0.6" />
-			<entity name="npcHarleyLBow" prob="0.6" />
+			<entity name="npcHarleyLBow" prob="0.5" />
 			<entity name="npcHarleyM60" prob="0.5" />
 			<entity name="npcHarleyMachete" prob="0.6" />
 			<entity name="npcHarleyPipeMG" prob="0.5" />
 			<entity name="npcHarleyPipePistol" prob="0.5" />
-			<entity name="npcHarleyPipeRifle" prob="0.6" />
+			<entity name="npcHarleyPipeRifle" prob="0.5" />
 			<entity name="npcHarleyPipeShotgun" prob="0.6" />
 			<entity name="npcHarleyPistol" prob="0.5" />
 			<entity name="npcHarleyPShotgun" prob="0.5" />
@@ -5069,6 +5182,7 @@
 			<entity name="npcHarleyBat" prob="0.4" />
 			<entity name="npcHarleyClub" prob="0.4" />
 			<entity name="npcHarleyDPistol" prob="0.5" />
+			<entity name="npcHarleyEmptyHand" prob="0.4" />
 			<entity name="npcHarleyHRifle" prob="0.5" />
 			<entity name="npcHarleyKnife" prob="0.4" />
 			<entity name="npcHarleyLBow" prob="0.5" />
@@ -5094,14 +5208,15 @@
 			<entity name="npcHarleyBat" prob="0.2" />
 			<entity name="npcHarleyClub" prob="0.2" />
 			<entity name="npcHarleyDPistol" prob="0.5" />
+			<entity name="npcHarleyEmptyHand" prob="0.2" />
 			<entity name="npcHarleyHRifle" prob="0.4" />
 			<entity name="npcHarleyKnife" prob="0.2" />
-			<entity name="npcHarleyLBow" prob="0.3" />
+			<entity name="npcHarleyLBow" prob="0.4" />
 			<entity name="npcHarleyM60" prob="0.6" />
 			<entity name="npcHarleyMachete" prob="0.2" />
 			<entity name="npcHarleyPipeMG" prob="0.4" />
 			<entity name="npcHarleyPipePistol" prob="0.4" />
-			<entity name="npcHarleyPipeRifle" prob="0.3" />
+			<entity name="npcHarleyPipeRifle" prob="0.4" />
 			<entity name="npcHarleyPipeShotgun" prob="0.3" />
 			<entity name="npcHarleyPistol" prob="0.5" />
 			<entity name="npcHarleyPShotgun" prob="0.5" />
@@ -5138,14 +5253,15 @@
 			<entity name="npcBakerBat" prob="1" />
 			<entity name="npcBakerClub" prob="1" />
 			<entity name="npcBakerDPistol" prob="0.5" />
+			<entity name="npcBakerEmptyHand" prob="1" />
 			<entity name="npcBakerHRifle" prob="0.6" />
 			<entity name="npcBakerKnife" prob="1" />
-			<entity name="npcBakerLBow" prob="0.8" />
+			<entity name="npcBakerLBow" prob="0.7" />
 			<entity name="npcBakerM60" prob="0.4" />
 			<entity name="npcBakerMachete" prob="1" />
 			<entity name="npcBakerPipeMG" prob="0.6" />
 			<entity name="npcBakerPipePistol" prob="0.7" />
-			<entity name="npcBakerPipeRifle" prob="0.8" />
+			<entity name="npcBakerPipeRifle" prob="0.7" />
 			<entity name="npcBakerPipeShotgun" prob="0.8" />
 			<entity name="npcBakerPistol" prob="0.6" />
 			<entity name="npcBakerPShotgun" prob="0.6" />
@@ -5160,14 +5276,15 @@
 			<entity name="npcNurseBat" prob="1" />
 			<entity name="npcNurseClub" prob="1" />
 			<entity name="npcNurseDPistol" prob="0.5" />
+			<entity name="npcNurseEmptyHand" prob="1" />
 			<entity name="npcNurseHRifle" prob="0.6" />
 			<entity name="npcNurseKnife" prob="1" />
-			<entity name="npcNurseLBow" prob="0.8" />
+			<entity name="npcNurseLBow" prob="0.7" />
 			<entity name="npcNurseM60" prob="0.4" />
 			<entity name="npcNurseMachete" prob="1" />
 			<entity name="npcNursePipeMG" prob="0.6" />
 			<entity name="npcNursePipePistol" prob="0.7" />
-			<entity name="npcNursePipeRifle" prob="0.8" />
+			<entity name="npcNursePipeRifle" prob="0.7" />
 			<entity name="npcNursePipeShotgun" prob="0.8" />
 			<entity name="npcNursePistol" prob="0.6" />
 			<entity name="npcNursePShotgun" prob="0.6" />
@@ -5184,14 +5301,15 @@
 			<entity name="npcBakerBat" prob="0.8" />
 			<entity name="npcBakerClub" prob="0.8" />
 			<entity name="npcBakerDPistol" prob="0.5" />
+			<entity name="npcBakerEmptyHand" prob="0.8" />
 			<entity name="npcBakerHRifle" prob="0.6" />
 			<entity name="npcBakerKnife" prob="0.8" />
-			<entity name="npcBakerLBow" prob="0.7" />
+			<entity name="npcBakerLBow" prob="0.6" />
 			<entity name="npcBakerM60" prob="0.4" />
 			<entity name="npcBakerMachete" prob="0.8" />
 			<entity name="npcBakerPipeMG" prob="0.6" />
 			<entity name="npcBakerPipePistol" prob="0.6" />
-			<entity name="npcBakerPipeRifle" prob="0.7" />
+			<entity name="npcBakerPipeRifle" prob="0.6" />
 			<entity name="npcBakerPipeShotgun" prob="0.7" />
 			<entity name="npcBakerPistol" prob="0.5" />
 			<entity name="npcBakerPShotgun" prob="0.5" />
@@ -5207,14 +5325,15 @@
 			<entity name="npcNurseBat" prob="0.8" />
 			<entity name="npcNurseClub" prob="0.8" />
 			<entity name="npcNurseDPistol" prob="0.5" />
+			<entity name="npcNurseEmptyHand" prob="0.8" />
 			<entity name="npcNurseHRifle" prob="0.6" />
 			<entity name="npcNurseKnife" prob="0.8" />
-			<entity name="npcNurseLBow" prob="0.7" />
+			<entity name="npcNurseLBow" prob="0.6" />
 			<entity name="npcNurseM60" prob="0.4" />
 			<entity name="npcNurseMachete" prob="0.8" />
 			<entity name="npcNursePipeMG" prob="0.6" />
 			<entity name="npcNursePipePistol" prob="0.6" />
-			<entity name="npcNursePipeRifle" prob="0.7" />
+			<entity name="npcNursePipeRifle" prob="0.6" />
 			<entity name="npcNursePipeShotgun" prob="0.7" />
 			<entity name="npcNursePistol" prob="0.5" />
 			<entity name="npcNursePShotgun" prob="0.5" />
@@ -5232,14 +5351,15 @@
 			<entity name="npcBakerBat" prob="0.6" />
 			<entity name="npcBakerClub" prob="0.6" />
 			<entity name="npcBakerDPistol" prob="0.5" />
+			<entity name="npcBakerEmptyHand" prob="0.6" />
 			<entity name="npcBakerHRifle" prob="0.5" />
 			<entity name="npcBakerKnife" prob="0.6" />
-			<entity name="npcBakerLBow" prob="0.6" />
+			<entity name="npcBakerLBow" prob="0.5" />
 			<entity name="npcBakerM60" prob="0.5" />
 			<entity name="npcBakerMachete" prob="0.6" />
 			<entity name="npcBakerPipeMG" prob="0.5" />
 			<entity name="npcBakerPipePistol" prob="0.5" />
-			<entity name="npcBakerPipeRifle" prob="0.6" />
+			<entity name="npcBakerPipeRifle" prob="0.5" />
 			<entity name="npcBakerPipeShotgun" prob="0.6" />
 			<entity name="npcBakerPistol" prob="0.5" />
 			<entity name="npcBakerPShotgun" prob="0.5" />
@@ -5255,14 +5375,15 @@
 			<entity name="npcNurseBat" prob="0.6" />
 			<entity name="npcNurseClub" prob="0.6" />
 			<entity name="npcNurseDPistol" prob="0.5" />
+			<entity name="npcNurseEmptyHand" prob="0.6" />
 			<entity name="npcNurseHRifle" prob="0.5" />
 			<entity name="npcNurseKnife" prob="0.6" />
-			<entity name="npcNurseLBow" prob="0.6" />
+			<entity name="npcNurseLBow" prob="0.5" />
 			<entity name="npcNurseM60" prob="0.5" />
 			<entity name="npcNurseMachete" prob="0.6" />
 			<entity name="npcNursePipeMG" prob="0.5" />
 			<entity name="npcNursePipePistol" prob="0.5" />
-			<entity name="npcNursePipeRifle" prob="0.6" />
+			<entity name="npcNursePipeRifle" prob="0.5" />
 			<entity name="npcNursePipeShotgun" prob="0.6" />
 			<entity name="npcNursePistol" prob="0.5" />
 			<entity name="npcNursePShotgun" prob="0.5" />
@@ -5280,6 +5401,7 @@
 			<entity name="npcBakerBat" prob="0.4" />
 			<entity name="npcBakerClub" prob="0.4" />
 			<entity name="npcBakerDPistol" prob="0.5" />
+			<entity name="npcBakerEmptyHand" prob="0.4" />
 			<entity name="npcBakerHRifle" prob="0.5" />
 			<entity name="npcBakerKnife" prob="0.4" />
 			<entity name="npcBakerLBow" prob="0.5" />
@@ -5303,6 +5425,7 @@
 			<entity name="npcNurseBat" prob="0.4" />
 			<entity name="npcNurseClub" prob="0.4" />
 			<entity name="npcNurseDPistol" prob="0.5" />
+			<entity name="npcNurseEmptyHand" prob="0.4" />
 			<entity name="npcNurseHRifle" prob="0.5" />
 			<entity name="npcNurseKnife" prob="0.4" />
 			<entity name="npcNurseLBow" prob="0.5" />
@@ -5328,14 +5451,15 @@
 			<entity name="npcBakerBat" prob="0.2" />
 			<entity name="npcBakerClub" prob="0.2" />
 			<entity name="npcBakerDPistol" prob="0.5" />
+			<entity name="npcBakerEmptyHand" prob="0.2" />
 			<entity name="npcBakerHRifle" prob="0.4" />
 			<entity name="npcBakerKnife" prob="0.2" />
-			<entity name="npcBakerLBow" prob="0.3" />
+			<entity name="npcBakerLBow" prob="0.4" />
 			<entity name="npcBakerM60" prob="0.6" />
 			<entity name="npcBakerMachete" prob="0.2" />
 			<entity name="npcBakerPipeMG" prob="0.4" />
 			<entity name="npcBakerPipePistol" prob="0.4" />
-			<entity name="npcBakerPipeRifle" prob="0.3" />
+			<entity name="npcBakerPipeRifle" prob="0.4" />
 			<entity name="npcBakerPipeShotgun" prob="0.3" />
 			<entity name="npcBakerPistol" prob="0.5" />
 			<entity name="npcBakerPShotgun" prob="0.5" />
@@ -5351,14 +5475,15 @@
 			<entity name="npcNurseBat" prob="0.2" />
 			<entity name="npcNurseClub" prob="0.2" />
 			<entity name="npcNurseDPistol" prob="0.5" />
+			<entity name="npcNurseEmptyHand" prob="0.2" />
 			<entity name="npcNurseHRifle" prob="0.4" />
 			<entity name="npcNurseKnife" prob="0.2" />
-			<entity name="npcNurseLBow" prob="0.3" />
+			<entity name="npcNurseLBow" prob="0.4" />
 			<entity name="npcNurseM60" prob="0.6" />
 			<entity name="npcNurseMachete" prob="0.2" />
 			<entity name="npcNursePipeMG" prob="0.4" />
 			<entity name="npcNursePipePistol" prob="0.4" />
-			<entity name="npcNursePipeRifle" prob="0.3" />
+			<entity name="npcNursePipeRifle" prob="0.4" />
 			<entity name="npcNursePipeShotgun" prob="0.3" />
 			<entity name="npcNursePistol" prob="0.5" />
 			<entity name="npcNursePShotgun" prob="0.5" />
@@ -5412,14 +5537,15 @@
 			<entity name="npcNurseBat" prob="0.01" />
 			<entity name="npcNurseClub" prob="0.01" />
 			<entity name="npcNurseDPistol" prob="0.005" />
+			<entity name="npcNurseEmptyHand" prob="0.01" />
 			<entity name="npcNurseHRifle" prob="0.006" />
 			<entity name="npcNurseKnife" prob="0.01" />
-			<entity name="npcNurseLBow" prob="0.008" />
+			<entity name="npcNurseLBow" prob="0.007" />
 			<entity name="npcNurseM60" prob="0.004" />
 			<entity name="npcNurseMachete" prob="0.01" />
 			<entity name="npcNursePipeMG" prob="0.006" />
 			<entity name="npcNursePipePistol" prob="0.007" />
-			<entity name="npcNursePipeRifle" prob="0.008" />
+			<entity name="npcNursePipeRifle" prob="0.007" />
 			<entity name="npcNursePipeShotgun" prob="0.008" />
 			<entity name="npcNursePistol" prob="0.006" />
 			<entity name="npcNursePShotgun" prob="0.006" />
@@ -5436,14 +5562,15 @@
 			<entity name="npcNurseBat" prob="0.008" />
 			<entity name="npcNurseClub" prob="0.008" />
 			<entity name="npcNurseDPistol" prob="0.005" />
+			<entity name="npcNurseEmptyHand" prob="0.008" />
 			<entity name="npcNurseHRifle" prob="0.006" />
 			<entity name="npcNurseKnife" prob="0.008" />
-			<entity name="npcNurseLBow" prob="0.007" />
+			<entity name="npcNurseLBow" prob="0.006" />
 			<entity name="npcNurseM60" prob="0.004" />
 			<entity name="npcNurseMachete" prob="0.008" />
 			<entity name="npcNursePipeMG" prob="0.006" />
 			<entity name="npcNursePipePistol" prob="0.006" />
-			<entity name="npcNursePipeRifle" prob="0.007" />
+			<entity name="npcNursePipeRifle" prob="0.006" />
 			<entity name="npcNursePipeShotgun" prob="0.007" />
 			<entity name="npcNursePistol" prob="0.005" />
 			<entity name="npcNursePShotgun" prob="0.005" />
@@ -5461,14 +5588,15 @@
 			<entity name="npcNurseBat" prob="0.006" />
 			<entity name="npcNurseClub" prob="0.006" />
 			<entity name="npcNurseDPistol" prob="0.005" />
+			<entity name="npcNurseEmptyHand" prob="0.006" />
 			<entity name="npcNurseHRifle" prob="0.005" />
 			<entity name="npcNurseKnife" prob="0.006" />
-			<entity name="npcNurseLBow" prob="0.006" />
+			<entity name="npcNurseLBow" prob="0.005" />
 			<entity name="npcNurseM60" prob="0.005" />
 			<entity name="npcNurseMachete" prob="0.006" />
 			<entity name="npcNursePipeMG" prob="0.005" />
 			<entity name="npcNursePipePistol" prob="0.005" />
-			<entity name="npcNursePipeRifle" prob="0.006" />
+			<entity name="npcNursePipeRifle" prob="0.005" />
 			<entity name="npcNursePipeShotgun" prob="0.006" />
 			<entity name="npcNursePistol" prob="0.005" />
 			<entity name="npcNursePShotgun" prob="0.005" />
@@ -5486,6 +5614,7 @@
 			<entity name="npcNurseBat" prob="0.004" />
 			<entity name="npcNurseClub" prob="0.004" />
 			<entity name="npcNurseDPistol" prob="0.005" />
+			<entity name="npcNurseEmptyHand" prob="0.004" />
 			<entity name="npcNurseHRifle" prob="0.005" />
 			<entity name="npcNurseKnife" prob="0.004" />
 			<entity name="npcNurseLBow" prob="0.005" />
@@ -5511,14 +5640,15 @@
 			<entity name="npcNurseBat" prob="0.002" />
 			<entity name="npcNurseClub" prob="0.002" />
 			<entity name="npcNurseDPistol" prob="0.005" />
+			<entity name="npcNurseEmptyHand" prob="0.002" />
 			<entity name="npcNurseHRifle" prob="0.004" />
 			<entity name="npcNurseKnife" prob="0.002" />
-			<entity name="npcNurseLBow" prob="0.003" />
+			<entity name="npcNurseLBow" prob="0.004" />
 			<entity name="npcNurseM60" prob="0.006" />
 			<entity name="npcNurseMachete" prob="0.002" />
 			<entity name="npcNursePipeMG" prob="0.004" />
 			<entity name="npcNursePipePistol" prob="0.004" />
-			<entity name="npcNursePipeRifle" prob="0.003" />
+			<entity name="npcNursePipeRifle" prob="0.004" />
 			<entity name="npcNursePipeShotgun" prob="0.003" />
 			<entity name="npcNursePistol" prob="0.005" />
 			<entity name="npcNursePShotgun" prob="0.005" />
