@@ -362,42 +362,6 @@
 					<consideration class="CanSeeTarget, SCore"/>
 					<consideration class="SelfNotHasBuff, SCore" buffs="buffNPCModStopAttacking,IsHealing,buffHitStun"/>	
 				</action>
-				<!-- FULL CONTROL ACTIONS - NO PLAYER COMMANDS -->
-				<action name="LeaderFollowControl" weight="10" >
-					<consideration class="SelfHasBuff, SCore" buffs="buffNPCModThreatControlMode,buffNPCModFullControlMode"/>
-					<consideration class="SelfHasBuff, SCore" buffs="buffNPCModStopAttacking"/>
-					<task class="FollowSDX, SCore" OnStartAddBuffs="NPCpegasus" OnStopRemoveBuffs="NPCpegasus"/>
-					<consideration class="HasOrder, SCore" order="Follow"/>
-				</action>
-				<action name="MoveToEnemyRunMeleeThreatControl" weight="4">
-					<consideration class="SelfHasBuff, SCore" buffs="buffNPCModFullControlMode"/>
-					<task class="MoveToAttackTargetSDX, SCore" run="true" /> 
-					<consideration class="FailOnDistanceToLeader, Score" max_distance="30"/>
-					<consideration class="NotInWeaponRange, SCore" action_index="0" /> 
-					<consideration class="CanSeeTarget, SCore"/>
-					<consideration class="SelfNotHasBuff, SCore" buffs="buffNPCModStopAttacking,buffHitStun"/>	
-					<consideration class="NotHasOrder, SCore" order="Stay"/>
-				</action>
-				 <action name="MoveToRandomTargetThreatControl" weight="3" entity_filter="IsPlayer">
-					<consideration class="SelfHasBuff, SCore" buffs="buffNPCModFullControlMode"/>
-                    <task class="MoveToInvestigate, SCore" run="true" />
-					<consideration class="SelfHasCVar, SCore" cvar="varFactionBandit" value="1"/>
-					<consideration class="FailOnDistanceToLeader, Score" max_distance="30"/>
-					<consideration class="NotInWeaponRange, SCore" action_index="0" /> 
-					<consideration class="CanNotSeeTarget, SCore"/>
-					<consideration class="CanHearTarget, SCore" />
-					<consideration class="SelfNotHasBuff, SCore" buffs="buffNPCModStopAttacking,buffHitStun"/>	
-					<consideration class="NotHasOrder, SCore" order="Stay"/>
-                 </action>					
-				<action name="MeleeAttackEntityThreatControl" weight="5">
-					<consideration class="SelfHasBuff, SCore" buffs="buffNPCModFullControlMode"/>
-					<task class="AttackTargetEntitySDX, SCore" action_index="0"/>
-					<consideration class="FailOnDistanceToLeader, Score" max_distance="30"/>
-					<consideration class="InWeaponRange, SCore" action_index="0" /> <!-- option 1  -->
-					<!--<consideration class="TargetDistance" flip_y="true" min="0" max="2" />--> <!-- option 2  -->
-					<consideration class="CanSeeTarget, SCore"/>
-					<consideration class="SelfNotHasBuff, SCore" buffs="buffNPCModStopAttacking,IsHealing,buffHitStun"/>	
-				</action>
 				<!-- CONTROL ACTIONS - PLAYER IS BEING ATTACKED OR GAVE ATTACK COMMAND -->
 				<action name="MoveToEnemyRunMeleeControlAttacked" weight="4">
 					<consideration class="SelfHasBuff, SCore" buffs="buffNPCModThreatControlMode,buffNPCModFullControlMode"/>
