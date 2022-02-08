@@ -319,7 +319,6 @@
 				<passive_effect name="DamageModifier" operation="perc_set" value="1"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
 				<passive_effect name="DismemberChance" operation="base_set" value=".05"/> 
-				<passive_effect name="StaminaMax" operation="base_set" value="100"/>
 				<passive_effect name="WaterMax" operation="base_set" value="100"/> 
 				<passive_effect name="CrouchSpeed" operation="base_set" value=".3"/> 
 				<passive_effect name="WalkSpeed" operation="base_set" value="0.35" tags="swimming"/>
@@ -2871,39 +2870,11 @@
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>	
 			<!--<property name="MapIcon" value="ui_game_symbol_bullet_point"/> -->
 			<property name="Names" value="KITT,HK-47,ED-209,Clank,Johnny5,Roboto,Marvin,Robbie,Rosie,HAL9000,GLaDOS,Bender" />		
-			<property name="HireCurrency" value="casinoCoin" />
-			<property name="HireCost" value="1000" />
+			<property name="HireCurrency" value="carBattery" />
+			<property name="HireCost" value="1" />
 		</entity_class> 
 
-		<entity_class name="NPCMechRangedTemplate" extends="NPCMechMeleeTemplate"> 	
-			<property name="AvatarController" value="AvatarAnimalControllerSDX, SCore"/> 
-			<property name='Class' value='EntityAliveSDX, SCore' />
-			<property name="Tags" value="entity,mech,ranged"/>
-			<property name="Faction" value="mechs"/>
-			<property name="HideInSpawnMenu" value="true"/>
-			<property name="SightRange" value="70"/>
-			<property name="LegCrippleScale" value="0"/>
-			<property name="RightHandJointName" value="Gunjoint" /> 
-			<property name="HandItem" value="gunNPCPistolHidden"/> 
-			<property name="AIPackages" value="NPCMechBasic, NPCMechRanged, NPCHired"/>
-			<!--<property name="AITask-1" value="RangedAttackTargetSDX, SCore" data="itemType=0;attackPeriod=10"/> 
-			<property name="AITask-2" value="ApproachAndAttackSDX, SCore" data="class=EntityAlive,0"/>
-			<property name="AITask-3" value="Look"/>	
-            <property name="AITask-4" value="ApproachAndFollowTargetSDX, SCore" data="incentives=Leader"/>
-            <property name="AITask-5" value="WanderSDX, SCore"/>
-			<property name="AITask-6" value="ApproachDistraction"/>
-			<property name="AITask-7" value="ApproachSpot"/> 
-			<property name="AITask-8" value="Territorial"/>
-            <property name="AITask-9" value="" />
-			<property name="AITarget-1" value="SetNearestEntityAsTarget" data="class=EntityAlive,80"/>
-			<property name="AITarget-2" value="SetAsTargetIfLeaderAttackedSDX, SCore" data="class=EntityAlive"/>
-			<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityAlive,80"/>
-			<property name="AITarget-4" value="SetAsTargetIfHurtSDX, SCore" data="class=EntityAlive"/>
-			<property name="AITarget-5" value=""/> -->
-			<property name="ItemsOnEnterGame.GameModeSurvival" value="gunNPCPistolHidden,ammoNPC9mmBulletBall"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCPistolHidden,ammoNPC9mmBulletBall"/>
-			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCPistolHidden,ammoNPC9mmBulletBall"/> 				
-		</entity_class>	
+
 
 	<!--  End Of Template Section  -->
 

@@ -167,7 +167,7 @@
 				</action>
 				<!-- Action to move the NPC close to the ally who needs help -->
 				<action name="MoveToHeal" weight="6">
-					<task class="MoveToTargetSDX, SCore" run="true" />
+					<task class="MoveToAttackTargetSDX, SCore" run="true" />
 					<consideration class="TargetHealthSDX, SCore" min="0.01" max="0.65"/>
 					<consideration class="TargetDistance" min="4" max="10" curve="threshold"/>
 					<consideration class="TargetNotHasBuff, SCore" buffs="buffHealHealth,buffProcessConsumables"/>		
@@ -177,7 +177,7 @@
 				<!-- Action to move the NPC close to the ally who needs help, specifically for sprained limbs. -->
 				<!-- The above only moves them if their heal is low, whereas this is necessary for a broken limb, which may not trigger the health check -->
 				<action name="MoveToMend" weight="6">
-					<task class="MoveToTargetSDX, SCore" run="true" />
+					<task class="MoveToAttackTargetSDX, SCore" run="true" />
 					<consideration class="TargetHasBuff, SCore" buffs="buffArmSprained,buffArmBroken,buffLegBroken,buffLegSprained"/>
 					<consideration class="TargetDistance" min="4" max="10" curve="threshold"/>
 					<consideration class="SelfNotHasBuff, SCore" buffs="IsHealing"/>
@@ -187,7 +187,7 @@
 			
 			<ai_package name="NPCMeleeBasic" entity_filter="IsEnemy"> <!-- faction check  -->
 				<action name="MoveToEnemyRunMelee" weight="4">
-					<task class="MoveToTargetSDX, SCore" run="true" /> 
+					<task class="MoveToAttackTargetSDX, SCore" run="true" /> 
 					<consideration class="FailOnDistanceToLeader, Score" max_distance="30"/>
 					<consideration class="NotInWeaponRange, SCore" action_index="0" /> 
 					<consideration class="CanSeeTarget, SCore"/>
@@ -212,6 +212,12 @@
 					<consideration class="CanSeeTarget, SCore"/>
 					<consideration class="SelfNotHasBuff, SCore" buffs="IsHealing,buffHitStun"/>	
 				</action>
+				<action name="BreakBlock" weight="5">
+                    <task class="AttackTargetEntitySDX, SCore" action_index="0"/>
+                    <consideration class="PathBlocked"/>
+                    <consideration class="TargetType" type="Block"/>
+                    <!--<consideration class="TargetDistance" flip_y="true" min="0" max="4"/>-->
+                </action>
 			</ai_package>	
 	
 			<ai_package name="NPCRangedBasic" entity_filter="IsEnemy" > <!-- props to the team, especially Ramsey, for this upgraded code  -->
@@ -231,7 +237,7 @@
 					<consideration class="NotHasOrder, SCore" order="Stay" />
 				</action>
 				<action name="MoveToEnemyMediumRanged" weight="4">
-					<task class="MoveToTargetSDX, SCore" run="true" action_index="1" />
+					<task class="MoveToAttackTargetSDX, SCore" run="true" action_index="1" />
 					<consideration class="TargetDistance" flip_x="true" min="20" curve="threshold" />
 					<consideration class="SelfNotHasBuff, SCore" buffs="PipeShotgunUser,PShotgunUser,AShotgunUser,SRifleUser,HRifleUser" />
 					<consideration class="FailOnDistanceToLeader, Score" max_distance="30" />
@@ -239,7 +245,7 @@
 					<consideration class="NotHasOrder, SCore" order="Stay" />
 				</action>
 				<action name="MoveToEnemyLongRanged" weight="4">
-					<task class="MoveToTargetSDX, SCore" run="true" action_index="1" />
+					<task class="MoveToAttackTargetSDX, SCore" run="true" action_index="1" />
 					<consideration class="TargetDistance" flip_x="true" min="25"  curve="threshold" />
 					<consideration class="SelfHasBuff, SCore" buffs="SRifleUser,HRifleUser,RocketLUser" />
 					<consideration class="FailOnDistanceToLeader, Score" max_distance="30" />
@@ -292,7 +298,7 @@
 			<ai_package name="NPCMelee" entity_filter="IsEnemy"> 
 				<!-- DEFAULT ACTIONS -->
 				<action name="MoveToEnemyRunMelee" weight="4">
-					<task class="MoveToTargetSDX, SCore" run="true" /> 
+					<task class="MoveToAttackTargetSDX, SCore" run="true" /> 
 					<consideration class="FailOnDistanceToLeader, Score" max_distance="30"/>
 					<consideration class="NotInWeaponRange, SCore" action_index="0" /> 
 					<consideration class="CanSeeTarget, SCore"/>
@@ -327,7 +333,7 @@
 				<action name="MoveToEnemyRunMeleeThreatControl" weight="4">
 					<consideration class="SelfHasBuff, SCore" buffs="buffNPCModThreatControlMode"/>
 					<consideration class="TargetNotHasBuff, SCore" buffs="buffNPCModThreat"/>
-					<task class="MoveToTargetSDX, SCore" run="true" /> 
+					<task class="MoveToAttackTargetSDX, SCore" run="true" /> 
 					<consideration class="FailOnDistanceToLeader, Score" max_distance="30"/>
 					<consideration class="NotInWeaponRange, SCore" action_index="0" /> 
 					<consideration class="CanSeeTarget, SCore"/>
@@ -365,7 +371,7 @@
 				</action>
 				<action name="MoveToEnemyRunMeleeThreatControl" weight="4">
 					<consideration class="SelfHasBuff, SCore" buffs="buffNPCModFullControlMode"/>
-					<task class="MoveToTargetSDX, SCore" run="true" /> 
+					<task class="MoveToAttackTargetSDX, SCore" run="true" /> 
 					<consideration class="FailOnDistanceToLeader, Score" max_distance="30"/>
 					<consideration class="NotInWeaponRange, SCore" action_index="0" /> 
 					<consideration class="CanSeeTarget, SCore"/>
@@ -397,7 +403,7 @@
 					<consideration class="SelfHasBuff, SCore" buffs="buffNPCModThreatControlMode,buffNPCModFullControlMode"/>
 					<!--<consideration class="TargetHasBuff, SCore" buffs="buffNPCModThreat"/>-->
 					<consideration class="TargetHasBuff, SCore" buffs="buffNPCModAttacking"/>
-					<task class="MoveToTargetSDX, SCore" run="true" /> 
+					<task class="MoveToAttackTargetSDX, SCore" run="true" /> 
 					<consideration class="FailOnDistanceToLeader, Score" max_distance="30"/>
 					<consideration class="NotInWeaponRange, SCore" action_index="0" /> 
 					<consideration class="CanSeeTarget, SCore"/>
@@ -456,7 +462,7 @@
 					<consideration class="NotHasOrder, SCore" order="Stay" />
 				</action>
 				<action name="MoveToEnemyMediumRanged" weight="4">
-					<task class="MoveToTargetSDX, SCore" run="true" action_index="1" />
+					<task class="MoveToAttackTargetSDX, SCore" run="true" action_index="1" />
 					<consideration class="SelfNotHasBuff, SCore" buffs="buffNPCModThreatControlMode,buffNPCModFullControlMode"/>
 					<consideration class="TargetDistance" min="20" max="25" curve="threshold" />
 					<consideration class="SelfNotHasBuff, SCore" buffs="PipeShotgunUser,PShotgunUser,AShotgunUser,SRifleUser,HRifleUser" />
@@ -465,7 +471,7 @@
 					<consideration class="NotHasOrder, SCore" order="Stay" />
 				</action>
 				<action name="MoveToEnemyLongRanged" weight="4">
-					<task class="MoveToTargetSDX, SCore" run="true" action_index="1" />
+					<task class="MoveToAttackTargetSDX, SCore" run="true" action_index="1" />
 					<consideration class="SelfNotHasBuff, SCore" buffs="buffNPCModThreatControlMode,buffNPCModFullControlMode"/>
 					<consideration class="TargetDistance" min="25" max="30" curve="threshold" />
 					<consideration class="SelfHasBuff, SCore" buffs="SRifleUser,HRifleUser" />
@@ -545,7 +551,7 @@
 					<consideration class="NotHasOrder, SCore" order="Stay" />
 				</action>
 				<action name="MoveToEnemyMediumRangedThreatControl" weight="4">
-					<task class="MoveToTargetSDX, SCore" run="true" action_index="1" />
+					<task class="MoveToAttackTargetSDX, SCore" run="true" action_index="1" />
 					<consideration class="SelfHasBuff, SCore" buffs="buffNPCModThreatControlMode"/>
 					<consideration class="TargetNotHasBuff, SCore" buffs="buffNPCModThreat"/>
 					<consideration class="TargetDistance" min="20" max="25" curve="threshold" />
@@ -555,7 +561,7 @@
 					<consideration class="NotHasOrder, SCore" order="Stay" />
 				</action>
 				<action name="MoveToEnemyLongRangedThreatControl" weight="4">
-					<task class="MoveToTargetSDX, SCore" run="true" action_index="1" />
+					<task class="MoveToAttackTargetSDX, SCore" run="true" action_index="1" />
 					<consideration class="SelfHasBuff, SCore" buffs="buffNPCModThreatControlMode"/>
 					<consideration class="SelfNotHasBuff, SCore" buffs="buffNPCModStopAttacking"/>
 					<consideration class="TargetNotHasBuff, SCore" buffs="buffNPCModThreat"/>
@@ -641,7 +647,7 @@
 					<consideration class="NotHasOrder, SCore" order="Stay" />
 				</action>
 				<action name="MoveToEnemyMediumRangedControlAttacked" weight="4">
-					<task class="MoveToTargetSDX, SCore" run="true" action_index="1" />
+					<task class="MoveToAttackTargetSDX, SCore" run="true" action_index="1" />
 					<consideration class="SelfHasBuff, SCore" buffs="buffNPCModThreatControlMode,buffNPCModFullControlMode"/>
 					<consideration class="SelfNotHasBuff, SCore" buffs="buffNPCModStopAttacking"/>
 					<consideration class="TargetHasBuff, SCore" buffs="buffNPCModAttacking"/>
@@ -652,7 +658,7 @@
 					<consideration class="NotHasOrder, SCore" order="Stay" />
 				</action>
 				<action name="MoveToEnemyLongRangedControlAttacked" weight="4">
-					<task class="MoveToTargetSDX, SCore" run="true" action_index="1" />
+					<task class="MoveToAttackTargetSDX, SCore" run="true" action_index="1" />
 					<consideration class="SelfHasBuff, SCore" buffs="buffNPCModThreatControlMode,buffNPCModFullControlMode"/>
 					<consideration class="SelfNotHasBuff, SCore" buffs="buffNPCModStopAttacking"/>
 					<consideration class="TargetHasBuff, SCore" buffs="buffNPCModAttacking"/>
@@ -758,7 +764,7 @@
 					<consideration class="TargetVisible" flip_y="true"/>
 				</action>
 				<action name="MoveToEnemyAgro" weight="5">
-					<task class="MoveToTargetSDX, SCore" run="true"/>
+					<task class="MoveToAttackTargetSDX, SCore" run="true"/>
 					<consideration class="TargetType" type="EntityPlayer,EntityNPC"/>
 					<consideration class="TargetIsEnemy, SCore"/>
 					<consideration class="TargetDistance" min="2" max="30" curve="threshold"/>
@@ -792,7 +798,7 @@
 					<consideration class="TargetVisible" flip_y="true"/>
 				</action>
 				<action name="MoveToEnemyAgro" weight="3">
-					<task class="MoveToTargetSDX, SCore" run="true"/>
+					<task class="MoveToAttackTargetSDX, SCore" run="true"/>
 					<consideration class="TargetType" type="EntityPlayer,EntityNPC"/>
 					<consideration class="TargetIsEnemy, SCore"/>
 					<consideration class="TargetDistance" min="2" max="30" curve="threshold"/>

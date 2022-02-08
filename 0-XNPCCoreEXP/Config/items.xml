@@ -1395,15 +1395,15 @@
 			</effect_group>
 		</item>	
 
-		<item name="gunNPCPistolHidden">
+		<item name="gunNPCPistolHidden"> <!-- Using as default for ranged mechs  -->
 			<property name="Extends" value="gunNPCPistol"/> 
 			<property name="Tags" value="weapon,ranged,gun,pistol,reloadPenalty1,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="HoldingItemHidden" value="true"/>
 			<property class="Action0">
 				<property name="Class" value="Melee"/>
-				<property name="DamageEntity" value="15"/>
-				<property name="DamageBlock" value="10"/>
+				<property name="DamageEntity" value="35"/>
+				<property name="DamageBlock" value="25"/>
 				<property name="Range" value="1.65"/>
 				<property name="Sphere" value="1.2"/>
 				<property name="Delay" value=".8" /> 
@@ -1446,11 +1446,9 @@
 			</effect_group> 
 		</item>	
 
-
-
 		<item name="gunNPCDPistol">
-		<property name="Extends" value="gunNPCSMG5"/> 
-		<property name="Tags" value="weapon,ranged,revolver,gun,shortRange,reloadPenalty1,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,attachmentsIncluded,canHaveCosmetic"/>
+			<property name="Extends" value="gunNPCSMG5"/> 
+			<property name="Tags" value="weapon,ranged,revolver,gun,shortRange,reloadPenalty1,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,attachmentsIncluded,canHaveCosmetic"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="HoldType" value="1"/>
 			<property name="Stacknumber" value="1"/>
@@ -1540,7 +1538,6 @@
 				<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="perkGunslinger"/>
 			</effect_group>
 		</item>			
-		
 		
 		<item name="gunNPCAk47">
 			<property name="Extends" value="gunNPCSMG5"/> 
