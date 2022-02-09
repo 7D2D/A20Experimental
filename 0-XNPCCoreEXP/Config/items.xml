@@ -348,8 +348,6 @@
 			<property name="RepairExpMultiplier" value="5.5"/>
 		</item>
 		
-
-			
 		<item name="meleeNPCMachete">
 			<property name="Extends" value="meleeHandNPCMaster"/>
 			<property name="Canhold" value="true"/> 
@@ -364,7 +362,7 @@
 			<property name="EconomicValue" value="1"/>
 			<property class="Action0">			
 				<property name="Class" value="Melee"/>
-				<property name="Delay" value=".2" /> 
+				<property name="Delay" value=".8" /> 
 				<property name="Range" value="1.65" />
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh"/>
@@ -377,8 +375,8 @@
 			</property>
 			<property class="Action1">			
 				<property name="Class" value="Melee"/>
-				<property name="Delay" value=".2" /> 
-				<property name="Range" value="1.5" />
+				<property name="Delay" value=".8" /> 
+				<property name="Range" value="1.65" />
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh"/>
 				<property name="Block_range" value="2.5"/>
@@ -389,8 +387,6 @@
 				</property>
 			</property>
 			<effect_group name="meleeWpnBladeT3Machete">
-				<passive_effect name="EntityDamage" operation="base_set" value="10.8" tags="perkDeepCuts"/> <!-- meleeWpnBladeT3Machete -->
-				<passive_effect name="BlockDamage" operation="base_set" value="11" tags="perkDeepCuts"/>
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkDeepCuts,perkFlurryOfBlows"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="19.2" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="288,673" tier="1,6" tags="perkDeepCuts"/>
@@ -430,7 +426,7 @@
 		<item name="meleeNPCClubWood"> 
 			<property name="Extends" value="meleeHandNPCMaster"/>
 			<property name="Canhold" value="true"/> 
-			<property name="HoldType" value="2"/>
+			<property name="HoldType" value="36"/>
 			<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attStrength,perkPummelPete,canHaveCosmetic"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="DisplayType" value="melee"/>
@@ -507,7 +503,7 @@
 		<item name="meleeNPCBatWood"> 
 			<property name="Extends" value="meleeHandNPCMaster"/>
 			<property name="Canhold" value="true"/> 
-			<property name="HoldType" value="2"/>
+			<property name="HoldType" value="36"/>
 			<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attStrength,perkPummelPete,canHaveCosmetic"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="DisplayType" value="melee"/>
@@ -551,8 +547,6 @@
 				</property>
 			</property>	
 				<effect_group name="meleeWpnClubT1BaseballBat">
-					<passive_effect name="EntityDamage" operation="base_set" value="10.4" tags="perkPummelPete"/> <!-- meleeWpnClubT1BaseballBat -->
-					<passive_effect name="BlockDamage" operation="base_set" value="10.6" tags="perkPummelPete"/>
 					<passive_effect name="AttacksPerMinute" operation="base_set" value="52" tags="perkPummelPete,perkFlurryOfBlows"/>
 					<passive_effect name="StaminaLoss" operation="base_set" value="20.9" tags="primary"/>
 					<passive_effect name="DegradationMax" operation="base_set" value="200,500" tier="1,6" tags="perkPummelPete"/>
@@ -587,7 +581,7 @@
 		<item name="meleeNPCAxe"> 
 			<property name="Extends" value="meleeHandNPCMaster"/>
 			<property name="Canhold" value="true"/> 
-			<property name="HoldType" value="1"/>
+			<property name="HoldType" value="2"/>
 			<property name="Tags" value="axe,melee,grunting,weapon,meleeWeapon,medium,longShaft,attStrength,perkDeepCuts,canHaveCosmetic"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="DisplayType" value="melee"/>
@@ -609,7 +603,7 @@
 				<property name="Sound_start" value="swoosh"/>
 				<property name="Block_range" value="2.5"/>
 				<property name="DamageEntity" value="20"/>
-				<property name="DamageBlock" value="15"/>
+				<property name="DamageBlock" value="35"/>
 				<property class="HitSounds">
 					<property name="Override0" value="organic" param1="metalstaborganic"/>
 				</property>
@@ -622,14 +616,12 @@
 				<property name="Sound_start" value="swoosh"/>
 				<property name="Block_range" value="2.5"/>
 				<property name="DamageEntity" value="25"/>
-				<property name="DamageBlock" value="15"/>
+				<property name="DamageBlock" value="45"/>
 				<property class="HitSounds">
 					<property name="Override0" value="organic" param1="metalstaborganic"/>
 				</property>
 			</property>	
 				<effect_group name="meleeToolAxeT1IronFireaxe">
-					<passive_effect name="EntityDamage" operation="base_set" value="10.1" tags="perkDeepCuts"/>
-					<passive_effect name="BlockDamage" operation="base_set" value="47.0" tags="perkDeepCuts"/>
 					<passive_effect name="AttacksPerMinute" operation="base_set" value="60" tags="perkDeepCuts,axe"/>
 					<passive_effect name="StaminaLoss" operation="base_set" value="19.9" tags="primary"/>
 					<passive_effect name="DegradationMax" operation="base_set" value="188,641" tier="1,6" tags="perkDeepCuts"/>
@@ -708,9 +700,7 @@
 				</property>
 			</property>	
 			<effect_group name="meleeWpnSpearT1IronSpear">
-				<passive_effect name="EntityDamage" operation="base_set" value="10.4" tags="perkJavelinMaster"/> <!-- meleeWpnSpearT1IronSpear -->
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.4" tags="perkJavelinMaster"/><display_value name="dTargetArmor" value="-.4"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="7" tags="perkJavelinMaster"/>
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkJavelinMaster"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="20.3" tags="primary"/>
 				<passive_effect name="DegradationMax" operation="base_set" value="212,423" tier="1,6" tags="perkJavelinMaster"/>
@@ -750,7 +740,7 @@
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,gun,reloadPenalty3,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="DisplayType" value="rangedGun"/>
-			<property name="HoldType" value="1"/> <!-- vanilla 6 --> <!-- So on ranged weapons, a small delay to the raycast is needed so the raycast doesnt fire when the melee animation is moving backwards.  Holdtype one adds a .16 delay.  Seems okay for the guns tested, but each weapon might better use more or less delay.  Setting Showhits in console shows the hit vector -->
+			<property name="HoldType" value="2"/> <!-- vanilla 6 --> <!-- So on ranged weapons, a small delay to the raycast is needed so the raycast doesnt fire when the melee animation is moving backwards.  Holdtype one adds a .16 delay.  Seems okay for the guns tested, but each weapon might better use more or less delay.  Setting Showhits in console shows the hit vector -->
 			
 			<property name="Stacknumber" value="1"/>
 			<property name="Candrop" value="false"/>	<!--  required or it will drop an Uber gun that never needs reloading  -->	
@@ -797,8 +787,6 @@
 			</property>
 			<effect_group name="gunHandgunT3SMG5">
 				<passive_effect name="MaxRange" operation="base_set" value="40" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="EntityDamage" operation="base_set" value="8" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="2" tags="perkGunslinger"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="0,.4"/> <!-- Simulate random number of mods added -->
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="26.7" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkGunslinger,9mmGun"/> <!-- random effective rng -->
@@ -845,7 +833,7 @@
 			<property name="Extends" value="gunNPCSMG5"/> 
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty4,gun,shortRange,revolver,barrelAttachments,sideAttachments,smallTopAttachments,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic"/>
 			<property name="CreativeMode" value="None"/>
-			<property name="HoldType" value="1"/>
+			<property name="HoldType" value="2"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Candrop" value="false"/>	
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/PipeRevolver/PipeRevolverPrefab.prefab"/>
@@ -866,7 +854,7 @@
 				<property name="Class" value="Melee"/>
 				<property name="DamageEntity" value="10"/>
 				<property name="DamageBlock" value="10"/>
-				<property name="Range" value="2.5"/>
+				<property name="Range" value="1.65"/>
 				<property name="Sphere" value="1.2"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Sound_start" value="swoosh"/>
@@ -887,13 +875,11 @@
 				<property name="AutoReload" value="true"/>
 				<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
 				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-				<property name="DamageEntity" value="10"/> <!--  This is base damage per ray that hits) -->
+				<property name="DamageEntity" value="12"/> <!--  This is base damage per ray that hits) -->
 				<property name="DamageBlock" value="3"/> 
 			</property>
 			<effect_group name="gunHandgunT0PipePistol">
 				<passive_effect name="MaxRange" operation="base_set" value="30" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="EntityDamage" operation="base_set" value="12" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="2" tags="perkGunslinger"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="0,.4"/> <!-- Simulate random number of mods added -->
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="20" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkGunslinger,9mmGun"/> <!-- random effective rng -->
@@ -935,7 +921,7 @@
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty5,gun,shotgun,shortRange,barrelAttachments,sideAttachments,stock,smallTopAttachments,noScopes,bottomAttachments,attStrength,perkBoomstick,attachmentsIncluded,canHaveCosmetic"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="DisplayType" value="rangedShotgun"/>
-			<property name="HoldType" value="1"/>
+			<property name="HoldType" value="32"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Candrop" value="false"/>
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/PipeShotgun/PipeShotgunPrefab.prefab"/>
@@ -955,7 +941,7 @@
 				<property name="Class" value="Melee"/>
 				<property name="DamageEntity" value="15"/>
 				<property name="DamageBlock" value="10"/>
-				<property name="Range" value="2.5"/>
+				<property name="Range" value="1.65"/>
 				<property name="Sphere" value="1.2"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Sound_start" value="swoosh"/>
@@ -982,8 +968,6 @@
 				<property name="DamageBlock" value="3"/> 				
 			</property>
 			<effect_group name="gunShotgunT0PipeShotgun">
-				<passive_effect name="EntityDamage" operation="base_set" value="10" tags="perkBoomstick"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="5.4" tags="perkBoomstick"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="0,.4"/> <!-- Simulate random number of mods added -->
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="60" tags="perkBoomstick"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkBoomstick"/>
@@ -1033,7 +1017,7 @@
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty3,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,attachmentsIncluded,bottomAttachments,attPerception,perkDeadEye,canHaveCosmetic"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="DisplayType" value="rangedGun"/>
-			<property name="HoldType" value="1"/>
+			<property name="HoldType" value="32"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Candrop" value="false"/>			
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/PipeRifle/PipeRiflePrefab.prefab"/>
@@ -1053,7 +1037,7 @@
 				<property name="Class" value="Melee"/>
 				<property name="DamageEntity" value="15"/>
 				<property name="DamageBlock" value="10"/>
-				<property name="Range" value="2.5"/>
+				<property name="Range" value="1.65"/>
 				<property name="Sphere" value="1.2"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Sound_start" value="swoosh"/>
@@ -1073,13 +1057,11 @@
 				<property name="Sound_empty" value="dryfire"/>
 				<property name="Sound_reload" value="hunting_rifle_reload"/>
 				<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
-				<property name="DamageEntity" value="15"/> <!--  This is base damage per ray that hits) -->
+				<property name="DamageEntity" value="32"/> <!--  This is base damage per ray that hits) -->
 				<property name="DamageBlock" value="3"/> 				
 			</property>
 			<effect_group name="gunRifleT0PipeRifle">
 				<passive_effect name="MaxRange" operation="base_set" value="35" tags="perkDeadEye"/>
-				<passive_effect name="EntityDamage" operation="base_set" value="32" tags="perkDeadEye"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="2" tags="perkDeadEye"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="0,.4"/> <!-- Simulate random number of mods added -->
 
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="23.3" tags="perkDeadEye"/>
@@ -1123,12 +1105,12 @@
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/PipeMachineGun/PipeMachineGunPrefab.prefab"/>
 			<property name="Material" value="MMachineGunParts"/> <property name="Weight" value="4"/>
 			<property name="CustomIcon" value="gunAK47"/>
-			<property name="HoldType" value="1"/>
+			<property name="HoldType" value="32"/>
 			<property class="Action0">
 				<property name="Class" value="Melee"/>
 				<property name="DamageEntity" value="15"/>
 				<property name="DamageBlock" value="10"/>
-				<property name="Range" value="2.5"/>
+				<property name="Range" value="1.65"/>
 				<property name="Sphere" value="1.2"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Sound_start" value="swoosh"/>
@@ -1149,14 +1131,12 @@
 				<property name="Sound_end" value="ak47_fire_end"/>
 				<property name="Particles_muzzle_fire" value="nozzleflash_ak" />
 				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-				<property name="DamageEntity" value="15"/> <!--  This is base damage per ray that hits) -->
+				<property name="DamageEntity" value="6"/> <!--  This is base damage per ray that hits) -->
 				<property name="DamageBlock" value="3"/> 				
 			</property>
 			
 			<effect_group name="gunMGT0PipeMachineGun">
 				<passive_effect name="MaxRange" operation="base_set" value="35" tags="perkMachineGunner"/>
-				<passive_effect name="EntityDamage" operation="base_set" value="6" tags="perkMachineGunner"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="2" tags="perkMachineGunner"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="0,.4"/> <!-- Simulate random number of mods added -->
 
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="23.3" tags="perkMachineGunner"/>
@@ -1205,7 +1185,7 @@
 			<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty4,gun,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,bottomAttachments,mediumTopAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="DisplayType" value="rangedShotgun"/>
-			<property name="HoldType" value="1"/> <!-- 5  -->
+			<property name="HoldType" value="32"/> <!-- 5  -->
 			<property name="Stacknumber" value="1"/>
 			<property name="Candrop" value="false"/>
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/MachineGun/m60MachinegunPrefab.prefab"/>
@@ -1225,7 +1205,7 @@
 				<property name="Class" value="Melee"/>
 				<property name="DamageEntity" value="20"/>
 				<property name="DamageBlock" value="10"/>
-				<property name="Range" value="2.5"/>
+				<property name="Range" value="1.65"/>
 				<property name="Sphere" value="1.2"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Sound_start" value="swoosh"/>
@@ -1247,13 +1227,11 @@
 				<property name="Particles_muzzle_fire" value="gunfire_m60"/>
 				<property name="Particles_muzzle_smoke" value="gunfire_smoke"/>
 				<property name="Buff" value="buffInjuryBleedingZombie"/>
-				<property name="DamageEntity" value="15"/> <!-- Per round that hits-->
+				<property name="DamageEntity" value="12"/> <!-- Per round that hits-->
 				<property name="DamageBlock" value="1"/>
 			</property>
 			<effect_group name="gunMGT3M60">
 				<passive_effect name="MaxRange" operation="base_set" value="40" tags="perkMachineGunner"/>
-				<passive_effect name="EntityDamage" operation="base_set" value="12" tags="perkMachineGunner"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="2" tags="perkMachineGunner"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="0,.4"/> <!-- Simulate random number of mods added -->
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="26.6" tags="perkMachineGunner"/>
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkMachineGunner"/> <!-- random effective rng -->
@@ -1322,7 +1300,7 @@
 				<property name="Class" value="Melee"/>
 				<property name="DamageEntity" value="15"/>
 				<property name="DamageBlock" value="10"/>
-				<property name="Range" value="2.5"/>
+				<property name="Range" value="1.65"/>
 				<property name="Sphere" value="1.2"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Sound_start" value="swoosh"/>
@@ -1345,14 +1323,12 @@
 				<property name="AutoReload" value="true"/>
 				<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
 				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-				<property name="DamageEntity" value="10"/> <!--  This is base damage per ray that hits) -->
+				<property name="DamageEntity" value="12"/> <!--  This is base damage per ray that hits) -->
 				<property name="DamageBlock" value="5"/> 				
 			</property>
 				
 			<effect_group name="gunHandgunT1Pistol">
 				<passive_effect name="MaxRange" operation="base_set" value="35" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="EntityDamage" operation="base_set" value="12" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="2" tags="perkGunslinger"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="23.3" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkGunslinger,9mmGun"/> <!-- random effective rng -->
 
@@ -1402,7 +1378,7 @@
 			<property name="HoldingItemHidden" value="true"/>
 			<property class="Action0">
 				<property name="Class" value="Melee"/>
-				<property name="DamageEntity" value="35"/>
+				<property name="DamageEntity" value="25"/>
 				<property name="DamageBlock" value="25"/>
 				<property name="Range" value="1.65"/>
 				<property name="Sphere" value="1.2"/>
@@ -1412,8 +1388,6 @@
 			</property>
 			<effect_group name="gunHandgunT1Pistol">
 				<passive_effect name="MaxRange" operation="base_set" value="35" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="EntityDamage" operation="base_set" value="12" tags="perkGunslinger,9mmGun"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="2" tags="perkGunslinger"/>
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="23.3" tags="perkGunslinger,9mmGun"/>
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkGunslinger,9mmGun"/> 
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="180" tags="perkGunslinger"/>
@@ -1450,7 +1424,7 @@
 			<property name="Extends" value="gunNPCSMG5"/> 
 			<property name="Tags" value="weapon,ranged,revolver,gun,shortRange,reloadPenalty1,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,attachmentsIncluded,canHaveCosmetic"/>
 			<property name="CreativeMode" value="None"/>
-			<property name="HoldType" value="1"/>
+			<property name="HoldType" value="2"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Candrop" value="false"/>	
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Desert Eagle/DesertEaglePrefab.prefab"/>
@@ -1471,7 +1445,7 @@
 				<property name="Class" value="Melee"/>
 				<property name="DamageEntity" value="15"/>
 				<property name="DamageBlock" value="10"/>
-				<property name="Range" value="2.5"/>
+				<property name="Range" value="1.65"/>
 				<property name="Sphere" value="1.2"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Sound_start" value="swoosh"/>
@@ -1491,13 +1465,11 @@
 				<property name="AutoReload" value="true"/>
 				<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
 				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-				<property name="DamageEntity" value="10"/> <!--  This is base damage per ray that hits) -->
+				<property name="DamageEntity" value="30"/> <!--  This is base damage per ray that hits) -->
 				<property name="DamageBlock" value="3"/> 				
 			</property>
 			<effect_group name="gunHandgunT3DesertVulture">
 				<passive_effect name="MaxRange" operation="base_set" value="30" tags="perkGunslinger"/>
-				<passive_effect name="EntityDamage" operation="base_set" value="32" tags="perkGunslinger"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="2" tags="perkGunslinger"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="0,.4"/> <!-- Simulate random number of mods added -->
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="23.3" tags="perkGunslinger"/>
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkGunslinger"/> <!-- random effective rng -->
@@ -1546,12 +1518,12 @@
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/ak47/ak47Prefab.prefab"/>
 			<property name="Material" value="MMachineGunParts"/> <property name="Weight" value="4"/>
 			<property name="CustomIcon" value="gunAK47"/>
-			<property name="HoldType" value="1"/>
+			<property name="HoldType" value="32"/>
 			<property class="Action0">
 				<property name="Class" value="Melee"/>
 				<property name="DamageEntity" value="20"/>
 				<property name="DamageBlock" value="10"/>
-				<property name="Range" value="2.5"/>
+				<property name="Range" value="1.65"/>
 				<property name="Sphere" value="1.2"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Sound_start" value="swoosh"/>
@@ -1572,13 +1544,11 @@
 				<property name="Sound_end" value="ak47_fire_end"/>
 				<property name="Particles_muzzle_fire" value="nozzleflash_ak" />
 				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-				<property name="DamageEntity" value="15"/> <!--  This is base damage per ray that hits) -->
+				<property name="DamageEntity" value="13"/> <!--  This is base damage per ray that hits) -->
 				<property name="DamageBlock" value="3"/> 				
 			</property>
 			<effect_group name="gunMGT1AK47">
 				<passive_effect name="MaxRange" operation="base_set" value="40" tags="perkMachineGunner"/>
-				<passive_effect name="EntityDamage" operation="base_set" value="13" tags="perkMachineGunner"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="2" tags="perkMachineGunner"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="0,.4"/> <!-- Simulate random number of mods added -->
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="26.7" tags="perkMachineGunner"/>
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkMachineGunner"/> <!-- random effective rng -->
@@ -1629,12 +1599,12 @@
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Tactical Assault Rifle/tacticalAssaultRiflePrefab.prefab"/>
 			<property name="Material" value="MMachineGunParts"/> <property name="Weight" value="4"/>
 			<property name="CustomIcon" value="gunAK47"/>
-			<property name="HoldType" value="1"/>
+			<property name="HoldType" value="32"/>
 			<property class="Action0">
 				<property name="Class" value="Melee"/>
 				<property name="DamageEntity" value="15"/>
 				<property name="DamageBlock" value="10"/>
-				<property name="Range" value="2.5"/>
+				<property name="Range" value="1.65"/>
 				<property name="Sphere" value="1.2"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Sound_start" value="swoosh"/>
@@ -1653,13 +1623,11 @@
 				<property name="Sound_empty" value="dryfire"/>
 				<property name="Particles_muzzle_fire" value="nozzleflash_ak" />
 				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
-				<property name="DamageEntity" value="15"/> <!--  This is base damage per ray that hits) -->
+				<property name="DamageEntity" value="13"/> <!--  This is base damage per ray that hits) -->
 				<property name="DamageBlock" value="3"/> 				
 			</property>
 			<effect_group name="gunMGT2TacticalAR">
 				<passive_effect name="MaxRange" operation="base_set" value="40" tags="perkMachineGunner"/>
-				<passive_effect name="EntityDamage" operation="base_set" value="13" tags="perkMachineGunner"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="2" tags="perkMachineGunner"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="0,.4"/> <!-- Simulate random number of mods added -->
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="26.7" tags="perkMachineGunner"/>
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkMachineGunner"/> <!-- random effective rng -->
@@ -1708,7 +1676,7 @@
 			<property name="Tags" value="weapon,ranged,gun,barrelAttachments,reloadPenalty1,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="DisplayType" value="rangedGun"/>
-			<property name="HoldType" value="1"/>
+			<property name="HoldType" value="32"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Candrop" value="false"/>			
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/HuntingRifle/HuntingRiflePrefab.prefab"/>
@@ -1728,7 +1696,7 @@
 				<property name="Class" value="Melee"/>
 				<property name="DamageEntity" value="15"/>
 				<property name="DamageBlock" value="10"/>
-				<property name="Range" value="2.5"/>
+				<property name="Range" value="1.65"/>
 				<property name="Sphere" value="1.2"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Sound_start" value="swoosh"/>
@@ -1748,13 +1716,11 @@
 				<property name="Sound_empty" value="dryfire"/>
 				<property name="Sound_reload" value="hunting_rifle_reload"/>
 				<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
-				<property name="DamageEntity" value="15"/> 
+				<property name="DamageEntity" value="35"/> 
 				<property name="DamageBlock" value="3"/> 				
 			</property>
 			<effect_group name="gunRifleT1HuntingRifle">
 				<passive_effect name="MaxRange" operation="base_set" value="50" tags="perkDeadEye"/>
-				<passive_effect name="EntityDamage" operation="base_set" value="35" tags="perkDeadEye"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="2" tags="perkDeadEye"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="0,.4"/> <!-- Simulate random number of mods added -->
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="33.3" tags="perkDeadEye"/>
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkDeadEye"/> <!-- random effective rng -->
@@ -1800,7 +1766,7 @@
 			<property name="Tags" value="weapon,ranged,gun,barrelAttachments,reloadPenalty2,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,magazine,firingMode,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="DisplayType" value="rangedGun"/>
-			<property name="HoldType" value="1"/>
+			<property name="HoldType" value="32"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Candrop" value="false"/>
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Sharp Shooter/sharpShooterGunPrefab.prefab"/>
@@ -1820,7 +1786,7 @@
 				<property name="Class" value="Melee"/>
 				<property name="DamageEntity" value="15"/>
 				<property name="DamageBlock" value="10"/>
-				<property name="Range" value="2.5"/>
+				<property name="Range" value="1.65"/>
 				<property name="Sphere" value="1.2"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Sound_start" value="swoosh"/>
@@ -1840,13 +1806,11 @@
 				<property name="Sound_empty" value="dryfire"/>
 				<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
 				<property name="Particles_muzzle_fire_fpv" value="gunfire_magnum_fpv"/>
-				<property name="DamageEntity" value="15"/> <!--  This is base damage per ray that hits) -->
+				<property name="DamageEntity" value="35"/> <!--  This is base damage per ray that hits) -->
 				<property name="DamageBlock" value="3"/> 				
 			</property>
 			<effect_group name="gunRifleT3SniperRifle">
 				<passive_effect name="MaxRange" operation="base_set" value="60" tags="perkDeadEye"/>
-				<passive_effect name="EntityDamage" operation="base_set" value="35" tags="perkDeadEye"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="2" tags="perkDeadEye"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="0,.4"/> <!-- Simulate random number of mods added -->
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="40" tags="perkDeadEye"/>
 				<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2,.2" tags="perkDeadEye"/> <!-- random effective rng -->
@@ -1894,7 +1858,7 @@
 			<property name="Tags" value="weapon,ranged,archery,bow,attAgility,perkArchery,canHaveCosmetic"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="DisplayType" value="rangedBow"/>
-			<property name="HoldType" value="2"/> 
+			<property name="HoldType" value="32"/> 
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/AdvancedBow/AdvancedWoodenBow/AdvancedWoodenBowPrefab.prefab"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Candrop" value="false"/>				
@@ -1907,7 +1871,7 @@
 				<property name="Class" value="Melee"/>
 				<property name="DamageEntity" value="10"/>
 				<property name="DamageBlock" value="10"/>
-				<property name="Range" value="2.5"/>
+				<property name="Range" value="1.65"/>
 				<property name="Sphere" value="1.2"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Sound_start" value="swoosh"/>
@@ -1929,12 +1893,10 @@
 				<property name="Sound_draw" value="bow2_draw"/>
 				<property name="Sound_cancel" value="bow_fire_cancel"/>
 				<property name="SoundDestroy" value="wooddestroy1"/>
-				<property name="DamageEntity" value="15"/> <!--  This is base damage per ray that hits) -->
+				<property name="DamageEntity" value="30"/> <!--  This is base damage per ray that hits) -->
 				<property name="DamageBlock" value="3"/> 				
 			</property>
 			<effect_group name="gunBowT3CompoundBow">
-				<passive_effect name="EntityDamage" operation="base_set" value="30" tags="perkArchery"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="2" tags="perkArchery"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="0,.4"/> <!-- Simulate random number of mods added -->
 
 				<passive_effect name="ProjectileVelocity" operation="perc_add" value=".2" tags="perkArchery"/>
@@ -1989,7 +1951,7 @@
 			<property name="Extends" value="gunNPCSMG5"/>
 			<property name="Tags" value="weapon,ranged,sideAttachments,reloadPenalty1,smallTopAttachments,mediumTopAttachments,bottomAttachments,attAgility,perkArchery,crossbow,attachmentsIncluded,canHaveCosmetic"/>
 			<property name="CreativeMode" value="None"/>
-			<property name="HoldType" value="1"/>
+			<property name="HoldType" value="32"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Candrop" value="false"/>				
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/IronCrossbow/IronCrossbowPrefab.prefab"/>
@@ -2002,7 +1964,7 @@
 				<property name="Class" value="Melee"/>
 				<property name="DamageEntity" value="15"/>
 				<property name="DamageBlock" value="10"/>
-				<property name="Range" value="2.5"/>
+				<property name="Range" value="1.65"/>
 				<property name="Sphere" value="1.2"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Sound_start" value="swoosh"/>
@@ -2024,7 +1986,7 @@
 				<property name="Sound_draw" value="bow2_draw"/>
 				<property name="Sound_cancel" value="bow_fire_cancel"/>	
 				<property name="SoundDestroy" value="wooddestroy1"/>
-				<property name="DamageEntity" value="15"/> 
+				<property name="DamageEntity" value="35"/> 
 				<property name="DamageBlock" value="3"/> 				
 			</property> 
 			<!-- Testing launcher class  -->
@@ -2042,8 +2004,6 @@
 				<property name="Auto_fire" value="true" /> 
 			</property> -->
 			<effect_group name="gunBowT1IronCrossbow">
-				<passive_effect name="EntityDamage" operation="base_set" value="45" tags="perkArchery"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="2" tags="perkArchery"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="0,.4"/> <!-- Simulate random number of mods added -->
 
 				<passive_effect name="DamageFalloffRange" operation="base_set" value="26.6" tags="perkArchery"/>
@@ -2099,7 +2059,7 @@
 			<property name="Tags" value="weapon,ranged,gun,shotgun,shortRange,reloadPenalty2,barrelAttachments,sideAttachments,smallTopAttachments,noScopes,stock,bottomAttachments,perkBoomstick,modGunShotgunTubeExtenderMagazine,attachmentsIncluded,canHaveCosmetic"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="DisplayType" value="rangedShotgun"/>
-			<property name="HoldType" value="1"/>
+			<property name="HoldType" value="32"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Candrop" value="false"/>
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Pump Shotgun/pumpShotgunPrefab.prefab"/>
@@ -2119,7 +2079,7 @@
 				<property name="Class" value="Melee"/>
 				<property name="DamageEntity" value="10"/>
 				<property name="DamageBlock" value="10"/>
-				<property name="Range" value="2.5"/>
+				<property name="Range" value="1.65"/>
 				<property name="Sphere" value="1.2"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Sound_start" value="swoosh"/>
@@ -2143,11 +2103,10 @@
 				<property name="Particles_muzzle_smoke_fpv" value="gunfire_smoke_fpv"/>
 				<property name="Buff" value="buffInjuryBleedingZombie"/>
 				<property name="DamageEntity" value="10"/> <!--  This is base damage per ray that hits) -->
-				<property name="DamageBlock" value="3"/> 				
+				<property name="DamageBlock" value="6"/> 				
 			</property>
 			<effect_group name="gunShotgunT2PumpShotgun">
-				<passive_effect name="EntityDamage" operation="base_set" value="10" tags="perkBoomstick"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="5.4" tags="perkBoomstick"/>
+
 				<passive_effect name="EntityDamage" operation="perc_add" value="0,.4"/> <!-- Simulate random number of mods added -->
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="60" tags="perkBoomstick"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkBoomstick"/>
@@ -2197,7 +2156,7 @@
 			<property name="Tags" value="weapon,ranged,gun,shotgun,shortRange,reloadPenalty2,barrelAttachments,sideAttachments,smallTopAttachments,noScopes,stock,magazine,drumMagazine,bottomAttachments,attStrength,perkBoomstick,attachmentsIncluded,canHaveCosmetic"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="DisplayType" value="rangedShotgun"/>
-			<property name="HoldType" value="76"/>
+			<property name="HoldType" value="32"/>
 			<property name="Stacknumber" value="1"/>
 			<property name="Candrop" value="false"/>
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Auto Shotgun/autoShotgunPrefab.prefab"/>
@@ -2217,7 +2176,7 @@
 				<property name="Class" value="Melee"/>
 				<property name="DamageEntity" value="15"/>
 				<property name="DamageBlock" value="10"/>
-				<property name="Range" value="2.5"/>
+				<property name="Range" value="1.65"/>
 				<property name="Sphere" value="1.2"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Sound_start" value="swoosh"/>
@@ -2240,11 +2199,9 @@
 				<property name="Particles_muzzle_smoke" value="gunfire_smoke"/>
 				<property name="Buff" value="buffInjuryBleedingZombie"/> 
 				<property name="DamageEntity" value="10"/> <!--  This is base damage per ray that hits) -->
-				<property name="DamageBlock" value="3"/> 				
+				<property name="DamageBlock" value="5"/> 				
 			</property>
 			<effect_group name="gunShotgunT3AutoShotgun">
-				<passive_effect name="EntityDamage" operation="base_set" value="10" tags="perkBoomstick"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="5.4" tags="perkBoomstick"/>
 				<passive_effect name="EntityDamage" operation="perc_add" value="0,.4"/> <!-- Simulate random number of mods added -->
 				<passive_effect name="RoundsPerMinute" operation="base_set" value="70" tags="perkBoomstick"/>
 				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkBoomstick"/>
@@ -2292,7 +2249,7 @@
 		<item name="gunNPCRocketLauncher">
 			<property name="Tags" value="weapon,ranged,launcher,gun,perkDemolitionsExpert"/>
 			<property name="DisplayType" value="rangedLauncher"/>
-			<property name="HoldType" value="2"/>
+			<property name="HoldType" value="32"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/RocketLauncher/rocketlauncherPrefab.prefab"/>
 			<property name="Material" value="MRocketLauncherParts"/> <property name="Weight" value="4"/>
@@ -2314,7 +2271,7 @@
 				<property name="Class" value="Melee"/>
 				<property name="DamageEntity" value="15"/>
 				<property name="DamageBlock" value="10"/>
-				<property name="Range" value="2.5"/>
+				<property name="Range" value="1.65"/>
 				<property name="Sphere" value="1.2"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Sound_start" value="swoosh"/>
@@ -2405,26 +2362,6 @@
 			</effect_group>
 		</item>
 		
-		<item name="ammoNPC1mmBulletBall">
-			<property name="Tags" value="ammo"/>
-			<property name="CreativeMode" value="None"/>
-			<property name="DisplayType" value="ammoBullet"/>
-			<property name="HoldType" value="45"/>
-			<property name="Candrop" value="false"/>				
-			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mbrass"/>
-			<property name="Stacknumber" value="60"/> 
-			<property name="EconomicValue" value="0"/>
-			<property name="Group" value="Ammo/Weapons"/>
-			<effect_group name="ammoNPC1mmBulletBall" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="1"/> 
-				<passive_effect name="BlockDamage" operation="base_set" value="1"/>
-				<passive_effect name="EntityPenetrationCount" operation="base_set" value="2"/> 
-				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
-				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
-			</effect_group>
-		</item>
 		<item name="ammoNPC762mmBulletBall">
 			<property name="Tags" value="ammo"/>
 			<property name="CreativeMode" value="None"/>
@@ -2438,9 +2375,6 @@
 			<property name="EconomicValue" value="0"/>
 			<property name="Group" value="Ammo/Weapons"/>
 			<effect_group name="ammoNPC762mmBulletBall" tiered="false"> 
-				<passive_effect name="EntityDamage" operation="base_set" value="50" />
-				<passive_effect name="BlockDamage" operation="base_set" value="8" tags="perkDeadEye,perkMachineGunner"/>
-	<!--			<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/> -->
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
 			</effect_group>
@@ -2458,24 +2392,11 @@
 			<property name="EconomicValue" value="0"/>
 			<property name="Group" value="Ammo/Weapons"/>
 			<effect_group name="ammoCrossbowBoltIron" tiered="false"> 
-				<passive_effect name="EntityDamage" operation="base_set" value="59" tags="perkArchery"/> 
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/><display_value name="dTargetArmor" value="-.2"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkArchery"/>
 				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
 				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 				<passive_effect name="ProjectileVelocity" operation="base_set" value="75" tags="perkArchery"/>
 			</effect_group>
-
-			<!--<effect_group name="perkPenetrator" tiered="false">
-				<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkArchery">
-					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
-				<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkArchery">
-					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
-				<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkArchery">
-					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
-				<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkArchery">
-					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
-			</effect_group> -->
 		</item>
 		<item name="ammoNPCArrowIron">
 			<property name="DisplayType" value="ammoArrow"/>
@@ -2490,24 +2411,11 @@
 			<property name="EconomicValue" value="0"/>
 			<property name="Group" value="Ammo/Weapons"/>
 			<effect_group name="ammoArrowIron" tiered="false"> <!-- ammoArrowIron -->
-				<passive_effect name="EntityDamage" operation="base_set" value="38" tags="perkArchery"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="3" tags="perkArchery"/>
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/><display_value name="dTargetArmor" value="-.2"/>
 				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
 				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 				<passive_effect name="ProjectileVelocity" operation="base_set" value="50" tags="perkArchery"/>
 			</effect_group>
-
-			<!--<effect_group name="perkPenetrator" tiered="false">
-				<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkArchery">
-					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
-				<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkArchery">
-					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
-				<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkArchery">
-					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
-				<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkArchery">
-					<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
-			</effect_group>-->
 		</item>	
 
 		<item name="ammoNPCShotgunShell">
@@ -2523,8 +2431,8 @@
 			<property name="EconomicValue" value="1"/>
 			<property name="Group" value="Ammo/Weapons"/>
 			<effect_group name="ammoShotgunShell" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="10.1" tags="perkBoomstick"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="5.4" tags="perkBoomstick"/>
+				<!--<passive_effect name="EntityDamage" operation="base_set" value="10.1" tags="perkBoomstick"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="5.4" tags="perkBoomstick"/> -->
 				<passive_effect name="BlockDamage" operation="base_add" value="20" tags="wood"/>
 				<passive_effect name="RoundRayCount" operation="base_set" value="10" tags="perkBoomstick"/>
 				<passive_effect name="MaxRange" operation="base_set" value="10" tags="perkBoomstick"/>
@@ -2538,28 +2446,6 @@
 				<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".15" tags="perkBoomstick"/>
 				<passive_effect name="SpreadMultiplierRunning" operation="perc_add" value=".3" tags="perkBoomstick"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
-			</effect_group>
-		</item>
-		
-		<item name="ammoNPCMechgunShell">
-			<property name="Tags" value="ammo"/>
-			<property name="CreativeMode" value="None"/>
-			<property name="DisplayType" value="ammoShotgun"/>
-			<property name="HoldType" value="45"/>
-			<property name="Candrop" value="false"/>
-			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
-			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mlead_scrap"/>
-			<property name="Stacknumber" value="3"/>
-			<property name="EconomicValue" value="1"/>
-			<property name="Group" value="Ammo/Weapons"/>
-			<effect_group name="ammoNPCShotgunShell" tiered="false">
-				<passive_effect name="EntityDamage" operation="base_set" value="1"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="1"/>
-				<passive_effect name="BlockDamage" operation="base_add" value="5" tags="wood"/>
-				<passive_effect name="RoundRayCount" operation="base_set" value="3"/>
-				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/>
-				<passive_effect name="BlockPenetrationFactor" operation="base_set" value="51"/>
 			</effect_group>
 		</item>
 		
@@ -2591,8 +2477,6 @@
 				<property name="Explosion.EntityDamage" value="442"/>  <!-- workaround, not affected by perks at all -->
 			</property>
 			<effect_group name="ammoRocketHE" tiered="false">
-				<passive_effect name="BlockDamage" operation="base_set" value="2500" />
-				<passive_effect name="EntityDamage" operation="base_set" value="420" />
 				<passive_effect name="ProjectileVelocity" operation="base_set" value="50" /> <!-- not working?  -->
 				<display_value name="dExRadius" value="5"/>
 			</effect_group>
@@ -2628,9 +2512,7 @@
 				<property name="GetQualityFromWeapon" value="true"/>
 			</property>
 			<effect_group name="ammoCrossbowBoltIron" tiered="false"> <!-- ammoCrossbowBoltIron -->
-				<passive_effect name="EntityDamage" operation="base_set" value="59" tags="perkArchery"/>
 				<passive_effect name="TargetArmor" operation="perc_add" value="-.2"/><display_value name="dTargetArmor" value="-.2"/>
-				<passive_effect name="BlockDamage" operation="base_set" value="6" tags="perkArchery"/>
 				<passive_effect name="DamageModifier" operation="perc_set" value=".1" tags="wood"/>
 				<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal,cloth"/>
 				<passive_effect name="ProjectileVelocity" operation="base_set" value="75" tags="perkArchery"/>
