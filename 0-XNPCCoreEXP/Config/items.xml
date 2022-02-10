@@ -193,20 +193,20 @@
 			<property name="Candrop" value="false"/>
 			<property name="CustomIcon" value="missingIcon"/>
 			<property class="Action0">			
-				<property name="Class" value="Melee"/>
+				<property name="Class" value="Melee"/><!-- not changing to SDX version yet due to extends  -->
 				<property name="Delay" value=".8" /> 
 				<property name="Range" value="1.65" />
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh"/>
-				<property name="Block_range" value="2.5"/>
+				<property name="Block_range" value="1.65"/>
 			</property>
 			<property class="Action1">			
-				<property name="Class" value="Melee"/>
+				<property name="Class" value="Melee"/><!-- not changing to SDX version yet due to extends  -->
 				<property name="Delay" value=".8" /> 
 				<property name="Range" value="1.65" />
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh"/>
-				<property name="Block_range" value="2.5"/>
+				<property name="Block_range" value="1.65"/>
 			</property>
 			
 			<effect_group name="meleeHandMaster" tiered="false">
@@ -233,24 +233,24 @@
 			<property name="FuelValue" value="1"/>
 			<property name="EconomicValue" value="1"/>
 			<property class="Action0">			
-				<property name="Class" value="Melee"/>
+				<property name="Class" value="MeleeSDX, SCore"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Range" value="1.65" />
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh"/>
-				<property name="Block_range" value="2.5"/>
+				<property name="Block_range" value="1.65"/>
 				<property name="DamageEntity" value="10"/>
-				<property name="DamageBlock" value="3"/>
+				<property name="DamageBlock" value="10"/>
 			</property>
 			<property class="Action1">			
-				<property name="Class" value="Melee"/>
+				<property name="Class" value="MeleeSDX, SCore"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Range" value="1.65" />
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh"/>
-				<property name="Block_range" value="2.5"/>
+				<property name="Block_range" value="1.65"/>
 				<property name="DamageEntity" value="15"/>
-				<property name="DamageBlock" value="5"/>
+				<property name="DamageBlock" value="10"/>
 			</property>
 			<effect_group name="meleeHandPlayer" tiered="false">
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="earth"/>
@@ -259,7 +259,7 @@
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="80"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="10.5" tags="primary"/>
 				<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
-				<passive_effect name="BlockRange" operation="base_set" value="2.6"/>
+				<passive_effect name="BlockRange" operation="base_set" value="1.65"/>
 			</effect_group>
 			<effect_group name="Power Attack" tiered="false">
 				<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
@@ -283,27 +283,27 @@
 			<property name="FuelValue" value="1"/>
 			<property name="EconomicValue" value="1"/>
 			<property class="Action0">			
-				<property name="Class" value="Melee"/>
+				<property name="Class" value="MeleeSDX, SCore"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Range" value="1.65" /> <!-- Too small or large will miss  -->
 				<property name="Sphere" value="1.2"/> <!-- effects attack angle, too small will miss  -->  
 				<property name="Sound_start" value="swoosh"/>
-				<property name="Block_range" value="2.5"/> <!-- needs testing  -->
+				<property name="Block_range" value="1.65"/> <!-- needs testing  -->
 				<property name="DamageEntity" value="15"/>
-				<property name="DamageBlock" value="5"/> 
+				<property name="DamageBlock" value="15"/> 
 				<property class="HitSounds">
 					<property name="Override0" value="organic" param1="metalstaborganic"/>
 				</property>
 			</property>
 			<property class="Action1">			
-				<property name="Class" value="Melee"/>
+				<property name="Class" value="MeleeSDX, SCore"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Range" value="1.65" />
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh"/>
-				<property name="Block_range" value="2.5"/>
+				<property name="Block_range" value="1.65"/>
 				<property name="DamageEntity" value="20"/>
-				<property name="DamageBlock" value="5"/> 
+				<property name="DamageBlock" value="20"/> 
 				<property class="HitSounds">
 					<property name="Override0" value="organic" param1="metalstaborganic"/>
 				</property>
@@ -314,7 +314,7 @@
 				<passive_effect name="DegradationMax" operation="base_set" value="462,1154" tier="1,6" tags="perkDeepCuts"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="perkDeepCuts"/>
 				<passive_effect name="MaxRange" operation="base_set" value="2.0" tags="perkDeepCuts"/>
-				<passive_effect name="BlockRange" operation="base_set" value="2.5" tags="perkDeepCuts"/>
+				<passive_effect name="BlockRange" operation="base_set" value="1.65" tags="perkDeepCuts"/>
 
 				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
@@ -361,27 +361,27 @@
 			<property name="FuelValue" value="1"/>
 			<property name="EconomicValue" value="1"/>
 			<property class="Action0">			
-				<property name="Class" value="Melee"/>
+				<property name="Class" value="MeleeSDX, SCore"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Range" value="1.65" />
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh"/>
-				<property name="Block_range" value="2.5"/>
+				<property name="Block_range" value="1.65"/>
 				<property name="DamageEntity" value="20"/>
-				<property name="DamageBlock" value="10"/>
+				<property name="DamageBlock" value="20"/>
 				<property class="HitSounds">
 					<property name="Override0" value="organic" param1="metalstaborganic"/>
 				</property>
 			</property>
 			<property class="Action1">			
-				<property name="Class" value="Melee"/>
+				<property name="Class" value="MeleeSDX, SCore"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Range" value="1.65" />
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh"/>
-				<property name="Block_range" value="2.5"/>
+				<property name="Block_range" value="1.65"/>
 				<property name="DamageEntity" value="25"/>
-				<property name="DamageBlock" value="10"/>
+				<property name="DamageBlock" value="25"/>
 				<property class="HitSounds">
 					<property name="Override0" value="organic" param1="metalstaborganic"/>
 				</property>
@@ -392,7 +392,7 @@
 				<passive_effect name="DegradationMax" operation="base_set" value="288,673" tier="1,6" tags="perkDeepCuts"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="perkDeepCuts"/>
 				<passive_effect name="MaxRange" operation="base_set" value="2.3" tags="perkDeepCuts"/>
-				<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkDeepCuts"/>
+				<passive_effect name="BlockRange" operation="base_set" value="1.65" tags="perkDeepCuts"/>
 
 				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
@@ -444,12 +444,12 @@
 			<property name="DegradationBreaksAfter" value="false"/>
 			<property name="ShowQuality" value="false"/>
 			<property class="Action0">
-				<property name="Class" value="Melee"/>
+				<property name="Class" value="MeleeSDX, SCore"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Range" value="1.65" />
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh"/>
-				<property name="Block_range" value="2.5"/>
+				<property name="Block_range" value="1.65"/>
 				<property name="DamageEntity" value="10"/>
 				<property name="DamageBlock" value="10"/>
 				<property class="HitSounds">
@@ -457,12 +457,12 @@
 				</property>
 			</property> 
 			<property class="Action1">
-				<property name="Class" value="Melee"/>
+				<property name="Class" value="MeleeSDX, SCore"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Range" value="1.65" />
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh"/>
-				<property name="Block_range" value="2.5"/>
+				<property name="Block_range" value="1.65"/>
 				<property name="DamageEntity" value="10"/>
 				<property name="DamageBlock" value="10"/>
 				<property class="HitSounds">
@@ -477,7 +477,7 @@
 					<passive_effect name="DegradationMax" operation="base_set" value="60,110" tier="1,6" tags="perkPummelPete"/>
 					<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="perkPummelPete"/>
 					<passive_effect name="MaxRange" operation="base_set" value="2.4" tags="perkPummelPete"/>
-					<passive_effect name="BlockRange" operation="base_set" value="3" tags="perkPummelPete"/>
+					<passive_effect name="BlockRange" operation="base_set" value="1.65" tags="perkPummelPete"/>
 
 					<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 					<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
@@ -521,38 +521,38 @@
 			<property name="DegradationBreaksAfter" value="false"/>
 			<property name="ShowQuality" value="false"/>
 			<property class="Action0">
-				<property name="Class" value="Melee"/>
+				<property name="Class" value="MeleeSDX, SCore"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Range" value="1.65" />
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh"/>
-				<property name="Block_range" value="2.5"/>
+				<property name="Block_range" value="1.65"/>
 				<property name="DamageEntity" value="20"/>
-				<property name="DamageBlock" value="15"/>
+				<property name="DamageBlock" value="20"/>
 				<property class="HitSounds">
 					<property name="Override0" value="organic" param1="woodhitorganic"/>
 				</property>
 			</property>
 			<property class="Action1">
-				<property name="Class" value="Melee"/>
+				<property name="Class" value="MeleeSDX, SCore"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Range" value="1.65" />
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh"/>
-				<property name="Block_range" value="2.5"/>
+				<property name="Block_range" value="1.65"/>
 				<property name="DamageEntity" value="25"/>
-				<property name="DamageBlock" value="15"/>
+				<property name="DamageBlock" value="25"/>
 				<property class="HitSounds">
 					<property name="Override0" value="organic" param1="woodhitorganic"/>
 				</property>
 			</property>	
 				<effect_group name="meleeWpnClubT1BaseballBat">
 					<passive_effect name="AttacksPerMinute" operation="base_set" value="52" tags="perkPummelPete,perkFlurryOfBlows"/>
-					<passive_effect name="StaminaLoss" operation="base_set" value="20.9" tags="primary"/>
+					<passive_effect name="StaminaLoss" operation="base_set" value="1" tags="primary"/>
 					<passive_effect name="DegradationMax" operation="base_set" value="200,500" tier="1,6" tags="perkPummelPete"/>
 					<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="perkPummelPete"/>
 					<passive_effect name="MaxRange" operation="base_set" value="2.4" tags="perkPummelPete"/>
-					<passive_effect name="BlockRange" operation="base_set" value="3" tags="perkPummelPete"/>
+					<passive_effect name="BlockRange" operation="base_set" value="1.65" tags="perkPummelPete"/>
 
 					<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 					<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
@@ -574,7 +574,7 @@
 				<effect_group name="Power Attack">
 					<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 					<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-					<passive_effect name="StaminaLoss" operation="base_set" value="35.6" tags="secondary"/>
+					<passive_effect name="StaminaLoss" operation="base_set" value="1" tags="secondary"/>
 				</effect_group>
 		</item>
 		
@@ -596,27 +596,27 @@
 			<property name="DegradationBreaksAfter" value="false"/>
 			<property name="ShowQuality" value="false"/>
 			<property class="Action0">
-				<property name="Class" value="Melee"/>
+				<property name="Class" value="MeleeSDX, SCore"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Range" value="1.65" />
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh"/>
-				<property name="Block_range" value="2.5"/>
+				<property name="Block_range" value="1.65"/>
 				<property name="DamageEntity" value="20"/>
-				<property name="DamageBlock" value="35"/>
+				<property name="DamageBlock" value="20"/>
 				<property class="HitSounds">
 					<property name="Override0" value="organic" param1="metalstaborganic"/>
 				</property>
 			</property>
 			<property class="Action1">
-				<property name="Class" value="Melee"/>
+				<property name="Class" value="MeleeSDX, SCore"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Range" value="1.65" />
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh"/>
-				<property name="Block_range" value="2.5"/>
+				<property name="Block_range" value="1.65"/>
 				<property name="DamageEntity" value="25"/>
-				<property name="DamageBlock" value="45"/>
+				<property name="DamageBlock" value="25"/>
 				<property class="HitSounds">
 					<property name="Override0" value="organic" param1="metalstaborganic"/>
 				</property>
@@ -627,7 +627,7 @@
 					<passive_effect name="DegradationMax" operation="base_set" value="188,641" tier="1,6" tags="perkDeepCuts"/>
 					<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="perkDeepCuts"/>
 					<passive_effect name="MaxRange" operation="base_set" value="2.6" tags="perkDeepCuts"/>
-					<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkDeepCuts"/>
+					<passive_effect name="BlockRange" operation="base_set" value="1.65" tags="perkDeepCuts"/>
 
 					<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 					<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
@@ -674,12 +674,12 @@
 			<property name="ShowQuality" value="false"/>
 
 			<property class="Action0">
-				<property name="Class" value="Melee"/>
+				<property name="Class" value="MeleeSDX, SCore"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Range" value="1.65" />
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh"/>
-				<property name="Block_range" value="2.5"/>
+				<property name="Block_range" value="1.65"/>
 				<property name="DamageEntity" value="15"/>
 				<property name="DamageBlock" value="15"/>
 				<property class="HitSounds">
@@ -687,14 +687,14 @@
 				</property>
 			</property>
 			<property class="Action1">
-				<property name="Class" value="Melee"/>
+				<property name="Class" value="MeleeSDX, SCore"/>
 				<property name="Delay" value=".8" /> 
 				<property name="Range" value="1.65" />
 				<property name="Sphere" value="1.2"/>
 				<property name="Sound_start" value="swoosh"/>
-				<property name="Block_range" value="2.5"/>
+				<property name="Block_range" value="1.65"/>
 				<property name="DamageEntity" value="20"/>
-				<property name="DamageBlock" value="15"/>
+				<property name="DamageBlock" value="20"/>
 				<property class="HitSounds">
 					<property name="Override0" value="organic" param1="woodhitorganic"/>
 				</property>
@@ -706,7 +706,7 @@
 				<passive_effect name="DegradationMax" operation="base_set" value="212,423" tier="1,6" tags="perkJavelinMaster"/>
 				<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="perkJavelinMaster"/>
 				<passive_effect name="MaxRange" operation="base_set" value="3.2" tags="perkJavelinMaster"/>
-				<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkJavelinMaster"/>
+				<passive_effect name="BlockRange" operation="base_set" value="1.65" tags="perkJavelinMaster"/>
 
 				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
 				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>

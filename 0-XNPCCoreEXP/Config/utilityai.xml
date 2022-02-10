@@ -191,7 +191,7 @@
 					<consideration class="FailOnDistanceToLeader, Score" max_distance="30"/>
 					<consideration class="NotInWeaponRange, SCore" action_index="0" /> 
 					<consideration class="CanSeeTarget, SCore"/>
-					<consideration class="SelfNotHasBuff, SCore" buffs="buffHitStun"/>	
+				<!--	<consideration class="SelfNotHasBuff, SCore" buffs="buffHitStun"/>	-->
 					<consideration class="NotHasOrder, SCore" order="Stay"/>
 				</action>
 				 <action name="MoveToRandomTarget" weight="3" entity_filter="IsPlayer" >
@@ -201,22 +201,22 @@
                     <consideration class="NotInWeaponRange, SCore" action_index="0" /> 
                     <consideration class="CanNotSeeTarget, SCore"/>
 					<consideration class="CanHearTarget, SCore" />
-                    <consideration class="SelfNotHasBuff, SCore" buffs="buffHitStun"/>    
+					<consideration class="NotPathBlockedSDX, SCore"  />
+                  <!--  <consideration class="SelfNotHasBuff, SCore" buffs="buffHitStun"/>   --> 
                     <consideration class="NotHasOrder, SCore" order="Stay"/>
                  </action>    					
-				<action name="MeleeAttackEntity" weight="5">
+				<action name="MeleeAttackEntity" weight="6">
 					<task class="AttackTargetEntitySDX, SCore" action_index="0"/>
 					<consideration class="FailOnDistanceToLeader, Score" max_distance="30"/>
-					<consideration class="InWeaponRange, SCore" action_index="0" /> <!-- option 1  -->
-					<!--<consideration class="TargetDistance" flip_y="true" min="0" max="2" />--> <!-- option 2  -->
+					<consideration class="InWeaponRange, SCore" action_index="0" /> 
 					<consideration class="CanSeeTarget, SCore"/>
 					<consideration class="SelfNotHasBuff, SCore" buffs="IsHealing,buffHitStun"/>	
 				</action>
-				<action name="BreakBlock" weight="5">
+				<action name="MeleeAttackBlock" weight="5">
                     <task class="AttackTargetEntitySDX, SCore" action_index="0"/>
-                    <consideration class="PathBlocked"/>
+                    <consideration class="PathBlockedSDX, SCore"  />
                     <consideration class="TargetType" type="Block"/>
-                    <!--<consideration class="TargetDistance" flip_y="true" min="0" max="4"/>-->
+                    <consideration class="TargetDistance" flip_y="true" min="1" max="3"/>
                 </action>
 			</ai_package>	
 	

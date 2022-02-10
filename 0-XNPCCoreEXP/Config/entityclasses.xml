@@ -122,6 +122,7 @@
 		<!--  Various player effects, including Snufkins Knockdown code bits  -->
 
 	<append xpath="/entity_classes/entity_class[@name='playerMale']">
+		<property name="Buffs" value="buffNPCModSlowStatusCheck"/>
 		<effect_group name="Signal Hired NPCs to Attack">
 			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffNPCModAttacking"/>
 		</effect_group>

@@ -4,7 +4,7 @@
     <Name value="0-XNPCCoreEXP" />
     <Description value="Experimental version of the NPC Core Community Modlet, required for NPC Addon Packs" />
     <Author value="Xyth" />
-    <Version value="20.2.02.00" />
+    <Version value="20.2.02.01" />
     <Website value="" />
   </ModInfo>
 </xml>
