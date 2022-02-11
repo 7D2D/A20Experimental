@@ -175,7 +175,7 @@
 			<property name="LootListAlive" value=""/> <!-- removing these two properties removes the E when alive and on death but disables the inventory  -->	
 			<property name="NPCID" value=""/> 
 			<property name="TimeStayAfterDeath" value="5"/>
-			<property name="AIPackages" value="NPCMechBasic, NPCMeleeBasic"/>
+			<!--<property name="AIPackages" value="NPCMechBasic, NPCMeleeBasic"/> -->
 			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 			<drop event="Harvest" name="resourceMechanicalParts" tag="salvageHarvest" count="1"/> 
 			<drop event="Harvest" name="resourceScrapIron" tag="salvageHarvest" count="3"/>
@@ -186,7 +186,7 @@
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 			</effect_group>
 		</entity_class> 
-		
+	
 		<entity_class name="NPCMechGunBot" extends="NPCMechRangedRobot" >
 			<property name="Mesh" value="#@modfolder:Resources/XythMechs.unity3d?GunBot_X" /> <!-- Free CC model by Willy Decarpentrie -->
 			<property name="Tags" value="entity,cp,mech,ranged,npc,knockdown"/>
@@ -219,15 +219,48 @@
 			<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunNPCPistolHidden,ammoNPC9mmBulletBall"/>
 			<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunNPCPistolHidden,ammoNPC9mmBulletBall"/> 		
 		</entity_class>	
-	
-		<entity_class name="NPCMechFlyingRangedTemplate" > 	<!-- move to core when working  -->
+		
+		<entity_class name="NPCMechBeeVomit" extends="NPCMechBee" >
+			<property name="HideInSpawnMenu" value="true"/> <!-- needs work, not meleeing  -->
+			<property name="Class" value="EntityVulture"/>
+			<property name="Mesh" value="#@modfolder:Resources/XythMechs.unity3d?Mecbee_X" />
+			<property name="Tags" value="entity,cp,mech,floating"/>
+			<!--<property name="AvatarController" value="AvatarAnimalController"/>
+			<property name="ModelType" value="Standard"/> -->
+			<property name="Faction" value="mechs"/>
+			<property name="LookAtAngle" value="0"/> 
+			<property name="HandItem" value="HandMecVomit"/>
+			<property name="HandItem" value="meleeHandAnimalZombieVultureRadiated"/>
+			<property name="AIPathCostScale" value=".9, 1"/>
+			<property name="SightRange" value="70"/>
+			<property name="MoveSpeed" value="1"/>
+			<property name="MoveSpeedAggro" value="2.1, 2.1"/> <!-- Used when player in vehicle -->
+			<property name="MaxTurnSpeed" value="190"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<property name="SizeScale" value="3.0"/>
+			<property name="LootListAlive" value=""/> <!-- removing these two properties removes the E when alive and on death but disables the inventory  -->	
+			<property name="NPCID" value=""/> 
+			<property name="TimeStayAfterDeath" value="5"/>
+			<property name="AIPackages" value="NPCMechBasic, NPCMeleeBasic"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" tag="salvageHarvest" count="1"/> 
+			<drop event="Harvest" name="resourceScrapIron" tag="salvageHarvest" count="3"/>
+			<drop event="Harvest" name="resourceElectricParts" tag="salvageHarvest" count="3"/> 
+			<drop event="Harvest" name="resourceScrapPolymers" tag="salvageHarvest" count="2"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="50"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			</effect_group>
+		</entity_class> 
+		
+		<entity_class name="NPCMechFlyingRangedTemplate" > 	<!-- move to core when allowEAI works  -->
 			<property name="Mesh" value="#@modfolder:Resources/XythMechs.unity3d?RobotRanged_X" />
 			<property name="AvatarController" value="AvatarAnimalControllerSDX, SCore"/> 
 			<property name="Class" value="EntityHornet"/>
 			<property name="Tags" value="allowEAI,entity,cp,mech,npc,vulture"/>
 			<property name="Faction" value="mechs"/>		
 			<property name="AIPathCostScale" value=".9, 1"/>
-			<property name="HideInSpawnMenu" value="false"/>
+			<property name="HideInSpawnMenu" value="true"/>
 			<property name="ModelType" value="Standard"/>
 			<property name="Prefab" value="NPC"/>
 			<property name="Parent" value="Animals"/>

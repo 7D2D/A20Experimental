@@ -8,6 +8,7 @@
 		<entity name="NPCMechSphereI" prob=".01" />
 		<entity name="NPCMechSphereII" prob=".01" />
 		<entity name="NPCMechBee" prob=".01" />
+		<entity name="NPCMechGunBot" prob=".01" />
 	</append> 
 	<append xpath="/entitygroups/entitygroup[ starts-with(@name, 'ZombiesNight')]">
 		<entity name="NPCMechDrone" prob=".3" />
@@ -17,5 +18,6 @@
 		<entity name="NPCMechSphereI" prob=".3" />
 		<entity name="NPCMechSphereII" prob=".3" />
 		<entity name="NPCMechBee" prob=".3" />
+		<entity name="NPCMechGunBot" prob=".3" />
 	</append> 
 </configs>
