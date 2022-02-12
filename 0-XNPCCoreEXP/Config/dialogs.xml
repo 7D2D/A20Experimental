@@ -153,7 +153,7 @@
 
       <!-- If the NPC is not hired ( not the value="not" ), then display this option, allowing a hire dialog box o be opened. --> 
       <response id="Hire" text="Hey little one, You look lost.  Want to come with me?  I have snacks!" >
-        <requirement type="Leader, SCore" requirementtype="Hide" value="not"/>
+        <requirement type="HiredSDX, SCore" requirementtype="Hide" value="not"/>
         <action type="OpenDialogSDX, SCore" id="Hire" />
       </response>
 

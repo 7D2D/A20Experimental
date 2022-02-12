@@ -274,7 +274,7 @@
 			<property name="SwimStrokeRate" value="1,1.5"/>
 			<property name="CanClimbLadders" value="true"/>
 			<property name="CanClimbVertical" value="false"/>
-			<property name="JumpMaxDistance" value="2.8, 3.9"/>
+			<property name="JumpMaxDistance" value="2.8, 3.9"/> 
 			<property name="Immunity" value="sickness;disease;wellness"/> 
 			<property name="ExperienceGain" value="600"/> 
 			<property name="LootDropProb" value="0.0"/> 
@@ -2024,7 +2024,7 @@
 		
 		<!--  NPC Animal templates  -->		
 		
-		<entity_class name="npcAnimalMeleeTemplate" >
+		<entity_class name="npcAnimalMeleeTemplate" extends="npcMeleeTemplate" >
 			<property name="HideInSpawnMenu" value="true"/>
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?ArcticFox_X"/>
 			<property name="EntityType" value="Player"/>
@@ -2043,8 +2043,8 @@
 			<property name="RootMotion" value="false"/>
 			<property name="RagdollOnDeathChance" value="0"/>
 			<property name="ExperienceGain" value="230"/>
-			<property name="Faction" value="whiteriver"/>
-			<property name="HandItem" value="meleeHandAnimalCoyote"/>
+			<property name="Faction" value="companionanimals"/>
+			<property name="HandItem" value="meleeHandAnimalFox"/>
 			<property name="SurfaceCategory" value="organic"/>
 			<property name="AttackTimeoutDay" value="0.05"/>  <!-- 0.05 * 20f = 1 seconds between attack -->
             <property name="AttackTimeoutNight" value="0.05"/>
@@ -2059,8 +2059,8 @@
 			<!--<property name="PathingBlocks" value="PathingCube" />   commented out in the template due to performance hit.  Enable in a specific entity as desired -->
 			<property name="AIPackages" value="NPCAnimalBasic, NPCMelee, NPCHired "/> <!-- Will make animal specific AI packages later -->
 			<property name="AIPathCostScale" value=".9, 1"/>
-			<property name="AINoiseSeekDist" value="20"/>	
-			<property name="MaxViewAngle" value="210"/>
+			<property name="AINoiseSeekDist" value="30"/>	
+			<property name="MaxViewAngle" value="270"/>
 			<property name="SightRange" value="70"/>
 			<property name="JumpMaxDistance" value="3.0, 4.0"/>
 			<property name="SoundRandomTime" value="20.0"/>
@@ -2072,19 +2072,14 @@
 			<property name="SoundSense" value="wolfsense"/>
 			<property name="SoundGiveUp" value="wolfgiveup"/>
 			<effect_group name="Base Effects">
-				<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
-				<passive_effect name="HealthMax" operation="base_set" value="100"/>
+				<passive_effect name="HealthMax" operation="base_set" value="400"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
-				<passive_effect name="StaminaMax" operation="base_set" value="100"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10" />
-				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
-				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffInjuryBleeding,buffInjuryBleedingZombie,buffInfectionCatch"/>
-				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffLegSprained,buffLegBroken,buffArmSprained,buffPlayerFallingDamage"/>
 			</effect_group>	
 			<effect_group>
 				<passive_effect name="WalkSpeed" operation="base_set" value=".4"/>
 				<passive_effect name="RunSpeed" operation="base_set" value="1.0"/> 
-				<passive_effect name="HealthChangeOT" operation="base_set" value="0.1"/>  <!-- heal x point of (red) health / minute -->
+				<passive_effect name="HealthChangeOT" operation="base_set" value=".5"/>  <!-- heal x point of (red) health / minute -->
 				<passive_effect name="DamageModifier" operation="perc_set" value="1"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
 				<passive_effect name="DismemberChance" operation="base_set" value=".05"/> 
@@ -2107,13 +2102,8 @@
 			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
 			<property name="Immunity" value="sickness;disease;wellness"/>
 			<property name="LootListAlive" value="traderNPC"/>
-			<property name="TimeStayAfterDeath" value="300"/>
+			<property name="TimeStayAfterDeath" value="5"/>
 			<property name="DeadBodyHitPoints" value="800"/>
-
-			<effect_group name="SelfMedicate Effects">
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value=".05"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-			</effect_group>		
 			<!--<effect_group name="ragtestforNREs">
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="ragtest"/>		
 			</effect_group>  Activate this if your testing ragdolls for NREs  -->				
@@ -2134,15 +2124,9 @@
 			<property name="MoveSpeedPanic" value="1.1"/>
 			<property name="AIPackages" value="NPCAnimalBasic, NPCRanged, NPCHired"/><!-- Placeholder, will eventually make animal specific AI packages  -->
 			<effect_group name="Base Effects">
-				<passive_effect name="DistractionResistance" operation="base_set" value="0,0"/>
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
-				<passive_effect name="StaminaMax" operation="base_set" value="200"/>
-				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10" />
-				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
-				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffInjuryBleeding,buffInjuryBleedingZombie,buffInfectionCatch"/>
-				<passive_effect name="BuffResistance" operation="base_add" value="2" tags="buffLegSprained,buffLegBroken,buffArmSprained,buffPlayerFallingDamage"/>
-			</effect_group>	
+			</effect_group>		
 		</entity_class> 	
 
 		<entity_class name="npcAnimalHumanoidRigMeleeTemplate" extends="npcAnimalMeleeTemplate" > <!-- Yea, some animals can walk upright, so....  -->
@@ -4637,11 +4621,13 @@
 			<property name="HasRagdoll" value="true"/>
 			<property name="HasDeathAnim" value="true"/>
 			<property name="RootMotion" value="false"/>
+			<property name="Faction" value="companionanimals"/>	
 			<property name="PhysicsBody" value="ArcticFox"/>
 			<property name="IsEntityAnimal" value="true"/> 
 			<property name="IsEnemyEntity" value="false"/> 			
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?ArcticFox_X"/>
 			<property name="HandItem" value="meleeHandAnimalFox"/>
+			<property name="RightHandJointName" value="articfox_Head_bone" />
 			<property name="ExperienceGain" value="300"/>
 			<property name="DeadBodyHitPoints" value="200"/>
 			<property name="SizeScale" value="1.3"/> 
