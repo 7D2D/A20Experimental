@@ -90,6 +90,7 @@
 			<relationship name="undead" value="hate"/>
 			<relationship name="whisperers" value="hate"/>
 			<relationship name="bandits" value="hate"/>
+			<relationship name="mechs" value="hate"/>
 		</faction>	
 
 		<faction name="zombieanimals">
@@ -140,6 +141,7 @@
 	<append xpath="/npc/factions/faction[@name='undead']" >		
 		<relationship name="whisperers" value="love"/>
 		<relationship name="zombieanimals" value="love"/>
+		<relationship name="mechs" value="neutral"/>
 	</append>
 		
 	<append xpath="/npc/factions/faction[@name='bandits']" >		
@@ -154,6 +156,7 @@
 	<append xpath="/npc/factions/faction[@name='whiteriver']">
         <relationship name="aggressiveanimalssmall" value="hate"/>
         <relationship name="aggressiveanimalsmedium" value="hate"/>
+		<relationship name="mechs" value="hate"/>
     </append>
 	
 		
@@ -178,6 +181,7 @@
             <relationship name="*" value="neutral"/>
             <relationship name="aggressiveanimalssmall" value="hate"/>
             <relationship name="aggressiveanimalsmedium" value="hate"/>
+			<relationship name="mechs" value="hate"/>
         </faction>
         <!-- Generic military faction - see below to see how it might be broken up into other factions -->
         <faction name="military">
@@ -189,6 +193,7 @@
 			<relationship name="aggressiveanimalsmedium" value="hate"/>
 			<relationship name="aggressiveanimalslarge" value="hate"/>
             <relationship name="zombieanimals" value="hate" />
+			<relationship name="mechs" value="hate"/>
 		</faction>
 			
 <!--  How you might seperate soldiers into factions  -->
@@ -203,6 +208,7 @@
 			<relationship name="aggressiveanimalssmall" value="hate"/>
 			<relationship name="aggressiveanimalsmedium" value="hate"/>
 			<relationship name="aggressiveanimalslarge" value="hate"/>
+			<relationship name="mechs" value="hate"/>
 		</faction>
 		<faction name="blueteam">
 			<relationship name="*" value="neutral"/>
@@ -214,6 +220,7 @@
 			<relationship name="aggressiveanimalssmall" value="hate"/>
 			<relationship name="aggressiveanimalsmedium" value="hate"/>
 			<relationship name="aggressiveanimalslarge" value="hate"/>
+			<relationship name="mechs" value="hate"/>
 		</faction>	
 		<faction name="greenteam">
 			<relationship name="*" value="neutral"/>
@@ -225,12 +232,24 @@
 			<relationship name="aggressiveanimalssmall" value="hate"/>
 			<relationship name="aggressiveanimalsmedium" value="hate"/>
 			<relationship name="aggressiveanimalslarge" value="hate"/>
+			<relationship name="mechs" value="hate"/>
 		</faction>	
 		
 		<faction name="mechs">
 			<relationship name="trader" value="neutral"/>
 			<relationship name="undead" value="hate"/>
 			<relationship name="*" value="hate"/>
+		</faction>	
+
+		<faction name="allymechs"> <!-- placeholder  -->
+			<relationship name="*" value="neutral"/>
+			<relationship name="undead" value="hate"/>
+			<relationship name="bandits" value="hate"/>
+			<relationship name="whisperers" value="hate"/>
+			<relationship name="aggressiveanimalssmall" value="hate"/>
+			<relationship name="aggressiveanimalsmedium" value="hate"/>
+			<relationship name="aggressiveanimalslarge" value="hate"/>
+            <relationship name="zombieanimals" value="hate" />
 		</faction>		
 		
 	</append>

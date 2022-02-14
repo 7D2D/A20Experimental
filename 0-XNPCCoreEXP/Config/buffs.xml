@@ -366,11 +366,9 @@
 				 always pick that effect_group (which is set to WVar 1)
 				  *If you don't want to test any: Set randomint to (0,0) or any number pther than what you have set in the range.*
 			-->
-			<effect_group name="CvarHumanWalkTypes">
+			<!--<effect_group name="CvarHumanWalkTypes">
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="HumanWalkTypes" operation="set" value="randomint(0,7)"/> 
 			</effect_group>
-			<!-- Change WVar to Value "0" --> 
-			<!-- Default walktypes are always 0, so for non walktype 7, WVar is ignored for now--><!-- for now only walktype 7 has "styles" -->
 			<effect_group name="(Normal Walk 7A)"> 
 				<requirement name="CVarCompare" cvar="HumanWalkTypes" operation="LTE" value="4"/>	
 				<triggered_effect trigger="onSelfBuffUpdate" action="AnimatorSetInt" property="WVar" value="0"/> 
@@ -387,9 +385,6 @@
 				<requirement name="CVarCompare" cvar="HumanWalkTypes" operation="Equals" value="7"/>	
 				<triggered_effect trigger="onSelfBuffUpdate" action="AnimatorSetInt" property="WVar" value="4"/>
 			</effect_group>	
-			
-			<!--  Special WalkStyles  -->
-			
 			<effect_group name="(Drunk Walk 7E)">
 				<requirement name="CVarCompare" cvar="HumanWalkTypes" operation="Equals" value="8"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AnimatorSetInt" property="WVar" value="2"/>
@@ -397,7 +392,7 @@
 			<effect_group name="(Injured Leg Walk 7F)">
 				<requirement name="CVarCompare" cvar="HumanWalkTypes" operation="Equals" value="9"/>	
 				<triggered_effect trigger="onSelfBuffUpdate" action="AnimatorSetInt" property="WVar" value="3"/>
-			</effect_group>	
+			</effect_group>	-->
 		</buff>
 	</append>
 

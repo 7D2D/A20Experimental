@@ -158,7 +158,7 @@
       </response>
 
       <!-- If the entity is hired, you can order the NPCs to do the following: -->
-     <response id="FollowMe" text="Heal" >
+     <response id="FollowMe" text="Follow Me" >
         <requirement type="Leader, SCore" requirementtype="Hide"/>
         <action type="ExecuteCommandSDX, SCore" id="FollowMe" />
       </response> 
@@ -190,13 +190,14 @@
 	  
 	  <response id="Loot" text="Loot around here" >
         <requirement type="Leader, SCore" requirementtype="Hide" />
-        <action type="AddBuffSDX, SCore" value="Self" id="buffGatherResources" />
+        <!--<action type="AddBuffSDX, SCore" value="Self" id="buffGatherResources" /> -->
+		<action type="AddBuffSDX, SCore" value="Self" id="buffOrderLoot" />
       </response>	 
 	
 	  <response id="GuardHere" text="Guard" >
         <requirement type="Leader, SCore" requirementtype="Hide" />
         <requirement type="HasTask, SCore" requirementtype="Hide" value="Stay" />
-        <action type="AddBuffSDX, SCore" value="Self" id="buffOrderGuardHere" />
+        <action type="AddBuffSDX, SCore" value="Self" id="buffOrderGuardHere" /> 
       </response>
   
 	  <response id="Dismiss" text="Abandon" >
