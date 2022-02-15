@@ -125,6 +125,7 @@
 		<property name="Buffs" value="buffNPCModSlowStatusCheck"/>
 		<effect_group name="Signal Hired NPCs to Attack">
 			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffNPCModAttacking"/>
+			<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" buff="buffNPCModAttacking"/>
 		</effect_group>
 		<effect_group>
 			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffInjuryKnockdown01">

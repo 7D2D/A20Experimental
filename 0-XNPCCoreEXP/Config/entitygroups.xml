@@ -1,7 +1,7 @@
 <configs>
-	
+
 	<append xpath="/entitygroups/entitygroup[@name='ZombiesAll']">
-	<!-- Goodies -->
+		<!-- Goodies -->
 		<entity name="npcBakerEmptyHand" prob="0.15" />
 		<entity name="npcBakerClub" prob="0.15" />
 		<entity name="npcBakerKnife" prob="0.15" />
@@ -18,7 +18,7 @@
 		<entity name="npcNursePistol" prob="0.1" />
 		<entity name="npcNurseLBow" prob="0.1" />
 		<entity name="npcAnimalFox" prob="0.1" />
-	<!-- Baddies -->
+		<!-- Baddies -->
 		<entity name="npcHarleyClub" prob="0.1" />
 		<entity name="npcHarleyBat" prob="0.1" />
 		<entity name="npcHarleyKnife" prob="0.1" />	
@@ -28,10 +28,11 @@
 		<entity name="npcHarleyPipePistol" prob="0.1" />
 		<entity name="npcHarleyPipeRifle" prob="0.1" />		
 		<entity name="npcHarleyPipeShotgun" prob="0.1" />
+		<entity name="none" prob="0.001"/>
 	</append>
-	
+
 	<append xpath="/entitygroups/entitygroup[@name='ZombiesNight']">
-	<!-- Goodies -->	
+		<!-- Goodies -->	
 		<entity name="npcBakerEmptyHand" prob="0.15" />
 		<entity name="npcBakerClub" prob="0.15" />
 		<entity name="npcBakerKnife" prob="0.15" />
@@ -48,7 +49,7 @@
 		<entity name="npcNursePistol" prob="0.1" />
 		<entity name="npcNurseLBow" prob="0.1" />
 		<entity name="npcAnimalFox" prob="0.1" />
-	<!-- Baddies -->
+		<!-- Baddies -->
 		<entity name="npcHarleyClub" prob="0.1" />
 		<entity name="npcHarleyBat" prob="0.1" />
 		<entity name="npcHarleyKnife" prob="0.1" />	
@@ -58,10 +59,11 @@
 		<entity name="npcHarleyPipePistol" prob="0.1" />
 		<entity name="npcHarleyPipeRifle" prob="0.1" />		
 		<entity name="npcHarleyPipeShotgun" prob="0.1" />
+		<entity name="none" prob="0.001"/>
 	</append>
-	
+
 	<append xpath="/entitygroups/entitygroup[@name='SnowZombies']">
-	<!-- Goodies -->	
+		<!-- Goodies -->	
 		<entity name="npcBakerEmptyHand" prob="0.15" />
 		<entity name="npcBakerClub" prob="0.15" />
 		<entity name="npcBakerKnife" prob="0.15" />
@@ -78,7 +80,7 @@
 		<entity name="npcNursePistol" prob="0.1" />
 		<entity name="npcNurseLBow" prob="0.1" />
 		<entity name="npcAnimalFox" prob="0.1" />
-	<!-- Baddies -->
+		<!-- Baddies -->
 		<entity name="npcHarleyClub" prob="0.1" />
 		<entity name="npcHarleyBat" prob="0.1" />
 		<entity name="npcHarleyKnife" prob="0.1" />	
@@ -88,10 +90,11 @@
 		<entity name="npcHarleyPipePistol" prob="0.1" />
 		<entity name="npcHarleyPipeRifle" prob="0.1" />		
 		<entity name="npcHarleyPipeShotgun" prob="0.1" />
+		<entity name="none" prob="0.001"/>
 	</append>	
 
 	<append xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']">
-	<!-- Baddies -->
+		<!-- Baddies -->
 		<entity name="npcHarleyBat" prob="0.1" />
 		<entity name="npcHarleyKnife" prob="0.1" />	
 		<entity name="npcHarleyMachete" prob="0.1" />
@@ -109,10 +112,11 @@
 		<entity name="npcHarleyAShotgun" prob="0.05" />
 		<entity name="npcHarleyXBow" prob="0.1" />
 		<entity name="npcHarleyRocketL" prob="0.025" />
+		<entity name="none" prob="0.001"/>
 	</append>
 
 	<append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']">
-	<!-- Baddies -->
+		<!-- Baddies -->
 		<entity name="npcHarleyBat" prob="0.1" />
 		<entity name="npcHarleyKnife" prob="0.1" />	
 		<entity name="npcHarleyMachete" prob="0.1" />
@@ -130,226 +134,14 @@
 		<entity name="npcHarleyAShotgun" prob="0.05" />
 		<entity name="npcHarleyXBow" prob="0.1" />
 		<entity name="npcHarleyRocketL" prob="0.025" />
+		<entity name="none" prob="0.001"/>
 	</append>
-		
+
 	<append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieArlene']]">	
 		<entity name="zombieFemaleTutorial" />
+		<entity name="none" prob="0.001"/>
 	</append>
-	
-	
-<!--	
-	
-	<insertAfter xpath="/entitygroups/entitygroup[@name='ZombiesAll']/entity[@name='zombieBoe']" >
-		<entity name="zombieFemaleTutorial" prob=".3" />
-	</insertAfter>
-	
-	<insertAfter xpath="/entitygroups/entitygroup[@name='ZombiesNight']/entity[@name='zombieBoe']" >
-		<entity name="zombieFemaleTutorial" prob=".3" />
-		<entity name="zombieFemaleTutorialFeral" prob=".15" />
-	</insertAfter>
 
-	<insertAfter xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']/entity[@name='zombieBoe']" >
-		<entity name="zombieFemaleTutorial" prob=".3" />
-	</insertAfter>
-	
-	<insertAfter xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']/entity[@name='zombieBoeFeral']" >
-		<entity name="zombieFemaleTutorialFeral" prob=".15"/>
-	</insertAfter>
-
-	<insertAfter xpath="/entitygroups/entitygroup[@name='ZombiesHoard']/entity[@name='zombieBoe']" >
-		<entity name="zombieFemaleTutorial" prob=".3" />
-	</insertAfter>	
-	
-	<insertAfter xpath="/entitygroups/entitygroup[@name='ZombieGhostTownGroup']/entity[@name='zombieBoe']" >
-		<entity name="zombieFemaleTutorial" prob=".3" />
-	</insertAfter>	
-	
-	<insertAfter xpath="/entitygroups/entitygroup[@name='ZombiesFeral']/entity[@name='zombieWightFeral']" >	
-		<entity name="zombieFemaleTutorialFeral" prob=".15"/>
-	</insertAfter>
-	
-	<insertAfter xpath="/entitygroups/entitygroup[@name='ZombieBadassGroup']/entity[@name='zombieArleneFeral']" >	
-		<entity name="zombieFemaleTutorialFeral" prob=".15"/>
-	</insertAfter>	
-	
-	<insertAfter xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForest']/entity[@name='animalZombieDog']" >
-
-	</insertAfter>	
-	
-	<insertAfter xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']/entity[@name='animalZombieDog']" >	
-
-	</insertAfter>
-	<insertAfter xpath="/entitygroups/entitygroup[@name='ZombieDogGroup']/entity[@name='animalZombieDog']" >	
-
-	</insertAfter>	
-	
-	<insertAfter xpath="/entitygroups/entitygroup[@name='ZombieSoldierGroup']/entity[@name='zombieSoldier']" >
-
-	</insertAfter>	
-	
-	<insertAfter xpath="/entitygroups/entitygroup[@name='HospitalGroup']/entity[@name='zombieLab']" >	
-
-	</insertAfter>
-	
-	<insertAfter xpath="/entitygroups/entitygroup[@name='ZombieHazMatOnlyGroup']/entity[@name='zombieMaleHazmat']" >	
-		
-	</insertAfter>
-
-	<insertAfter xpath="/entitygroups/entitygroup[@name='ZombieBikerBarGroup']/entity[@name='zombieBiker']" >	
-		
-	</insertAfter>
-	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'ZombieBikerBarGroupGS')]/entity[@name='zombieBiker']">
-		
-	</insertAfter>	
-	
-	<insertAfter xpath="/entitygroups/entitygroup[@name='ZombieAnimalsGroup']/entity[@name='animalZombieDog']" >	
-
-	</insertAfter>		-->
-	
-	
-	<!-- NPCs can be sleepers in zombie sleeper hordes, but this is not recommended, they count as enemies in quests -->
-	
-	<!--<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'sleeperHordeStageGS')]/entity[@name='zombieBoe']">
-		<entity name="npcNurseEmptyHand" prob=".2" />
-		<entity name="npcNurseClub" prob=".2" />
-		<entity name="npcNurseSMG" prob=".1" />	
-	</insertAfter>
-	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'sleeperHordeStageGS')]/entity[@name='zombieJoe']">
-		<entity name="npcNurseEmptyHand" prob=".2" />
-		<entity name="npcNurseClub" prob=".2" />
-		<entity name="npcNurseSMG" prob=".1" />	
-	</insertAfter>
-	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'sleeperHordeStageGS')]/entity[@name='zombieSteve']">
-		<entity name="npcNurseEmptyHand" prob=".2" />
-		<entity name="npcNurseClub" prob=".2" />
-		<entity name="npcNurseSMG" prob=".1" />	
-	</insertAfter>
-	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'sleeperHordeStageGS')]/entity[@name='zombieMoe']">
-		<entity name="npcNurseEmptyHand" prob=".2" />
-		<entity name="npcNurseClub" prob=".2" />
-		<entity name="npcNurseSMG" prob=".1" />	
-	</insertAfter>	-->
-	
-	<!-- NPCs using the EntityEnemySDX, SCore Class can spawn in BloodMoon groups without error  -->
-	
-	<!--<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'feralHordeStageGS')]/entity[@name='zombieBoe']">
-		<entity name="npcNurseEmptyHandBloodMoon" prob=".1" />
-		<entity name="npcNurseClubBloodMoon" prob=".1" />
-		<entity name="npcNurseSMGBloodMoon" prob=".1" />	
-	</insertAfter>
-	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'feralHordeStageGS')]/entity[@name='zombieJoe']">
-		<entity name="npcNurseEmptyHandBloodMoon" prob=".1" />
-		<entity name="npcNurseClubBloodMoon" prob=".15" />
-		<entity name="npcNurseSMGBloodMoon" prob=".1" />	
-	</insertAfter>
-	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'feralHordeStageGS')]/entity[@name='zombieSteve']">
-		<entity name="npcNurseEmptyHandBloodMoon" prob=".1" />
-		<entity name="npcNurseClubBloodMoon" prob=".1" />
-		<entity name="npcNurseSMGBloodMoon" prob=".1" />	
-	</insertAfter> -->
-	
-	<!--<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'feralHordeStageGS')]/entity[@name='zombieFatCopFeral']">
-		
-	</insertAfter>
-	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'feralHordeStageGS')]/entity[@name='zombieWightFeral']">
-		
-	</insertAfter>	
-	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'scoutHordeStageGS')]/entity[@name='zombieBoe']">
-		<entity name="zombieFemaleTutorial" prob=".3" />
-	</insertAfter>
-	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'scoutHordeStageGS')]/entity[@name='zombieJoe']">
-		<entity name="zombieFemaleTutorial" prob=".3" />	
-	</insertAfter>
-	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'scoutHordeStageGS')]/entity[@name='zombieSteve']">
-		<entity name="zombieFemaleTutorial" prob=".3" />	
-	</insertAfter>	
-	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'wanderingHordeStageGS')]/entity[@name='zombieBoe']">
-		<entity name="zombieFemaleTutorial" prob=".3" />
-	</insertAfter>
-	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'wanderingHordeStageGS')]/entity[@name='zombieJoe']">
-		<entity name="zombieFemaleTutorial" prob=".3" />
-	</insertAfter>
-	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'wanderingHordeStageGS')]/entity[@name='zombieSteve']">
-		<entity name="zombieFemaleTutorial" prob=".3" />
-	</insertAfter>	
-
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'FwanderingHordeStageGS')]/entity[@name='zombieBoe']">
-		<entity name="zombieFemaleTutorial" prob=".3" />
-	</insertAfter>
-	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'FwanderingHordeStageGS')]/entity[@name='zombieJoe']">
-		<entity name="zombieFemaleTutorial" prob=".3" />
-	</insertAfter>
-	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'FwanderingHordeStageGS')]/entity[@name='zombieSteve']">
-		<entity name="zombieFemaleTutorial" prob=".3" />
-	</insertAfter>	
-
-	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'zombieHospitalGroupGS')]/entity[@name='zombieLab']">
-
-	</insertAfter>	
-	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'zombieHospitalGroupGS')]/entity[@name='zombieBoeFeral' and @prob='0.1']">
-
-	</insertAfter>	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'zombieHospitalGroupGS')]/entity[@name='zombieBoeFeral' and @prob='0.2']">
-
-	</insertAfter>		
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'zombieHospitalGroupGS')]/entity[@name='zombieBoeFeral' and @prob='0.3']">
-
-	</insertAfter>	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'zombieHospitalGroupGS')]/entity[@name='zombieBoeFeral' and @prob='0.4']">
-
-	</insertAfter>		
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'zombieHospitalGroupGS')]/entity[@name='zombieBoeFeral' and @prob='0.5']">
- 
-	</insertAfter>		
-	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'zombieSoldierGroupGS')]/entity[@name='zombieSoldier']">
-
-	</insertAfter>		
-	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'zombieSoldierGroupGS')]/entity[@name='zombieSoldierFeral' and @prob='0.1']">
- 
-	</insertAfter>	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'zombieSoldierGroupGS')]/entity[@name='zombieSoldierFeral' and @prob='0.2']">
- 
-	</insertAfter>		
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'zombieSoldierGroupGS')]/entity[@name='zombieSoldierFeral' and @prob='0.3']">
- 
-	</insertAfter>	
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'zombieSoldierGroupGS')]/entity[@name='zombieSoldierFeral' and @prob='0.4']">
-
-	</insertAfter>		
-	<insertAfter xpath="/entitygroups/entitygroup[ starts-with(@name, 'zombieSoldierGroupGS')]/entity[@name='zombieSoldierFeral' and @prob='0.5']">
- 
-	</insertAfter>	-->
-
-	
-	<!--  Gan/Xyth's method for injecting new characters from other modders.  Baselining on the zombieFemaleTutorial -->
-	
-	<!--<append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieFemaleTutorial' and @prob='.3']]">
-
-    </append> 
-	
-	<append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieFemaleTutorialFeral' and @prob='.15']]">
-
-    </append> 		-->
-	
 	<!--
         Sleeper Volume Entity Groups
 
@@ -450,6 +242,7 @@
 			<entity name="npcHarleySRifle" prob="0.4" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsAllGroupGS50">
 			<entity name="npcHarleyAK47" prob="0.5" />
@@ -476,6 +269,7 @@
 			<entity name="npcHarleySRifle" prob="0.4" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsAllGroupGS100">
 			<entity name="npcHarleyAK47" prob="0.5" />
@@ -502,6 +296,7 @@
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsAllGroupGS200">
 			<entity name="npcHarleyAK47" prob="0.5" />
@@ -528,6 +323,7 @@
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsAllGroupGS400">
 			<entity name="npcHarleyAK47" prob="0.5" />
@@ -554,6 +350,7 @@
 			<entity name="npcHarleySRifle" prob="0.6" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsAllGroupGS800">
 			<entity name="npcHarleyAK47" prob="0.5" />
@@ -573,12 +370,14 @@
 			<entity name="npcHarleySRifle" prob="0.6" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsMeleeGroupGS01">
 			<entity name="npcHarleyClub" prob="0.8" />
 			<entity name="npcHarleyEmptyHand" prob="1" />
 			<entity name="npcHarleyKnife" prob="0.4" />
 			<entity name="npcHarleySpear" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsMeleeGroupGS50">
 			<entity name="npcHarleyAxe" prob="0.2" />
@@ -588,6 +387,7 @@
 			<entity name="npcHarleyKnife" prob="0.4" />
 			<entity name="npcHarleyMachete" prob="0.2" />
 			<entity name="npcHarleySpear" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsMeleeGroupGS100">
 			<entity name="npcHarleyAxe" prob="0.4" />
@@ -597,6 +397,7 @@
 			<entity name="npcHarleyKnife" prob="0.5" />
 			<entity name="npcHarleyMachete" prob="0.4" />
 			<entity name="npcHarleySpear" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsMeleeGroupGS200">
 			<entity name="npcHarleyAxe" prob="0.6" />
@@ -606,6 +407,7 @@
 			<entity name="npcHarleyKnife" prob="0.5" />
 			<entity name="npcHarleyMachete" prob="0.6" />
 			<entity name="npcHarleySpear" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsMeleeGroupGS400">
 			<entity name="npcHarleyAxe" prob="0.8" />
@@ -615,6 +417,7 @@
 			<entity name="npcHarleyKnife" prob="0.6" />
 			<entity name="npcHarleyMachete" prob="0.8" />
 			<entity name="npcHarleySpear" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsMeleeGroupGS800">
 			<entity name="npcHarleyAxe" prob="1" />
@@ -623,6 +426,7 @@
 			<entity name="npcHarleyKnife" prob="0.6" />
 			<entity name="npcHarleyMachete" prob="1" />
 			<entity name="npcHarleySpear" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsRangedGroupGS01">
 			<entity name="npcHarleyAK47" prob="0.6" />
@@ -641,6 +445,7 @@
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.6" />
 			<entity name="npcHarleyXBow" prob="0.8" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsRangedGroupGS50">
 			<entity name="npcHarleyAK47" prob="0.6" />
@@ -660,6 +465,7 @@
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.6" />
 			<entity name="npcHarleyXBow" prob="0.7" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsRangedGroupGS100">
 			<entity name="npcHarleyAK47" prob="0.5" />
@@ -679,6 +485,7 @@
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsRangedGroupGS200">
 			<entity name="npcHarleyAK47" prob="0.5" />
@@ -698,6 +505,7 @@
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsRangedGroupGS400">
 			<entity name="npcHarleyAK47" prob="0.4" />
@@ -717,6 +525,7 @@
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.4" />
 			<entity name="npcHarleyXBow" prob="0.3" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsRangedGroupGS800">
 			<entity name="npcHarleyAK47" prob="0.4" />
@@ -733,6 +542,7 @@
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.4" />
 			<entity name="npcHarleyXBow" prob="0.2" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsBossGroupGS01">
 			<entity name="npcHarleyAK47" prob="0.9" />
@@ -744,6 +554,7 @@
 			<entity name="npcHarleySMG" prob="0.8" />
 			<entity name="npcHarleySRifle" prob="0.7" />
 			<entity name="npcHarleyTRifle" prob="0.9" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsBossGroupGS50">
 			<entity name="npcHarleyAK47" prob="0.7" />
@@ -756,6 +567,7 @@
 			<entity name="npcHarleySMG" prob="0.7" />
 			<entity name="npcHarleySRifle" prob="0.6" />
 			<entity name="npcHarleyTRifle" prob="0.7" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsBossGroupGS100">
 			<entity name="npcHarleyAK47" prob="0.6" />
@@ -768,6 +580,7 @@
 			<entity name="npcHarleySMG" prob="0.6" />
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsBossGroupGS200">
 			<entity name="npcHarleyAK47" prob="0.4" />
@@ -780,6 +593,7 @@
 			<entity name="npcHarleySMG" prob="0.4" />
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsBossGroupGS400">
 			<entity name="npcHarleyAK47" prob="0.3" />
@@ -792,6 +606,7 @@
 			<entity name="npcHarleySMG" prob="0.3" />
 			<entity name="npcHarleySRifle" prob="0.4" />
 			<entity name="npcHarleyTRifle" prob="0.3" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcBanditsBossGroupGS800">
 			<entity name="npcHarleyAK47" prob="0.1" />
@@ -802,6 +617,7 @@
 			<entity name="npcHarleySMG" prob="0.2" />
 			<entity name="npcHarleySRifle" prob="0.3" />
 			<entity name="npcHarleyTRifle" prob="0.1" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 
 		<!-- Duke NPC entity groups -->
@@ -829,6 +645,7 @@
 			<entity name="npcHarleySRifle" prob="0.004" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeAllGroupGS50">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -855,6 +672,7 @@
 			<entity name="npcHarleySRifle" prob="0.004" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeAllGroupGS100">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -881,6 +699,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeAllGroupGS200">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -907,6 +726,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeAllGroupGS400">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -933,6 +753,7 @@
 			<entity name="npcHarleySRifle" prob="0.006" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeAllGroupGS800">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -952,12 +773,14 @@
 			<entity name="npcHarleySRifle" prob="0.006" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeMeleeGroupGS01">
 			<entity name="npcHarleyClub" prob="0.008" />
 			<entity name="npcHarleyEmptyHand" prob="0.01" />
 			<entity name="npcHarleyKnife" prob="0.004" />
 			<entity name="npcHarleySpear" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeMeleeGroupGS50">
 			<entity name="npcHarleyAxe" prob="0.002" />
@@ -967,6 +790,7 @@
 			<entity name="npcHarleyKnife" prob="0.004" />
 			<entity name="npcHarleyMachete" prob="0.002" />
 			<entity name="npcHarleySpear" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeMeleeGroupGS100">
 			<entity name="npcHarleyAxe" prob="0.004" />
@@ -976,6 +800,7 @@
 			<entity name="npcHarleyKnife" prob="0.005" />
 			<entity name="npcHarleyMachete" prob="0.004" />
 			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeMeleeGroupGS200">
 			<entity name="npcHarleyAxe" prob="0.006" />
@@ -985,6 +810,7 @@
 			<entity name="npcHarleyKnife" prob="0.005" />
 			<entity name="npcHarleyMachete" prob="0.006" />
 			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeMeleeGroupGS400">
 			<entity name="npcHarleyAxe" prob="0.008" />
@@ -994,6 +820,7 @@
 			<entity name="npcHarleyKnife" prob="0.006" />
 			<entity name="npcHarleyMachete" prob="0.008" />
 			<entity name="npcHarleySpear" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeMeleeGroupGS800">
 			<entity name="npcHarleyAxe" prob="0.01" />
@@ -1002,6 +829,7 @@
 			<entity name="npcHarleyKnife" prob="0.006" />
 			<entity name="npcHarleyMachete" prob="0.01" />
 			<entity name="npcHarleySpear" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeRangedGroupGS01">
 			<entity name="npcHarleyAK47" prob="0.006" />
@@ -1020,6 +848,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.006" />
 			<entity name="npcHarleyXBow" prob="0.008" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeRangedGroupGS50">
 			<entity name="npcHarleyAK47" prob="0.006" />
@@ -1039,6 +868,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.006" />
 			<entity name="npcHarleyXBow" prob="0.007" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeRangedGroupGS100">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -1058,6 +888,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeRangedGroupGS200">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -1077,6 +908,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeRangedGroupGS400">
 			<entity name="npcHarleyAK47" prob="0.004" />
@@ -1096,6 +928,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.004" />
 			<entity name="npcHarleyXBow" prob="0.003" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeRangedGroupGS800">
 			<entity name="npcHarleyAK47" prob="0.004" />
@@ -1112,6 +945,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.004" />
 			<entity name="npcHarleyXBow" prob="0.002" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeBossGroupGS01">
 			<entity name="npcHarleyAK47" prob="0.009" />
@@ -1123,6 +957,7 @@
 			<entity name="npcHarleySMG" prob="0.008" />
 			<entity name="npcHarleySRifle" prob="0.007" />
 			<entity name="npcHarleyTRifle" prob="0.009" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeBossGroupGS50">
 			<entity name="npcHarleyAK47" prob="0.007" />
@@ -1135,6 +970,7 @@
 			<entity name="npcHarleySMG" prob="0.007" />
 			<entity name="npcHarleySRifle" prob="0.006" />
 			<entity name="npcHarleyTRifle" prob="0.007" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeBossGroupGS100">
 			<entity name="npcHarleyAK47" prob="0.006" />
@@ -1147,6 +983,7 @@
 			<entity name="npcHarleySMG" prob="0.006" />
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeBossGroupGS200">
 			<entity name="npcHarleyAK47" prob="0.004" />
@@ -1159,6 +996,7 @@
 			<entity name="npcHarleySMG" prob="0.004" />
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeBossGroupGS400">
 			<entity name="npcHarleyAK47" prob="0.003" />
@@ -1171,6 +1009,7 @@
 			<entity name="npcHarleySMG" prob="0.003" />
 			<entity name="npcHarleySRifle" prob="0.004" />
 			<entity name="npcHarleyTRifle" prob="0.003" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDukeBossGroupGS800">
 			<entity name="npcHarleyAK47" prob="0.001" />
@@ -1181,6 +1020,7 @@
 			<entity name="npcHarleySMG" prob="0.002" />
 			<entity name="npcHarleySRifle" prob="0.003" />
 			<entity name="npcHarleyTRifle" prob="0.001" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 
 		<!-- Military NPC entity groups -->
@@ -1208,6 +1048,7 @@
 			<entity name="npcNurseSRifle" prob="0.004" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryAllGroupGS50">
 			<entity name="npcNurseAK47" prob="0.005" />
@@ -1234,6 +1075,7 @@
 			<entity name="npcNurseSRifle" prob="0.004" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryAllGroupGS100">
 			<entity name="npcNurseAK47" prob="0.005" />
@@ -1260,6 +1102,7 @@
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryAllGroupGS200">
 			<entity name="npcNurseAK47" prob="0.005" />
@@ -1286,6 +1129,7 @@
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryAllGroupGS400">
 			<entity name="npcNurseAK47" prob="0.005" />
@@ -1312,6 +1156,7 @@
 			<entity name="npcNurseSRifle" prob="0.006" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryAllGroupGS800">
 			<entity name="npcNurseAK47" prob="0.005" />
@@ -1331,12 +1176,14 @@
 			<entity name="npcNurseSRifle" prob="0.006" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryMeleeGroupGS01">
 			<entity name="npcNurseClub" prob="0.008" />
 			<entity name="npcNurseEmptyHand" prob="0.01" />
 			<entity name="npcNurseKnife" prob="0.004" />
 			<entity name="npcNurseSpear" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryMeleeGroupGS50">
 			<entity name="npcNurseAxe" prob="0.002" />
@@ -1346,6 +1193,7 @@
 			<entity name="npcNurseKnife" prob="0.004" />
 			<entity name="npcNurseMachete" prob="0.002" />
 			<entity name="npcNurseSpear" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryMeleeGroupGS100">
 			<entity name="npcNurseAxe" prob="0.004" />
@@ -1355,6 +1203,7 @@
 			<entity name="npcNurseKnife" prob="0.005" />
 			<entity name="npcNurseMachete" prob="0.004" />
 			<entity name="npcNurseSpear" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryMeleeGroupGS200">
 			<entity name="npcNurseAxe" prob="0.006" />
@@ -1364,6 +1213,7 @@
 			<entity name="npcNurseKnife" prob="0.005" />
 			<entity name="npcNurseMachete" prob="0.006" />
 			<entity name="npcNurseSpear" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryMeleeGroupGS400">
 			<entity name="npcNurseAxe" prob="0.008" />
@@ -1373,6 +1223,7 @@
 			<entity name="npcNurseKnife" prob="0.006" />
 			<entity name="npcNurseMachete" prob="0.008" />
 			<entity name="npcNurseSpear" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryMeleeGroupGS800">
 			<entity name="npcNurseAxe" prob="0.01" />
@@ -1381,6 +1232,7 @@
 			<entity name="npcNurseKnife" prob="0.006" />
 			<entity name="npcNurseMachete" prob="0.01" />
 			<entity name="npcNurseSpear" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryRangedGroupGS01">
 			<entity name="npcNurseAK47" prob="0.006" />
@@ -1399,6 +1251,7 @@
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.006" />
 			<entity name="npcNurseXBow" prob="0.008" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryRangedGroupGS50">
 			<entity name="npcNurseAK47" prob="0.006" />
@@ -1418,6 +1271,7 @@
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.006" />
 			<entity name="npcNurseXBow" prob="0.007" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryRangedGroupGS100">
 			<entity name="npcNurseAK47" prob="0.005" />
@@ -1437,6 +1291,7 @@
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryRangedGroupGS200">
 			<entity name="npcNurseAK47" prob="0.005" />
@@ -1456,6 +1311,7 @@
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryRangedGroupGS400">
 			<entity name="npcNurseAK47" prob="0.004" />
@@ -1475,6 +1331,7 @@
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.004" />
 			<entity name="npcNurseXBow" prob="0.003" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryRangedGroupGS800">
 			<entity name="npcNurseAK47" prob="0.004" />
@@ -1491,6 +1348,7 @@
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.004" />
 			<entity name="npcNurseXBow" prob="0.002" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryBossGroupGS01">
 			<entity name="npcNurseAK47" prob="0.009" />
@@ -1502,6 +1360,7 @@
 			<entity name="npcNurseSMG" prob="0.008" />
 			<entity name="npcNurseSRifle" prob="0.007" />
 			<entity name="npcNurseTRifle" prob="0.009" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryBossGroupGS50">
 			<entity name="npcNurseAK47" prob="0.007" />
@@ -1514,6 +1373,7 @@
 			<entity name="npcNurseSMG" prob="0.007" />
 			<entity name="npcNurseSRifle" prob="0.006" />
 			<entity name="npcNurseTRifle" prob="0.007" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryBossGroupGS100">
 			<entity name="npcNurseAK47" prob="0.006" />
@@ -1526,6 +1386,7 @@
 			<entity name="npcNurseSMG" prob="0.006" />
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryBossGroupGS200">
 			<entity name="npcNurseAK47" prob="0.004" />
@@ -1538,6 +1399,7 @@
 			<entity name="npcNurseSMG" prob="0.004" />
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryBossGroupGS400">
 			<entity name="npcNurseAK47" prob="0.003" />
@@ -1550,6 +1412,7 @@
 			<entity name="npcNurseSMG" prob="0.003" />
 			<entity name="npcNurseSRifle" prob="0.004" />
 			<entity name="npcNurseTRifle" prob="0.003" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMilitaryBossGroupGS800">
 			<entity name="npcNurseAK47" prob="0.001" />
@@ -1560,6 +1423,7 @@
 			<entity name="npcNurseSMG" prob="0.002" />
 			<entity name="npcNurseSRifle" prob="0.003" />
 			<entity name="npcNurseTRifle" prob="0.001" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 
 		<!-- Vault NPC entity groups -->
@@ -1587,6 +1451,7 @@
 			<entity name="npcNurseSRifle" prob="0.004" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultAllGroupGS50">
 			<entity name="npcNurseAK47" prob="0.005" />
@@ -1613,6 +1478,7 @@
 			<entity name="npcNurseSRifle" prob="0.004" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultAllGroupGS100">
 			<entity name="npcNurseAK47" prob="0.005" />
@@ -1639,6 +1505,7 @@
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultAllGroupGS200">
 			<entity name="npcNurseAK47" prob="0.005" />
@@ -1665,6 +1532,7 @@
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultAllGroupGS400">
 			<entity name="npcNurseAK47" prob="0.005" />
@@ -1691,6 +1559,7 @@
 			<entity name="npcNurseSRifle" prob="0.006" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultAllGroupGS800">
 			<entity name="npcNurseAK47" prob="0.005" />
@@ -1710,12 +1579,14 @@
 			<entity name="npcNurseSRifle" prob="0.006" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultMeleeGroupGS01">
 			<entity name="npcNurseClub" prob="0.008" />
 			<entity name="npcNurseEmptyHand" prob="0.01" />
 			<entity name="npcNurseKnife" prob="0.004" />
 			<entity name="npcNurseSpear" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultMeleeGroupGS50">
 			<entity name="npcNurseAxe" prob="0.002" />
@@ -1725,6 +1596,7 @@
 			<entity name="npcNurseKnife" prob="0.004" />
 			<entity name="npcNurseMachete" prob="0.002" />
 			<entity name="npcNurseSpear" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultMeleeGroupGS100">
 			<entity name="npcNurseAxe" prob="0.004" />
@@ -1734,6 +1606,7 @@
 			<entity name="npcNurseKnife" prob="0.005" />
 			<entity name="npcNurseMachete" prob="0.004" />
 			<entity name="npcNurseSpear" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultMeleeGroupGS200">
 			<entity name="npcNurseAxe" prob="0.006" />
@@ -1743,6 +1616,7 @@
 			<entity name="npcNurseKnife" prob="0.005" />
 			<entity name="npcNurseMachete" prob="0.006" />
 			<entity name="npcNurseSpear" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultMeleeGroupGS400">
 			<entity name="npcNurseAxe" prob="0.008" />
@@ -1752,6 +1626,7 @@
 			<entity name="npcNurseKnife" prob="0.006" />
 			<entity name="npcNurseMachete" prob="0.008" />
 			<entity name="npcNurseSpear" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultMeleeGroupGS800">
 			<entity name="npcNurseAxe" prob="0.01" />
@@ -1760,6 +1635,7 @@
 			<entity name="npcNurseKnife" prob="0.006" />
 			<entity name="npcNurseMachete" prob="0.01" />
 			<entity name="npcNurseSpear" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultRangedGroupGS01">
 			<entity name="npcNurseAK47" prob="0.006" />
@@ -1778,6 +1654,7 @@
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.006" />
 			<entity name="npcNurseXBow" prob="0.008" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultRangedGroupGS50">
 			<entity name="npcNurseAK47" prob="0.006" />
@@ -1797,6 +1674,7 @@
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.006" />
 			<entity name="npcNurseXBow" prob="0.007" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultRangedGroupGS100">
 			<entity name="npcNurseAK47" prob="0.005" />
@@ -1816,6 +1694,7 @@
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultRangedGroupGS200">
 			<entity name="npcNurseAK47" prob="0.005" />
@@ -1835,6 +1714,7 @@
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultRangedGroupGS400">
 			<entity name="npcNurseAK47" prob="0.004" />
@@ -1854,6 +1734,7 @@
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.004" />
 			<entity name="npcNurseXBow" prob="0.003" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultRangedGroupGS800">
 			<entity name="npcNurseAK47" prob="0.004" />
@@ -1870,6 +1751,7 @@
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.004" />
 			<entity name="npcNurseXBow" prob="0.002" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultBossGroupGS01">
 			<entity name="npcNurseAK47" prob="0.009" />
@@ -1881,6 +1763,7 @@
 			<entity name="npcNurseSMG" prob="0.008" />
 			<entity name="npcNurseSRifle" prob="0.007" />
 			<entity name="npcNurseTRifle" prob="0.009" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultBossGroupGS50">
 			<entity name="npcNurseAK47" prob="0.007" />
@@ -1893,6 +1776,7 @@
 			<entity name="npcNurseSMG" prob="0.007" />
 			<entity name="npcNurseSRifle" prob="0.006" />
 			<entity name="npcNurseTRifle" prob="0.007" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultBossGroupGS100">
 			<entity name="npcNurseAK47" prob="0.006" />
@@ -1905,6 +1789,7 @@
 			<entity name="npcNurseSMG" prob="0.006" />
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultBossGroupGS200">
 			<entity name="npcNurseAK47" prob="0.004" />
@@ -1917,6 +1802,7 @@
 			<entity name="npcNurseSMG" prob="0.004" />
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultBossGroupGS400">
 			<entity name="npcNurseAK47" prob="0.003" />
@@ -1929,6 +1815,7 @@
 			<entity name="npcNurseSMG" prob="0.003" />
 			<entity name="npcNurseSRifle" prob="0.004" />
 			<entity name="npcNurseTRifle" prob="0.003" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcVaultBossGroupGS800">
 			<entity name="npcNurseAK47" prob="0.001" />
@@ -1939,6 +1826,7 @@
 			<entity name="npcNurseSMG" prob="0.002" />
 			<entity name="npcNurseSRifle" prob="0.003" />
 			<entity name="npcNurseTRifle" prob="0.001" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 
 		<!-- Whisperers NPC entity groups -->
@@ -1966,6 +1854,7 @@
 			<entity name="npcHarleySRifle" prob="0.004" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersAllGroupGS50">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -1992,6 +1881,7 @@
 			<entity name="npcHarleySRifle" prob="0.004" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersAllGroupGS100">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -2018,6 +1908,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersAllGroupGS200">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -2044,6 +1935,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersAllGroupGS400">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -2070,6 +1962,7 @@
 			<entity name="npcHarleySRifle" prob="0.006" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersAllGroupGS800">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -2089,12 +1982,14 @@
 			<entity name="npcHarleySRifle" prob="0.006" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersMeleeGroupGS01">
 			<entity name="npcHarleyClub" prob="0.008" />
 			<entity name="npcHarleyEmptyHand" prob="0.01" />
 			<entity name="npcHarleyKnife" prob="0.004" />
 			<entity name="npcHarleySpear" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersMeleeGroupGS50">
 			<entity name="npcHarleyAxe" prob="0.002" />
@@ -2104,6 +1999,7 @@
 			<entity name="npcHarleyKnife" prob="0.004" />
 			<entity name="npcHarleyMachete" prob="0.002" />
 			<entity name="npcHarleySpear" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersMeleeGroupGS100">
 			<entity name="npcHarleyAxe" prob="0.004" />
@@ -2113,6 +2009,7 @@
 			<entity name="npcHarleyKnife" prob="0.005" />
 			<entity name="npcHarleyMachete" prob="0.004" />
 			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersMeleeGroupGS200">
 			<entity name="npcHarleyAxe" prob="0.006" />
@@ -2122,6 +2019,7 @@
 			<entity name="npcHarleyKnife" prob="0.005" />
 			<entity name="npcHarleyMachete" prob="0.006" />
 			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersMeleeGroupGS400">
 			<entity name="npcHarleyAxe" prob="0.008" />
@@ -2131,6 +2029,7 @@
 			<entity name="npcHarleyKnife" prob="0.006" />
 			<entity name="npcHarleyMachete" prob="0.008" />
 			<entity name="npcHarleySpear" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersMeleeGroupGS800">
 			<entity name="npcHarleyAxe" prob="0.01" />
@@ -2139,6 +2038,7 @@
 			<entity name="npcHarleyKnife" prob="0.006" />
 			<entity name="npcHarleyMachete" prob="0.01" />
 			<entity name="npcHarleySpear" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersRangedGroupGS01">
 			<entity name="npcHarleyAK47" prob="0.006" />
@@ -2157,6 +2057,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.006" />
 			<entity name="npcHarleyXBow" prob="0.008" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersRangedGroupGS50">
 			<entity name="npcHarleyAK47" prob="0.006" />
@@ -2176,6 +2077,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.006" />
 			<entity name="npcHarleyXBow" prob="0.007" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersRangedGroupGS100">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -2195,6 +2097,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersRangedGroupGS200">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -2214,6 +2117,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersRangedGroupGS400">
 			<entity name="npcHarleyAK47" prob="0.004" />
@@ -2233,6 +2137,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.004" />
 			<entity name="npcHarleyXBow" prob="0.003" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersRangedGroupGS800">
 			<entity name="npcHarleyAK47" prob="0.004" />
@@ -2249,6 +2154,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.004" />
 			<entity name="npcHarleyXBow" prob="0.002" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersBossGroupGS01">
 			<entity name="npcHarleyAK47" prob="0.009" />
@@ -2260,6 +2166,7 @@
 			<entity name="npcHarleySMG" prob="0.008" />
 			<entity name="npcHarleySRifle" prob="0.007" />
 			<entity name="npcHarleyTRifle" prob="0.009" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersBossGroupGS50">
 			<entity name="npcHarleyAK47" prob="0.007" />
@@ -2272,6 +2179,7 @@
 			<entity name="npcHarleySMG" prob="0.007" />
 			<entity name="npcHarleySRifle" prob="0.006" />
 			<entity name="npcHarleyTRifle" prob="0.007" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersBossGroupGS100">
 			<entity name="npcHarleyAK47" prob="0.006" />
@@ -2284,6 +2192,7 @@
 			<entity name="npcHarleySMG" prob="0.006" />
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersBossGroupGS200">
 			<entity name="npcHarleyAK47" prob="0.004" />
@@ -2296,6 +2205,7 @@
 			<entity name="npcHarleySMG" prob="0.004" />
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersBossGroupGS400">
 			<entity name="npcHarleyAK47" prob="0.003" />
@@ -2308,6 +2218,7 @@
 			<entity name="npcHarleySMG" prob="0.003" />
 			<entity name="npcHarleySRifle" prob="0.004" />
 			<entity name="npcHarleyTRifle" prob="0.003" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhisperersBossGroupGS800">
 			<entity name="npcHarleyAK47" prob="0.001" />
@@ -2318,6 +2229,7 @@
 			<entity name="npcHarleySMG" prob="0.002" />
 			<entity name="npcHarleySRifle" prob="0.003" />
 			<entity name="npcHarleyTRifle" prob="0.001" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 
 		<!-- Whiteriver NPC entity groups -->
@@ -2366,6 +2278,7 @@
 			<entity name="npcNurseSRifle" prob="0.4" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverAllGroupGS50">
 			<entity name="npcBakerAK47" prob="0.5" />
@@ -2414,6 +2327,7 @@
 			<entity name="npcNurseSRifle" prob="0.4" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverAllGroupGS100">
 			<entity name="npcBakerAK47" prob="0.5" />
@@ -2462,6 +2376,7 @@
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverAllGroupGS200">
 			<entity name="npcBakerAK47" prob="0.5" />
@@ -2510,6 +2425,7 @@
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverAllGroupGS400">
 			<entity name="npcBakerAK47" prob="0.5" />
@@ -2558,6 +2474,7 @@
 			<entity name="npcNurseSRifle" prob="0.6" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverAllGroupGS800">
 			<entity name="npcBakerAK47" prob="0.5" />
@@ -2594,6 +2511,7 @@
 			<entity name="npcNurseSRifle" prob="0.6" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverMeleeGroupGS01">
 			<entity name="npcBakerClub" prob="1" />
@@ -2602,6 +2520,7 @@
 			<entity name="npcNurseClub" prob="1" />
 			<entity name="npcNurseKnife" prob="0.5" />
 			<entity name="npcNurseSpear" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverMeleeGroupGS50">
 			<entity name="npcBakerAxe" prob="0.2" />
@@ -2616,6 +2535,7 @@
 			<entity name="npcNurseKnife" prob="0.5" />
 			<entity name="npcNurseMachete" prob="0.2" />
 			<entity name="npcNurseSpear" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverMeleeGroupGS100">
 			<entity name="npcBakerAxe" prob="0.4" />
@@ -2630,6 +2550,7 @@
 			<entity name="npcNurseKnife" prob="0.5" />
 			<entity name="npcNurseMachete" prob="0.4" />
 			<entity name="npcNurseSpear" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverMeleeGroupGS200">
 			<entity name="npcBakerAxe" prob="0.6" />
@@ -2644,6 +2565,7 @@
 			<entity name="npcNurseKnife" prob="0.5" />
 			<entity name="npcNurseMachete" prob="0.6" />
 			<entity name="npcNurseSpear" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverMeleeGroupGS400">
 			<entity name="npcBakerAxe" prob="0.8" />
@@ -2658,6 +2580,7 @@
 			<entity name="npcNurseKnife" prob="0.5" />
 			<entity name="npcNurseMachete" prob="0.8" />
 			<entity name="npcNurseSpear" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverMeleeGroupGS800">
 			<entity name="npcBakerAxe" prob="1" />
@@ -2670,6 +2593,7 @@
 			<entity name="npcNurseKnife" prob="0.5" />
 			<entity name="npcNurseMachete" prob="1" />
 			<entity name="npcNurseSpear" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverRangedGroupGS01">
 			<entity name="npcBakerAK47" prob="0.6" />
@@ -2704,6 +2628,7 @@
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.6" />
 			<entity name="npcNurseXBow" prob="0.8" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverRangedGroupGS50">
 			<entity name="npcBakerAK47" prob="0.6" />
@@ -2740,6 +2665,7 @@
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.6" />
 			<entity name="npcNurseXBow" prob="0.7" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverRangedGroupGS100">
 			<entity name="npcBakerAK47" prob="0.5" />
@@ -2776,6 +2702,7 @@
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverRangedGroupGS200">
 			<entity name="npcBakerAK47" prob="0.5" />
@@ -2812,6 +2739,7 @@
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverRangedGroupGS400">
 			<entity name="npcBakerAK47" prob="0.4" />
@@ -2848,6 +2776,7 @@
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.4" />
 			<entity name="npcNurseXBow" prob="0.3" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverRangedGroupGS800">
 			<entity name="npcBakerAK47" prob="0.4" />
@@ -2878,6 +2807,7 @@
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.4" />
 			<entity name="npcNurseXBow" prob="0.2" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverBossGroupGS01">
 			<entity name="npcBakerAK47" prob="0.9" />
@@ -2898,6 +2828,7 @@
 			<entity name="npcNurseSMG" prob="0.8" />
 			<entity name="npcNurseSRifle" prob="0.7" />
 			<entity name="npcNurseTRifle" prob="0.9" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverBossGroupGS50">
 			<entity name="npcBakerAK47" prob="0.7" />
@@ -2920,6 +2851,7 @@
 			<entity name="npcNurseSMG" prob="0.7" />
 			<entity name="npcNurseSRifle" prob="0.6" />
 			<entity name="npcNurseTRifle" prob="0.7" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverBossGroupGS100">
 			<entity name="npcBakerAK47" prob="0.6" />
@@ -2942,6 +2874,7 @@
 			<entity name="npcNurseSMG" prob="0.6" />
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverBossGroupGS200">
 			<entity name="npcBakerAK47" prob="0.4" />
@@ -2964,6 +2897,7 @@
 			<entity name="npcNurseSMG" prob="0.4" />
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverBossGroupGS400">
 			<entity name="npcBakerAK47" prob="0.3" />
@@ -2986,6 +2920,7 @@
 			<entity name="npcNurseSMG" prob="0.3" />
 			<entity name="npcNurseSRifle" prob="0.4" />
 			<entity name="npcNurseTRifle" prob="0.3" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcWhiteriverBossGroupGS800">
 			<entity name="npcBakerAK47" prob="0.1" />
@@ -3004,6 +2939,7 @@
 			<entity name="npcNurseSMG" prob="0.2" />
 			<entity name="npcNurseSRifle" prob="0.3" />
 			<entity name="npcNurseTRifle" prob="0.1" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 
 		<!-- Enemy NPC entity groups -->
@@ -3031,6 +2967,7 @@
 			<entity name="npcHarleySRifle" prob="0.4" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyAllGroupGS50">
 			<entity name="npcHarleyAK47" prob="0.5" />
@@ -3057,6 +2994,7 @@
 			<entity name="npcHarleySRifle" prob="0.4" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyAllGroupGS100">
 			<entity name="npcHarleyAK47" prob="0.5" />
@@ -3083,6 +3021,7 @@
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyAllGroupGS200">
 			<entity name="npcHarleyAK47" prob="0.5" />
@@ -3109,6 +3048,7 @@
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyAllGroupGS400">
 			<entity name="npcHarleyAK47" prob="0.5" />
@@ -3135,6 +3075,7 @@
 			<entity name="npcHarleySRifle" prob="0.6" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyAllGroupGS800">
 			<entity name="npcHarleyAK47" prob="0.5" />
@@ -3154,12 +3095,14 @@
 			<entity name="npcHarleySRifle" prob="0.6" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyMeleeGroupGS01">
 			<entity name="npcHarleyClub" prob="0.8" />
 			<entity name="npcHarleyEmptyHand" prob="1" />
 			<entity name="npcHarleyKnife" prob="0.4" />
 			<entity name="npcHarleySpear" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyMeleeGroupGS50">
 			<entity name="npcHarleyAxe" prob="0.2" />
@@ -3169,6 +3112,7 @@
 			<entity name="npcHarleyKnife" prob="0.4" />
 			<entity name="npcHarleyMachete" prob="0.2" />
 			<entity name="npcHarleySpear" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyMeleeGroupGS100">
 			<entity name="npcHarleyAxe" prob="0.4" />
@@ -3178,6 +3122,7 @@
 			<entity name="npcHarleyKnife" prob="0.5" />
 			<entity name="npcHarleyMachete" prob="0.4" />
 			<entity name="npcHarleySpear" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyMeleeGroupGS200">
 			<entity name="npcHarleyAxe" prob="0.6" />
@@ -3187,6 +3132,7 @@
 			<entity name="npcHarleyKnife" prob="0.5" />
 			<entity name="npcHarleyMachete" prob="0.6" />
 			<entity name="npcHarleySpear" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyMeleeGroupGS400">
 			<entity name="npcHarleyAxe" prob="0.8" />
@@ -3196,6 +3142,7 @@
 			<entity name="npcHarleyKnife" prob="0.6" />
 			<entity name="npcHarleyMachete" prob="0.8" />
 			<entity name="npcHarleySpear" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyMeleeGroupGS800">
 			<entity name="npcHarleyAxe" prob="1" />
@@ -3204,6 +3151,7 @@
 			<entity name="npcHarleyKnife" prob="0.6" />
 			<entity name="npcHarleyMachete" prob="1" />
 			<entity name="npcHarleySpear" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyRangedGroupGS01">
 			<entity name="npcHarleyAK47" prob="0.6" />
@@ -3222,6 +3170,7 @@
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.6" />
 			<entity name="npcHarleyXBow" prob="0.8" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyRangedGroupGS50">
 			<entity name="npcHarleyAK47" prob="0.6" />
@@ -3241,6 +3190,7 @@
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.6" />
 			<entity name="npcHarleyXBow" prob="0.7" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyRangedGroupGS100">
 			<entity name="npcHarleyAK47" prob="0.5" />
@@ -3260,6 +3210,7 @@
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyRangedGroupGS200">
 			<entity name="npcHarleyAK47" prob="0.5" />
@@ -3279,6 +3230,7 @@
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyRangedGroupGS400">
 			<entity name="npcHarleyAK47" prob="0.4" />
@@ -3298,6 +3250,7 @@
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.4" />
 			<entity name="npcHarleyXBow" prob="0.3" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyRangedGroupGS800">
 			<entity name="npcHarleyAK47" prob="0.4" />
@@ -3314,6 +3267,7 @@
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.4" />
 			<entity name="npcHarleyXBow" prob="0.2" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyBossGroupGS01">
 			<entity name="npcHarleyAK47" prob="0.9" />
@@ -3325,6 +3279,7 @@
 			<entity name="npcHarleySMG" prob="0.8" />
 			<entity name="npcHarleySRifle" prob="0.7" />
 			<entity name="npcHarleyTRifle" prob="0.9" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyBossGroupGS50">
 			<entity name="npcHarleyAK47" prob="0.7" />
@@ -3337,6 +3292,7 @@
 			<entity name="npcHarleySMG" prob="0.7" />
 			<entity name="npcHarleySRifle" prob="0.6" />
 			<entity name="npcHarleyTRifle" prob="0.7" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyBossGroupGS100">
 			<entity name="npcHarleyAK47" prob="0.6" />
@@ -3349,6 +3305,7 @@
 			<entity name="npcHarleySMG" prob="0.6" />
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyBossGroupGS200">
 			<entity name="npcHarleyAK47" prob="0.4" />
@@ -3361,6 +3318,7 @@
 			<entity name="npcHarleySMG" prob="0.4" />
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyBossGroupGS400">
 			<entity name="npcHarleyAK47" prob="0.3" />
@@ -3373,6 +3331,7 @@
 			<entity name="npcHarleySMG" prob="0.3" />
 			<entity name="npcHarleySRifle" prob="0.4" />
 			<entity name="npcHarleyTRifle" prob="0.3" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyBossGroupGS800">
 			<entity name="npcHarleyAK47" prob="0.1" />
@@ -3383,6 +3342,7 @@
 			<entity name="npcHarleySMG" prob="0.2" />
 			<entity name="npcHarleySRifle" prob="0.3" />
 			<entity name="npcHarleyTRifle" prob="0.1" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 
 		<!-- Friendly NPC entity groups -->
@@ -3433,6 +3393,7 @@
 			<entity name="npcNurseSRifle" prob="0.4" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAllGroupGS50">
 			<entity name="npcBakerAK47" prob="0.5" />
@@ -3483,6 +3444,7 @@
 			<entity name="npcNurseSRifle" prob="0.4" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAllGroupGS100">
 			<entity name="npcBakerAK47" prob="0.5" />
@@ -3533,6 +3495,7 @@
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAllGroupGS200">
 			<entity name="npcBakerAK47" prob="0.5" />
@@ -3583,6 +3546,7 @@
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAllGroupGS400">
 			<entity name="npcBakerAK47" prob="0.5" />
@@ -3633,6 +3597,7 @@
 			<entity name="npcNurseSRifle" prob="0.6" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAllGroupGS800">
 			<entity name="npcBakerAK47" prob="0.5" />
@@ -3669,6 +3634,7 @@
 			<entity name="npcNurseSRifle" prob="0.6" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyMeleeGroupGS01">
 			<entity name="npcBakerClub" prob="0.8" />
@@ -3679,6 +3645,7 @@
 			<entity name="npcNurseEmptyHand" prob="1" />
 			<entity name="npcNurseKnife" prob="0.4" />
 			<entity name="npcNurseSpear" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyMeleeGroupGS50">
 			<entity name="npcBakerAxe" prob="0.2" />
@@ -3695,6 +3662,7 @@
 			<entity name="npcNurseKnife" prob="0.4" />
 			<entity name="npcNurseMachete" prob="0.2" />
 			<entity name="npcNurseSpear" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyMeleeGroupGS100">
 			<entity name="npcBakerAxe" prob="0.4" />
@@ -3711,6 +3679,7 @@
 			<entity name="npcNurseKnife" prob="0.5" />
 			<entity name="npcNurseMachete" prob="0.4" />
 			<entity name="npcNurseSpear" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyMeleeGroupGS200">
 			<entity name="npcBakerAxe" prob="0.6" />
@@ -3727,6 +3696,7 @@
 			<entity name="npcNurseKnife" prob="0.5" />
 			<entity name="npcNurseMachete" prob="0.6" />
 			<entity name="npcNurseSpear" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyMeleeGroupGS400">
 			<entity name="npcBakerAxe" prob="0.8" />
@@ -3743,6 +3713,7 @@
 			<entity name="npcNurseKnife" prob="0.6" />
 			<entity name="npcNurseMachete" prob="0.8" />
 			<entity name="npcNurseSpear" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyMeleeGroupGS800">
 			<entity name="npcBakerAxe" prob="1" />
@@ -3757,6 +3728,7 @@
 			<entity name="npcNurseKnife" prob="0.6" />
 			<entity name="npcNurseMachete" prob="1" />
 			<entity name="npcNurseSpear" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyRangedGroupGS01">
 			<entity name="npcBakerAK47" prob="0.6" />
@@ -3791,6 +3763,7 @@
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.6" />
 			<entity name="npcNurseXBow" prob="0.8" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyRangedGroupGS50">
 			<entity name="npcBakerAK47" prob="0.6" />
@@ -3827,6 +3800,7 @@
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.6" />
 			<entity name="npcNurseXBow" prob="0.7" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyRangedGroupGS100">
 			<entity name="npcBakerAK47" prob="0.5" />
@@ -3863,6 +3837,7 @@
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyRangedGroupGS200">
 			<entity name="npcBakerAK47" prob="0.5" />
@@ -3899,6 +3874,7 @@
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyRangedGroupGS400">
 			<entity name="npcBakerAK47" prob="0.4" />
@@ -3935,6 +3911,7 @@
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.4" />
 			<entity name="npcNurseXBow" prob="0.3" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyRangedGroupGS800">
 			<entity name="npcBakerAK47" prob="0.4" />
@@ -3965,6 +3942,7 @@
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.4" />
 			<entity name="npcNurseXBow" prob="0.2" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyBossGroupGS01">
 			<entity name="npcBakerAK47" prob="0.9" />
@@ -3985,6 +3963,7 @@
 			<entity name="npcNurseSMG" prob="0.8" />
 			<entity name="npcNurseSRifle" prob="0.7" />
 			<entity name="npcNurseTRifle" prob="0.9" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyBossGroupGS50">
 			<entity name="npcBakerAK47" prob="0.7" />
@@ -4007,6 +3986,7 @@
 			<entity name="npcNurseSMG" prob="0.7" />
 			<entity name="npcNurseSRifle" prob="0.6" />
 			<entity name="npcNurseTRifle" prob="0.7" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyBossGroupGS100">
 			<entity name="npcBakerAK47" prob="0.6" />
@@ -4029,6 +4009,7 @@
 			<entity name="npcNurseSMG" prob="0.6" />
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyBossGroupGS200">
 			<entity name="npcBakerAK47" prob="0.4" />
@@ -4051,6 +4032,7 @@
 			<entity name="npcNurseSMG" prob="0.4" />
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyBossGroupGS400">
 			<entity name="npcBakerAK47" prob="0.3" />
@@ -4073,6 +4055,7 @@
 			<entity name="npcNurseSMG" prob="0.3" />
 			<entity name="npcNurseSRifle" prob="0.4" />
 			<entity name="npcNurseTRifle" prob="0.3" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyBossGroupGS800">
 			<entity name="npcBakerAK47" prob="0.1" />
@@ -4091,6 +4074,7 @@
 			<entity name="npcNurseSMG" prob="0.2" />
 			<entity name="npcNurseSRifle" prob="0.3" />
 			<entity name="npcNurseTRifle" prob="0.1" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 
 		<!-- Mech NPC entity groups -->
@@ -4118,6 +4102,7 @@
 			<entity name="npcHarleySRifle" prob="0.004" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechAllGroupGS50">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -4144,6 +4129,7 @@
 			<entity name="npcHarleySRifle" prob="0.004" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechAllGroupGS100">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -4170,6 +4156,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechAllGroupGS200">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -4196,6 +4183,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechAllGroupGS400">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -4222,6 +4210,7 @@
 			<entity name="npcHarleySRifle" prob="0.006" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechAllGroupGS800">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -4241,12 +4230,14 @@
 			<entity name="npcHarleySRifle" prob="0.006" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechMeleeGroupGS01">
 			<entity name="npcHarleyClub" prob="0.008" />
 			<entity name="npcHarleyEmptyHand" prob="0.01" />
 			<entity name="npcHarleyKnife" prob="0.004" />
 			<entity name="npcHarleySpear" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechMeleeGroupGS50">
 			<entity name="npcHarleyAxe" prob="0.002" />
@@ -4256,6 +4247,7 @@
 			<entity name="npcHarleyKnife" prob="0.004" />
 			<entity name="npcHarleyMachete" prob="0.002" />
 			<entity name="npcHarleySpear" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechMeleeGroupGS100">
 			<entity name="npcHarleyAxe" prob="0.004" />
@@ -4265,6 +4257,7 @@
 			<entity name="npcHarleyKnife" prob="0.005" />
 			<entity name="npcHarleyMachete" prob="0.004" />
 			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechMeleeGroupGS200">
 			<entity name="npcHarleyAxe" prob="0.006" />
@@ -4274,6 +4267,7 @@
 			<entity name="npcHarleyKnife" prob="0.005" />
 			<entity name="npcHarleyMachete" prob="0.006" />
 			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechMeleeGroupGS400">
 			<entity name="npcHarleyAxe" prob="0.008" />
@@ -4283,6 +4277,7 @@
 			<entity name="npcHarleyKnife" prob="0.006" />
 			<entity name="npcHarleyMachete" prob="0.008" />
 			<entity name="npcHarleySpear" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechMeleeGroupGS800">
 			<entity name="npcHarleyAxe" prob="0.01" />
@@ -4291,6 +4286,7 @@
 			<entity name="npcHarleyKnife" prob="0.006" />
 			<entity name="npcHarleyMachete" prob="0.01" />
 			<entity name="npcHarleySpear" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechRangedGroupGS01">
 			<entity name="npcHarleyAK47" prob="0.006" />
@@ -4309,6 +4305,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.006" />
 			<entity name="npcHarleyXBow" prob="0.008" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechRangedGroupGS50">
 			<entity name="npcHarleyAK47" prob="0.006" />
@@ -4328,6 +4325,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.006" />
 			<entity name="npcHarleyXBow" prob="0.007" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechRangedGroupGS100">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -4347,6 +4345,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechRangedGroupGS200">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -4366,6 +4365,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechRangedGroupGS400">
 			<entity name="npcHarleyAK47" prob="0.004" />
@@ -4385,6 +4385,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.004" />
 			<entity name="npcHarleyXBow" prob="0.003" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechRangedGroupGS800">
 			<entity name="npcHarleyAK47" prob="0.004" />
@@ -4401,6 +4402,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.004" />
 			<entity name="npcHarleyXBow" prob="0.002" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechBossGroupGS01">
 			<entity name="npcHarleyAK47" prob="0.009" />
@@ -4412,6 +4414,7 @@
 			<entity name="npcHarleySMG" prob="0.008" />
 			<entity name="npcHarleySRifle" prob="0.007" />
 			<entity name="npcHarleyTRifle" prob="0.009" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechBossGroupGS50">
 			<entity name="npcHarleyAK47" prob="0.007" />
@@ -4424,6 +4427,7 @@
 			<entity name="npcHarleySMG" prob="0.007" />
 			<entity name="npcHarleySRifle" prob="0.006" />
 			<entity name="npcHarleyTRifle" prob="0.007" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechBossGroupGS100">
 			<entity name="npcHarleyAK47" prob="0.006" />
@@ -4436,6 +4440,7 @@
 			<entity name="npcHarleySMG" prob="0.006" />
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechBossGroupGS200">
 			<entity name="npcHarleyAK47" prob="0.004" />
@@ -4448,6 +4453,7 @@
 			<entity name="npcHarleySMG" prob="0.004" />
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechBossGroupGS400">
 			<entity name="npcHarleyAK47" prob="0.003" />
@@ -4460,6 +4466,7 @@
 			<entity name="npcHarleySMG" prob="0.003" />
 			<entity name="npcHarleySRifle" prob="0.004" />
 			<entity name="npcHarleyTRifle" prob="0.003" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcMechBossGroupGS800">
 			<entity name="npcHarleyAK47" prob="0.001" />
@@ -4470,6 +4477,7 @@
 			<entity name="npcHarleySMG" prob="0.002" />
 			<entity name="npcHarleySRifle" prob="0.003" />
 			<entity name="npcHarleyTRifle" prob="0.001" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 
 		<!-- Fantasy NPC entity groups -->
@@ -4497,6 +4505,7 @@
 			<entity name="npcHarleySRifle" prob="0.004" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyAllGroupGS50">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -4523,6 +4532,7 @@
 			<entity name="npcHarleySRifle" prob="0.004" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyAllGroupGS100">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -4549,6 +4559,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyAllGroupGS200">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -4575,6 +4586,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyAllGroupGS400">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -4601,6 +4613,7 @@
 			<entity name="npcHarleySRifle" prob="0.006" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyAllGroupGS800">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -4620,12 +4633,14 @@
 			<entity name="npcHarleySRifle" prob="0.006" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyMeleeGroupGS01">
 			<entity name="npcHarleyClub" prob="0.008" />
 			<entity name="npcHarleyEmptyHand" prob="0.01" />
 			<entity name="npcHarleyKnife" prob="0.004" />
 			<entity name="npcHarleySpear" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyMeleeGroupGS50">
 			<entity name="npcHarleyAxe" prob="0.002" />
@@ -4635,6 +4650,7 @@
 			<entity name="npcHarleyKnife" prob="0.004" />
 			<entity name="npcHarleyMachete" prob="0.002" />
 			<entity name="npcHarleySpear" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyMeleeGroupGS100">
 			<entity name="npcHarleyAxe" prob="0.004" />
@@ -4644,6 +4660,7 @@
 			<entity name="npcHarleyKnife" prob="0.005" />
 			<entity name="npcHarleyMachete" prob="0.004" />
 			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyMeleeGroupGS200">
 			<entity name="npcHarleyAxe" prob="0.006" />
@@ -4653,6 +4670,7 @@
 			<entity name="npcHarleyKnife" prob="0.005" />
 			<entity name="npcHarleyMachete" prob="0.006" />
 			<entity name="npcHarleySpear" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyMeleeGroupGS400">
 			<entity name="npcHarleyAxe" prob="0.008" />
@@ -4662,6 +4680,7 @@
 			<entity name="npcHarleyKnife" prob="0.006" />
 			<entity name="npcHarleyMachete" prob="0.008" />
 			<entity name="npcHarleySpear" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyMeleeGroupGS800">
 			<entity name="npcHarleyAxe" prob="0.01" />
@@ -4670,6 +4689,7 @@
 			<entity name="npcHarleyKnife" prob="0.006" />
 			<entity name="npcHarleyMachete" prob="0.01" />
 			<entity name="npcHarleySpear" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyRangedGroupGS01">
 			<entity name="npcHarleyAK47" prob="0.006" />
@@ -4688,6 +4708,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.006" />
 			<entity name="npcHarleyXBow" prob="0.008" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyRangedGroupGS50">
 			<entity name="npcHarleyAK47" prob="0.006" />
@@ -4707,6 +4728,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.006" />
 			<entity name="npcHarleyXBow" prob="0.007" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyRangedGroupGS100">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -4726,6 +4748,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyRangedGroupGS200">
 			<entity name="npcHarleyAK47" prob="0.005" />
@@ -4745,6 +4768,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.005" />
 			<entity name="npcHarleyXBow" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyRangedGroupGS400">
 			<entity name="npcHarleyAK47" prob="0.004" />
@@ -4764,6 +4788,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.004" />
 			<entity name="npcHarleyXBow" prob="0.003" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyRangedGroupGS800">
 			<entity name="npcHarleyAK47" prob="0.004" />
@@ -4780,6 +4805,7 @@
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.004" />
 			<entity name="npcHarleyXBow" prob="0.002" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyBossGroupGS01">
 			<entity name="npcHarleyAK47" prob="0.009" />
@@ -4791,6 +4817,7 @@
 			<entity name="npcHarleySMG" prob="0.008" />
 			<entity name="npcHarleySRifle" prob="0.007" />
 			<entity name="npcHarleyTRifle" prob="0.009" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyBossGroupGS50">
 			<entity name="npcHarleyAK47" prob="0.007" />
@@ -4803,6 +4830,7 @@
 			<entity name="npcHarleySMG" prob="0.007" />
 			<entity name="npcHarleySRifle" prob="0.006" />
 			<entity name="npcHarleyTRifle" prob="0.007" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyBossGroupGS100">
 			<entity name="npcHarleyAK47" prob="0.006" />
@@ -4815,6 +4843,7 @@
 			<entity name="npcHarleySMG" prob="0.006" />
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyBossGroupGS200">
 			<entity name="npcHarleyAK47" prob="0.004" />
@@ -4827,6 +4856,7 @@
 			<entity name="npcHarleySMG" prob="0.004" />
 			<entity name="npcHarleySRifle" prob="0.005" />
 			<entity name="npcHarleyTRifle" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyBossGroupGS400">
 			<entity name="npcHarleyAK47" prob="0.003" />
@@ -4839,6 +4869,7 @@
 			<entity name="npcHarleySMG" prob="0.003" />
 			<entity name="npcHarleySRifle" prob="0.004" />
 			<entity name="npcHarleyTRifle" prob="0.003" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFantasyBossGroupGS800">
 			<entity name="npcHarleyAK47" prob="0.001" />
@@ -4849,6 +4880,7 @@
 			<entity name="npcHarleySMG" prob="0.002" />
 			<entity name="npcHarleySRifle" prob="0.003" />
 			<entity name="npcHarleyTRifle" prob="0.001" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 
 		<!-- Enemy animal entity groups -->
@@ -4859,6 +4891,7 @@
 			<entity name="animalMountainLion" prob="0.5" />
 			<entity name="animalSnake" prob="1" />
 			<entity name="animalWolf" prob="0.9" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyAnimalsAllGroupGS50">
 			<entity name="animalBear" prob="0.2" />
@@ -4867,6 +4900,7 @@
 			<entity name="animalMountainLion" prob="0.5" />
 			<entity name="animalSnake" prob="0.8" />
 			<entity name="animalWolf" prob="0.7" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyAnimalsAllGroupGS100">
 			<entity name="animalBear" prob="0.4" />
@@ -4875,6 +4909,7 @@
 			<entity name="animalMountainLion" prob="0.5" />
 			<entity name="animalSnake" prob="0.6" />
 			<entity name="animalWolf" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyAnimalsAllGroupGS200">
 			<entity name="animalBear" prob="0.6" />
@@ -4883,6 +4918,7 @@
 			<entity name="animalMountainLion" prob="0.5" />
 			<entity name="animalSnake" prob="0.4" />
 			<entity name="animalWolf" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyAnimalsAllGroupGS400">
 			<entity name="animalBear" prob="0.8" />
@@ -4891,6 +4927,7 @@
 			<entity name="animalMountainLion" prob="0.5" />
 			<entity name="animalSnake" prob="0.2" />
 			<entity name="animalWolf" prob="0.3" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyAnimalsAllGroupGS800">
 			<entity name="animalBear" prob="1" />
@@ -4899,42 +4936,49 @@
 			<entity name="animalMountainLion" prob="0.5" />
 			<entity name="animalSnake" prob="0.1" />
 			<entity name="animalWolf" prob="0.1" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyAnimalsBossGroupGS01">
 			<entity name="animalBear" prob="0.3" />
 			<entity name="animalBossGrace" prob="0.1" />
 			<entity name="animalDireWolf" prob="1" />
 			<entity name="animalMountainLion" prob="1" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyAnimalsBossGroupGS50">
 			<entity name="animalBear" prob="0.4" />
 			<entity name="animalBossGrace" prob="0.2" />
 			<entity name="animalDireWolf" prob="0.8" />
 			<entity name="animalMountainLion" prob="0.8" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyAnimalsBossGroupGS100">
 			<entity name="animalBear" prob="0.5" />
 			<entity name="animalBossGrace" prob="0.4" />
 			<entity name="animalDireWolf" prob="0.6" />
 			<entity name="animalMountainLion" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyAnimalsBossGroupGS200">
 			<entity name="animalBear" prob="0.5" />
 			<entity name="animalBossGrace" prob="0.6" />
 			<entity name="animalDireWolf" prob="0.4" />
 			<entity name="animalMountainLion" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyAnimalsBossGroupGS400">
 			<entity name="animalBear" prob="0.6" />
 			<entity name="animalBossGrace" prob="0.8" />
 			<entity name="animalDireWolf" prob="0.2" />
 			<entity name="animalMountainLion" prob="0.2" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcEnemyAnimalsBossGroupGS800">
 			<entity name="animalBear" prob="0.7" />
 			<entity name="animalBossGrace" prob="1" />
 			<entity name="animalDireWolf" prob="0.1" />
 			<entity name="animalMountainLion" prob="0.1" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 
 		<!-- Friendly animal entity groups -->
@@ -4945,6 +4989,7 @@
 			<entity name="animalRabbit" prob="1" />
 			<entity name="animalStag" prob="0.7" />
 			<entity name="npcAnimalFox" prob="0.7" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAnimalsAllGroupGS50">
 			<entity name="animalBoar" prob="0.2" />
@@ -4953,6 +4998,7 @@
 			<entity name="animalRabbit" prob="0.8" />
 			<entity name="animalStag" prob="0.6" />
 			<entity name="npcAnimalFox" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAnimalsAllGroupGS100">
 			<entity name="animalBoar" prob="0.4" />
@@ -4961,6 +5007,7 @@
 			<entity name="animalRabbit" prob="0.6" />
 			<entity name="animalStag" prob="0.5" />
 			<entity name="npcAnimalFox" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAnimalsAllGroupGS200">
 			<entity name="animalBoar" prob="0.6" />
@@ -4969,6 +5016,7 @@
 			<entity name="animalRabbit" prob="0.4" />
 			<entity name="animalStag" prob="0.5" />
 			<entity name="npcAnimalFox" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAnimalsAllGroupGS400">
 			<entity name="animalBoar" prob="0.8" />
@@ -4977,6 +5025,7 @@
 			<entity name="animalRabbit" prob="0.2" />
 			<entity name="animalStag" prob="0.4" />
 			<entity name="npcAnimalFox" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAnimalsAllGroupGS800">
 			<entity name="animalBoar" prob="1" />
@@ -4985,60 +5034,73 @@
 			<entity name="animalRabbit" prob="0.1" />
 			<entity name="animalStag" prob="0.3" />
 			<entity name="npcAnimalFox" prob="0.3" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAnimalsDomesticGroupGS01">
 			<entity name="animalRabbit" prob="1" />
 			<entity name="npcAnimalFox" prob="0.1" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAnimalsDomesticGroupGS50">
 			<entity name="animalRabbit" prob="0.8" />
 			<entity name="npcAnimalFox" prob="0.2" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAnimalsDomesticGroupGS100">
 			<entity name="animalRabbit" prob="0.6" />
 			<entity name="npcAnimalFox" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAnimalsDomesticGroupGS200">
 			<entity name="animalRabbit" prob="0.4" />
 			<entity name="npcAnimalFox" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAnimalsDomesticGroupGS400">
 			<entity name="animalRabbit" prob="0.2" />
 			<entity name="npcAnimalFox" prob="0.8" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAnimalsDomesticGroupGS800">
 			<entity name="animalRabbit" prob="0.1" />
 			<entity name="npcAnimalFox" prob="1" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAnimalsFarmGroupGS01">
 			<entity name="animalBoar" prob="0.1" />
 			<entity name="animalChicken" prob="1" />
 			<entity name="animalRabbit" prob="1" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAnimalsFarmGroupGS50">
 			<entity name="animalBoar" prob="0.2" />
 			<entity name="animalChicken" prob="0.8" />
 			<entity name="animalRabbit" prob="0.8" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAnimalsFarmGroupGS100">
 			<entity name="animalBoar" prob="0.4" />
 			<entity name="animalChicken" prob="0.6" />
 			<entity name="animalRabbit" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAnimalsFarmGroupGS200">
 			<entity name="animalBoar" prob="0.6" />
 			<entity name="animalChicken" prob="0.4" />
 			<entity name="animalRabbit" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAnimalsFarmGroupGS400">
 			<entity name="animalBoar" prob="0.8" />
 			<entity name="animalChicken" prob="0.2" />
 			<entity name="animalRabbit" prob="0.2" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFriendlyAnimalsFarmGroupGS800">
 			<entity name="animalBoar" prob="1" />
 			<entity name="animalChicken" prob="0.1" />
 			<entity name="animalRabbit" prob="0.1" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 
 		<!-- Arachnids entity groups -->
@@ -5049,6 +5111,7 @@
 			<entity name="animalMountainLion" prob="0.005" />
 			<entity name="animalSnake" prob="0.01" />
 			<entity name="animalWolf" prob="0.009" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcArachnidsAllGroupGS50">
 			<entity name="animalBear" prob="0.002" />
@@ -5057,6 +5120,7 @@
 			<entity name="animalMountainLion" prob="0.005" />
 			<entity name="animalSnake" prob="0.008" />
 			<entity name="animalWolf" prob="0.007" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcArachnidsAllGroupGS100">
 			<entity name="animalBear" prob="0.004" />
@@ -5065,6 +5129,7 @@
 			<entity name="animalMountainLion" prob="0.005" />
 			<entity name="animalSnake" prob="0.006" />
 			<entity name="animalWolf" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcArachnidsAllGroupGS200">
 			<entity name="animalBear" prob="0.006" />
@@ -5073,6 +5138,7 @@
 			<entity name="animalMountainLion" prob="0.005" />
 			<entity name="animalSnake" prob="0.004" />
 			<entity name="animalWolf" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcArachnidsAllGroupGS400">
 			<entity name="animalBear" prob="0.008" />
@@ -5081,6 +5147,7 @@
 			<entity name="animalMountainLion" prob="0.005" />
 			<entity name="animalSnake" prob="0.002" />
 			<entity name="animalWolf" prob="0.003" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcArachnidsAllGroupGS800">
 			<entity name="animalBear" prob="0.01" />
@@ -5089,92 +5156,111 @@
 			<entity name="animalMountainLion" prob="0.005" />
 			<entity name="animalSnake" prob="0.001" />
 			<entity name="animalWolf" prob="0.001" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcArachnidsBossGroupGS01">
 			<entity name="animalBear" prob="0.003" />
 			<entity name="animalBossGrace" prob="0.001" />
 			<entity name="animalDireWolf" prob="0.01" />
 			<entity name="animalMountainLion" prob="0.01" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcArachnidsBossGroupGS50">
 			<entity name="animalBear" prob="0.004" />
 			<entity name="animalBossGrace" prob="0.002" />
 			<entity name="animalDireWolf" prob="0.008" />
 			<entity name="animalMountainLion" prob="0.008" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcArachnidsBossGroupGS100">
 			<entity name="animalBear" prob="0.005" />
 			<entity name="animalBossGrace" prob="0.004" />
 			<entity name="animalDireWolf" prob="0.006" />
 			<entity name="animalMountainLion" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcArachnidsBossGroupGS200">
 			<entity name="animalBear" prob="0.005" />
 			<entity name="animalBossGrace" prob="0.006" />
 			<entity name="animalDireWolf" prob="0.004" />
 			<entity name="animalMountainLion" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcArachnidsBossGroupGS400">
 			<entity name="animalBear" prob="0.006" />
 			<entity name="animalBossGrace" prob="0.008" />
 			<entity name="animalDireWolf" prob="0.002" />
 			<entity name="animalMountainLion" prob="0.002" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcArachnidsBossGroupGS800">
 			<entity name="animalBear" prob="0.007" />
 			<entity name="animalBossGrace" prob="0.01" />
 			<entity name="animalDireWolf" prob="0.001" />
 			<entity name="animalMountainLion" prob="0.001" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 
 		<!-- Flyer entity groups -->
 		<entitygroup name="npcFlyersAllGroupGS01">
 			<entity name="animalZombieVultureRadiated" prob="0.001" />
 			<entity name="animalZombieVulture" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFlyersAllGroupGS50">
 			<entity name="animalZombieVultureRadiated" prob="0.002" />
 			<entity name="animalZombieVulture" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFlyersAllGroupGS100">
 			<entity name="animalZombieVultureRadiated" prob="0.004" />
 			<entity name="animalZombieVulture" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFlyersAllGroupGS200">
 			<entity name="animalZombieVultureRadiated" prob="0.006" />
 			<entity name="animalZombieVulture" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFlyersAllGroupGS400">
 			<entity name="animalZombieVultureRadiated" prob="0.008" />
 			<entity name="animalZombieVulture" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFlyersAllGroupGS800">
 			<entity name="animalZombieVultureRadiated" prob="0.01" />
 			<entity name="animalZombieVulture" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFlyersBossGroupGS01">
 			<entity name="animalZombieVultureRadiated" prob="0.003" />
 			<entity name="animalZombieVulture" prob="0.01" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFlyersBossGroupGS50">
 			<entity name="animalZombieVultureRadiated" prob="0.004" />
 			<entity name="animalZombieVulture" prob="0.008" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFlyersBossGroupGS100">
 			<entity name="animalZombieVultureRadiated" prob="0.005" />
 			<entity name="animalZombieVulture" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFlyersBossGroupGS200">
 			<entity name="animalZombieVultureRadiated" prob="0.005" />
 			<entity name="animalZombieVulture" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFlyersBossGroupGS400">
 			<entity name="animalZombieVultureRadiated" prob="0.006" />
 			<entity name="animalZombieVulture" prob="0.002" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcFlyersBossGroupGS800">
 			<entity name="animalZombieVultureRadiated" prob="0.007" />
 			<entity name="animalZombieVulture" prob="0.001" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 
 		<!-- Deco entity groups -->
@@ -5202,6 +5288,7 @@
 			<entity name="npcHarleySRifle" prob="0.4" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDecoTrapGroupGS50">
 			<entity name="npcHarleyAK47" prob="0.5" />
@@ -5228,6 +5315,7 @@
 			<entity name="npcHarleySRifle" prob="0.4" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDecoTrapGroupGS100">
 			<entity name="npcHarleyAK47" prob="0.5" />
@@ -5254,6 +5342,7 @@
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDecoTrapGroupGS200">
 			<entity name="npcHarleyAK47" prob="0.5" />
@@ -5280,6 +5369,7 @@
 			<entity name="npcHarleySRifle" prob="0.5" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDecoTrapGroupGS400">
 			<entity name="npcHarleyAK47" prob="0.5" />
@@ -5306,6 +5396,7 @@
 			<entity name="npcHarleySRifle" prob="0.6" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDecoTrapGroupGS800">
 			<entity name="npcHarleyAK47" prob="0.5" />
@@ -5325,6 +5416,7 @@
 			<entity name="npcHarleySRifle" prob="0.6" />
 			<entity name="npcHarleyTRifle" prob="0.5" />
 			<entity name="npcHarleyXBow" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDecoRescueGroupGS01">
 			<entity name="npcBakerAK47" prob="0.5" />
@@ -5373,6 +5465,7 @@
 			<entity name="npcNurseSRifle" prob="0.4" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDecoRescueGroupGS50">
 			<entity name="npcBakerAK47" prob="0.5" />
@@ -5423,6 +5516,7 @@
 			<entity name="npcNurseSRifle" prob="0.4" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.6" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDecoRescueGroupGS100">
 			<entity name="npcBakerAK47" prob="0.5" />
@@ -5473,6 +5567,7 @@
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDecoRescueGroupGS200">
 			<entity name="npcBakerAK47" prob="0.5" />
@@ -5523,6 +5618,7 @@
 			<entity name="npcNurseSRifle" prob="0.5" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.5" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDecoRescueGroupGS400">
 			<entity name="npcBakerAK47" prob="0.5" />
@@ -5573,6 +5669,7 @@
 			<entity name="npcNurseSRifle" prob="0.6" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDecoRescueGroupGS800">
 			<entity name="npcBakerAK47" prob="0.5" />
@@ -5609,6 +5706,7 @@
 			<entity name="npcNurseSRifle" prob="0.6" />
 			<entity name="npcNurseTRifle" prob="0.5" />
 			<entity name="npcNurseXBow" prob="0.4" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDecoTraderGroupGS01">
 			<entity name="npcNurseAK47" prob="0.005" />
@@ -5634,6 +5732,7 @@
 			<entity name="npcNurseSRifle" prob="0.004" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDecoTraderGroupGS50">
 			<entity name="npcNurseAK47" prob="0.005" />
@@ -5660,6 +5759,7 @@
 			<entity name="npcNurseSRifle" prob="0.004" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.006" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDecoTraderGroupGS100">
 			<entity name="npcNurseAK47" prob="0.005" />
@@ -5686,6 +5786,7 @@
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDecoTraderGroupGS200">
 			<entity name="npcNurseAK47" prob="0.005" />
@@ -5712,6 +5813,7 @@
 			<entity name="npcNurseSRifle" prob="0.005" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.005" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDecoTraderGroupGS400">
 			<entity name="npcNurseAK47" prob="0.005" />
@@ -5738,6 +5840,7 @@
 			<entity name="npcNurseSRifle" prob="0.006" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
 		<entitygroup name="npcDecoTraderGroupGS800">
 			<entity name="npcNurseAK47" prob="0.005" />
@@ -5757,6 +5860,7 @@
 			<entity name="npcNurseSRifle" prob="0.006" />
 			<entity name="npcNurseTRifle" prob="0.005" />
 			<entity name="npcNurseXBow" prob="0.004" />
+			<entity name="none" prob="0.001"/>
 		</entitygroup>
-    </insertAfter>
+	</insertAfter>
 </configs>

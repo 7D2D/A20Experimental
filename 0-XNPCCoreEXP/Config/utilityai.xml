@@ -890,9 +890,10 @@
 					<consideration class="FailOnDistanceToLeader, Score" max_distance="30" />
 					<consideration class="TargetVisible" />
 					<consideration class="InWeaponRange, SCore" action_index="1" />
-					<consideration class="SelfNotHasBuff, SCore" buffs="buffBurstDelay,IsHealing" />
+					<consideration class="SelfNotHasBuff, SCore" buffs="buffBurstDelay,IsHealing" /> 
 				</action>
 			</ai_package>	
+			
 		</ai_packages>
 	</append>
 </config>
