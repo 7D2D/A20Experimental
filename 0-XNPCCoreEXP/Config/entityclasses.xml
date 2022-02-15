@@ -139,11 +139,11 @@
 		<effect_group name="CVar Hired Cleanup">
 			<triggered_effect trigger="onSelfEnteredGame" action="ClearStaleHires, SCore" />
 		</effect_group>	
-		<!--  This effect group sets a cvar on the player called "DamageRelationship" which is the faction relationship at which the player can damage NPCs. 1001 means "everyone." This is only for faction targeting - it doesn't affect allies (hired NPCs), and other players and their NPCs are governed by the server's "Player Killing" setting. If you want to adjust the value: 800+ is "Love", 600+ is "Like", 400+ is "Neutral", 200+ is "Dislike", and 0+ is "Hate". -->
+		<!--  This effect group sets a cvar on the player called "DamageRelationship" which is the faction relationship at which the player can damage NPCs. 1001 means "everyone." 400 is the default, and what is in effect when this effect group is commented out.  This is only for faction targeting - it doesn't affect allies (hired NPCs), and other players and their NPCs are governed by the server's "Player Killing" setting. If you want to adjust the value: 800+ is "Love", 600+ is "Like", 400+ is "Neutral", 200+ is "Dislike", and 0+ is "Hate". -->
 			<!--<effect_group name="Damage All NPCs">
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="DamageRelationship" operation="set" value="400" />
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="DamageRelationship" operation="set" value="400" />
-				<triggered_effect trigger="onSelfRespawn" action="ModifyCVar" cvar="DamageRelationship" operation="set" value="400" />
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="DamageRelationship" operation="set" value="1001" />
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="DamageRelationship" operation="set" value="1001" />
+				<triggered_effect trigger="onSelfRespawn" action="ModifyCVar" cvar="DamageRelationship" operation="set" value="1001" />
 			</effect_group>-->
 	</append>
 

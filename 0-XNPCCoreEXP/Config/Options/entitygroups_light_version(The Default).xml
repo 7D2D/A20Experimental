@@ -10,7 +10,7 @@
 		<entity name="npcBakerSMG" prob="0.1" />
 		<entity name="npcBakerAK47" prob="0.1" />
 		<entity name="npcBakerHRifle" prob="0.1" />
-		<entity name="npcBakerPistol" prob="0.1" />
+		<entity name="npcBakerPistol" prob="0.2" />
 		<entity name="npcBakerLBow" prob="0.1" />
 		<entity name="npcNurseEmptyHand" prob="0.15" />
 		<entity name="npcNurseClub" prob="0.15" />
@@ -40,7 +40,7 @@
 		<entity name="npcBakerSMG" prob="0.1" />
 		<entity name="npcBakerAK47" prob="0.1" />
 		<entity name="npcBakerHRifle" prob="0.1" />
-		<entity name="npcBakerPistol" prob="0.1" />
+		<entity name="npcBakerPistol" prob="0.2" />
 		<entity name="npcBakerLBow" prob="0.1" />
 		<entity name="npcNurseEmptyHand" prob="0.15" />
 		<entity name="npcNurseClub" prob="0.15" />
@@ -70,7 +70,7 @@
 		<entity name="npcBakerSMG" prob="0.1" />
 		<entity name="npcBakerAK47" prob="0.1" />
 		<entity name="npcBakerHRifle" prob="0.1" />
-		<entity name="npcBakerPistol" prob="0.1" />
+		<entity name="npcBakerPistol" prob="0.2" />
 		<entity name="npcBakerLBow" prob="0.1" />
 		<entity name="npcNurseEmptyHand" prob="0.15" />
 		<entity name="npcNurseClub" prob="0.15" />
