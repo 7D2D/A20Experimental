@@ -156,7 +156,9 @@
 	<append xpath="/npc/factions/faction[@name='whiteriver']">
         <relationship name="aggressiveanimalssmall" value="hate"/>
         <relationship name="aggressiveanimalsmedium" value="hate"/>
+		<relationship name="aggressiveanimalslarge" value="hate"/>
 		<relationship name="mechs" value="hate"/>
+		<relationship name="whisperers" value="hate"/>
     </append>
 	
 		

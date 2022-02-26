@@ -122,7 +122,6 @@
 		<!--  Various player effects, including Snufkins Knockdown code bits  -->
 
 	<append xpath="/entity_classes/entity_class[@name='playerMale']">
-		<property name="Buffs" value="buffNPCModSlowStatusCheck"/>
 		<effect_group name="Signal Hired NPCs to Attack">
 			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffNPCModAttacking"/>
 			<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="other" buff="buffNPCModAttacking"/>
@@ -137,8 +136,9 @@
 				<requirement name="EntityTagCompare" target="other" tags="staminadrain"/> <!-- If the attacking entity has this tag, it will lower the players stamina   -->
 			</triggered_effect>
 		</effect_group>
-		<effect_group name="CVar Hired Cleanup">
+		<effect_group name="Startup Things">
 			<triggered_effect trigger="onSelfEnteredGame" action="ClearStaleHires, SCore" />
+			<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffNPCModSlowStatusCheck"/>
 		</effect_group>	
 		<!--  This effect group sets a cvar on the player called "DamageRelationship" which is the faction relationship at which the player can damage NPCs. 1001 means "everyone." 400 is the default, and what is in effect when this effect group is commented out.  This is only for faction targeting - it doesn't affect allies (hired NPCs), and other players and their NPCs are governed by the server's "Player Killing" setting. If you want to adjust the value: 800+ is "Love", 600+ is "Like", 400+ is "Neutral", 200+ is "Dislike", and 0+ is "Hate". -->
 			<!--<effect_group name="Damage All NPCs">
@@ -2079,10 +2079,11 @@
 			<property name="AIPackages" value="NPCAnimalCompanion, NPCMeleeCompanion, NPCHiredCompanion "/>
             <property name="MaxViewAngle" value="360"/>
             <property name="NPCID" value="NPCAnimalGeneric"/> 
-            <property class="Boundary" >
+			<!-- if your animal is clipping walls, you can activate this and adjust size to fit your animal -->
+            <!--<property class="Boundary" > 
                 <property name="BoundaryBox" value=".2,.3,1.1" />
                 <property name="Center" value="0,0,0"/>
-            </property>
+            </property> -->
             <property name="Names" value="Buster, Sally, Fluffy" />        
             <property name="HireCurrency" value="foodRawMeat" />
             <property name="HireCost" value="20" />
@@ -4637,7 +4638,7 @@
 			<property name="AIPackages" value="NPCAnimalCompanion, NPCMeleeCompanion, NPCHiredCompanion, NPCLoot "/> 
 			<property class="Boundary" >
                 <property name="BoundaryBox" value=".2,.3,1.1" />
-                <property name="Center" value="0,0,0"/>
+                <property name="Center" value="0,.15,0"/>
             </property>
 		</entity_class>	
 		

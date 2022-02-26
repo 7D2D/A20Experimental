@@ -72,15 +72,18 @@
 			</ai_package>
 
 			<ai_package name="NPCBasicNoChat" >
-				<action name="Wander" weight="1" entity_filter="IsSelf"><!-- Lowest weight, so wander doesnt win against any other action, yet will score true so the NPC does something if not busy in dialog. -->
+				<action name="Wander" weight="1" entity_filter="IsSelf">
 					<task class="WanderSDX, SCore"/>
-					<task class="IdleSDX, SCore" OnStartAddBuffs="RandomWanderIdle" OnStopRemoveBuffs="RandomWanderIdle" timeout="50" /><!-- fires an Idle buff on start, removes same on exit  -->
-					<consideration class="HasOrder, SCore" order="None, Wander"/> <!-- blocks the action when it has an order not listed  -->
-	 				<consideration class="IsNotBusy, SCore"/>   <!-- If doing an activity, don't just walkaway, do that animation -->
+					<consideration class="HasNotOrder, SCore" order="Stay, Guard"/>
+					<task class="IdleSDX, SCore" OnStartAddBuffs="RandomWanderIdle" OnStopRemoveBuffs="RandomWanderIdle" timeout="50" />
 				</action>
+				<action name="NoChatIdle" weight="1" entity_filter="IsPlayer">
+                    <task class="IdleSDX, SCore" OnStartAddBuffs="RandomIdle" OnStopRemoveBuffs="RandomIdle" /> 
+						<consideration class="HasOrder, SCore" order="Stay, Guard"/>
+				</action> 
 				<action name="OnReload" weight="3" entity_filter="IsSelf" >
                     <task class="IdleSDX, SCore"  /> 
-                    <consideration class="SelfHasBuff, SCore" buffs="buffReload2,buffReloadDelay,buffReload3"/> <!-- Outscores Wander when buff is active  -->
+                    <consideration class="SelfHasBuff, SCore" buffs="buffReload2,buffReloadDelay,buffReload3"/> 
                 </action>  
 				<action name="HealSelf" weight="6" entity_filter="IsSelf">
 					<task class="HealSDX, SCore" OnStartAddBuffs="IsHealing" OnStopAddBuffs="buffProcessConsumables"/>
@@ -667,8 +670,9 @@
                     <task class="Loot, SCore" run="false" TargetType="Loot, SecureLoot" buff="ActivityBuff"/>
                     <consideration class="HasOrder, SCore" order="Loot"/>
                    <consideration class="EnemyNotNear, SCore" distance="15"/> 
-				   <consideration class="FailOnDistanceToLeader, Score" max_distance="30"/>
-				   <consideration class="SelfNotHasBuff, SCore" buffs="ActivityCoolDown"/>
+                   <consideration class="FailOnDistanceToLeader, SCore" max_distance="30"/>
+                   <consideration class="SelfNotHasBuff, SCore" buffs="ActivityCoolDown"/>
+                   <consideration class="HasPath, SCore" TargetType="Loot, SecureLoot" />
                 </action>
             </ai_package>
 			
@@ -799,9 +803,17 @@
             </ai_package>
 			
 			<ai_package name="NPCHiredCompanion" entity_filter="IsLeader" >
-                <action name="TooClose" weight="3">
-                    <task class="BackupFromTargetSDX, SCore" max_distance="2"/>
+                <action name="TooCloseInside" weight="3">
+                    <task class="BackupFromTargetSDX, SCore" max_distance="4.5"/>
                     <consideration class="EnemyNotNear, SCore" />
+                    <consideration class="IsInside, SCore" />
+                    <consideration class="TargetDistance" flip_y="true" min="0" max="3"  />
+                    <consideration class="NotHasOrder, SCore" order="Stay"/>
+                </action> 
+                <action name="TooCloseOutside" weight="3">
+                    <task class="BackupFromTargetSDX, SCore" max_distance="4.5"/>
+                    <consideration class="EnemyNotNear, SCore" />
+                    <consideration class="IsNotInside, SCore" />
                     <consideration class="TargetDistance" flip_y="true" min="0" max="1"  />
                     <consideration class="NotHasOrder, SCore" order="Stay"/>
                 </action> 

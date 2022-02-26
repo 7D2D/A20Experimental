@@ -784,6 +784,7 @@
 				<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
 				<property name="DamageEntity" value="10"/> <!--  This is base damage per ray that hits) -->
 				<property name="DamageBlock" value="3"/> 
+				<!--<requirement name="CVarCompare" cvar="_underwater" operation="LTE" value="0"/> -->
 			</property>
 			<effect_group name="gunHandgunT3SMG5">
 				<passive_effect name="MaxRange" operation="base_set" value="40" tags="perkGunslinger,9mmGun"/>
@@ -1906,7 +1907,7 @@
 			</property>			
 			<property class="Action1">
 				<property name="Class" value="Ranged"/>
-				<property name="Magazine_items" value="ammoNPC762mmBulletAP"/>
+				<property name="Magazine_items" value="ammoNPC762mmBulletBall"/>
 				<property name="Reload_time" value="0"/>
 				<property name="Infinite_ammo" value="true" />
 				<property name="Single_magazine_usage" value="false"/>
