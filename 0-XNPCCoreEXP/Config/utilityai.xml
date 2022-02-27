@@ -21,7 +21,6 @@
 					<task class="WanderSDX, SCore"/>
 					<task class="IdleSDX, SCore" OnStartAddBuffs="RandomWanderIdle" OnStopRemoveBuffs="RandomWanderIdle" timeout="50" /><!-- fires an Idle buff on start, removes same on exit  -->
 					<consideration class="HasOrder, SCore" order="None, Wander"/> <!-- blocks the action when it has an order not listed  -->
-	 				<consideration class="IsNotBusy, SCore"/>   <!-- If doing an activity, don't just walkaway, do that animation -->
 				</action>
 				<action name="OnReload" weight="3" entity_filter="IsSelf" >
                     <task class="IdleSDX, SCore"  /> 
@@ -74,12 +73,12 @@
 			<ai_package name="NPCBasicNoChat" >
 				<action name="Wander" weight="1" entity_filter="IsSelf">
 					<task class="WanderSDX, SCore"/>
-					<consideration class="HasNotOrder, SCore" order="Stay, Guard"/>
+					<consideration class="HasNotOrder, SCore" order="Stay"/>
 					<task class="IdleSDX, SCore" OnStartAddBuffs="RandomWanderIdle" OnStopRemoveBuffs="RandomWanderIdle" timeout="50" />
 				</action>
 				<action name="NoChatIdle" weight="1" entity_filter="IsPlayer">
                     <task class="IdleSDX, SCore" OnStartAddBuffs="RandomIdle" OnStopRemoveBuffs="RandomIdle" /> 
-						<consideration class="HasOrder, SCore" order="Stay, Guard"/>
+						<consideration class="HasOrder, SCore" order="Stay"/>
 				</action> 
 				<action name="OnReload" weight="3" entity_filter="IsSelf" >
                     <task class="IdleSDX, SCore"  /> 
@@ -115,12 +114,20 @@
 			</ai_package>	
 	
 			<ai_package name="NPCHired" entity_filter="IsLeader" >
-				<action name="TooClose" weight="3">
-					<task class="BackupFromTargetSDX, SCore" max_distance="4.5"/>
-					<consideration class="EnemyNotNear, SCore" />
-					<consideration class="TargetDistance" flip_y="true" min="0" max="1"  />
-					<consideration class="NotHasOrder, SCore" order="Stay"/>
-				</action> 
+				<action name="TooCloseInside" weight="3">
+                    <task class="BackupFromTargetSDX, SCore" max_distance="4.5"/>
+                    <consideration class="EnemyNotNear, SCore" />
+                    <consideration class="IsInside, SCore" />
+                    <consideration class="TargetDistance" flip_y="true" min="0" max="3"  />
+                    <consideration class="NotHasOrder, SCore" order="Stay"/>
+                </action> 
+                <action name="TooCloseOutside" weight="3">
+                    <task class="BackupFromTargetSDX, SCore" max_distance="4.5"/>
+                    <consideration class="EnemyNotNear, SCore" />
+                    <consideration class="IsNotInside, SCore" />
+                    <consideration class="TargetDistance" flip_y="true" min="0" max="1"  />
+                    <consideration class="NotHasOrder, SCore" order="Stay"/>
+                </action> 
 				<action name="LeaderFollow" weight="2" >
 					<task class="FollowSDX, SCore" OnStartAddBuffs="NPCpegasus" OnStopRemoveBuffs="NPCpegasus"/>
 					<consideration class="HasOrder, SCore" order="Follow"/>
@@ -698,7 +705,6 @@
 				<!--   -->
 				<action name="Wander" weight="1">
 					<task class="WanderSDX, SCore"/>
-					<consideration class="IsNotBusy, SCore"/>
 					<consideration class="Random, SCore" percent="0.90"/>
 				</action>
 				<action name="MoveToWaypoint" weight="2">
@@ -785,7 +791,7 @@
 			</ai_package>
 			
 			<ai_package name="NPCAnimalCompanion" >
-                <action name="Wander" weight="1" entity_filter="IsSelf"><!-- Lowest weight, so wander doesnt win against any other action, yet will score true so the NPC does something if not busy in dialog. -->
+                <action name="Wander" weight="1" entity_filter="IsSelf">
                     <task class="WanderSDX, SCore"/>
                     <task class="IdleSDX, SCore" OnStartAddBuffs="RandomWanderIdle" OnStopRemoveBuffs="RandomWanderIdle" timeout="50" /><!-- fires an Idle buff on start, removes same on exit  -->
                     <consideration class="HasOrder, SCore" order="None, Wander"/> <!-- blocks the action when it has an order not listed  -->
