@@ -28,7 +28,6 @@
 		<entity name="npcHarleyPipePistol" prob="0.1" />
 		<entity name="npcHarleyPipeRifle" prob="0.1" />		
 		<entity name="npcHarleyPipeShotgun" prob="0.1" />
-		<entity name="none" prob="0.001"/>
 	</append>
 
 	<append xpath="/entitygroups/entitygroup[@name='ZombiesNight']">
@@ -59,7 +58,6 @@
 		<entity name="npcHarleyPipePistol" prob="0.1" />
 		<entity name="npcHarleyPipeRifle" prob="0.1" />		
 		<entity name="npcHarleyPipeShotgun" prob="0.1" />
-		<entity name="none" prob="0.001"/>
 	</append>
 
 	<append xpath="/entitygroups/entitygroup[@name='SnowZombies']">
@@ -90,7 +88,6 @@
 		<entity name="npcHarleyPipePistol" prob="0.1" />
 		<entity name="npcHarleyPipeRifle" prob="0.1" />		
 		<entity name="npcHarleyPipeShotgun" prob="0.1" />
-		<entity name="none" prob="0.001"/>
 	</append>	
 
 	<append xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']">
@@ -112,7 +109,6 @@
 		<entity name="npcHarleyAShotgun" prob="0.05" />
 		<entity name="npcHarleyXBow" prob="0.1" />
 		<entity name="npcHarleyRocketL" prob="0.025" />
-		<entity name="none" prob="0.001"/>
 	</append>
 
 	<append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']">
@@ -134,12 +130,10 @@
 		<entity name="npcHarleyAShotgun" prob="0.05" />
 		<entity name="npcHarleyXBow" prob="0.1" />
 		<entity name="npcHarleyRocketL" prob="0.025" />
-		<entity name="none" prob="0.001"/>
 	</append>
 
 	<append xpath="/entitygroups/entitygroup[descendant::entity[@name='zombieArlene']]">	
 		<entity name="zombieFemaleTutorial" />
-		<entity name="none" prob="0.001"/>
 	</append>
 
 	<!--

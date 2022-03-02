@@ -2180,7 +2180,6 @@
 			<property name="AITarget-4" value=""/>
 			<property name="SurfaceCategory" value="organic"/>
 			<property name="ParticleOnDeath" value="blood_death"/>
-			<property name="LookAtAngle" value="50"/>
 			<property name="DismemberTag_L_HeadGore" value="Prefabs/HeadGore" data ="rot=90,0,0"/>
 			<property name="DismemberTag_L_LeftUpperLegGore" value="Prefabs/UpperLegGore"/>
 			<property name="DismemberTag_L_LeftLowerLegGore" value="Prefabs/UpperLegGore"/>
@@ -4640,6 +4639,24 @@
                 <property name="BoundaryBox" value=".2,.3,1.1" />
                 <property name="Center" value="0,.15,0"/>
             </property>
+			<property name="MoveSpeed" value="0.1"/> 
+			<property name="MoveSpeedAggro" value="1.0, 1.0"/> 
+			<property name="MoveSpeedPanic" value="1.0"/>
+			<property name="MoveSpeedRand" value="-.05, .05"/> 
+			<effect_group>
+				<passive_effect name="WalkSpeed" operation="base_set" value=".5"/>
+				<passive_effect name="RunSpeed" operation="base_set" value="1.0"/> 
+				<passive_effect name="HealthChangeOT" operation="base_set" value="0.1"/>  <!-- heal x point of (red) health / minute -->
+				<passive_effect name="DamageModifier" operation="perc_set" value="1"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
+				<passive_effect name="DismemberChance" operation="base_set" value=".05"/> 
+				<passive_effect name="WaterMax" operation="base_set" value="100"/> 
+				<passive_effect name="CrouchSpeed" operation="base_set" value=".3"/> 
+				<passive_effect name="WalkSpeed" operation="base_set" value="0.35" tags="swimming"/>
+				<passive_effect name="RunSpeed" operation="base_set" value="0.35" tags="swimming"/>
+				<passive_effect name="Mobility" operation="base_set" value="1"/> 
+				<passive_effect name="JumpStrength" operation="base_set" value="0.16"/> 
+			</effect_group>
 		</entity_class>	
 		
 		<entity_class name="animalFox" extends="animalTemplateHostileWalking">
