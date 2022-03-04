@@ -173,7 +173,7 @@
         <action type="ExecuteCommandSDX, SCore" id="OpenInventory" />
       </response>
 
-	  <response id="StayHere" text="Stay" >
+	  <response id="StayHere" text="Stay right there" >
         <requirement type="Leader, SCore" requirementtype="Hide" />
         <action type="AddBuffSDX, SCore" value="Self" id="buffOrderStay" />
       </response>
@@ -194,7 +194,7 @@
 		<action type="AddBuffSDX, SCore" value="Self" id="buffOrderLoot" />
       </response>	 
 	
-	  <response id="GuardHere" text="Guard" >
+	  <response id="GuardHere" text="Stay over here" >
         <requirement type="Leader, SCore" requirementtype="Hide" />
         <requirement type="HasTask, SCore" requirementtype="Hide" value="Stay" />
         <action type="AddBuffSDX, SCore" value="Self" id="buffOrderGuardHere" /> 

@@ -808,7 +808,7 @@
                 </action> 
             </ai_package>
 			
-			<ai_package name="NPCHiredCompanion" entity_filter="IsLeader" >
+			<ai_package name="NPCAnimalHiredCompanion" entity_filter="IsLeader" >
                 <action name="TooCloseInside" weight="3">
                     <task class="BackupFromTargetSDX, SCore" max_distance="4.5"/>
                     <consideration class="EnemyNotNear, SCore" />
@@ -836,7 +836,7 @@
                     <consideration class="TargetDistance"  min="2" max="6" curve="threshold"/>
                 </action>
             </ai_package>
-			<ai_package name="NPCMeleeCompanion" entity_filter="IsEnemy"> 
+			<ai_package name="NPCAnimalMeleeCompanion" entity_filter="IsEnemy"> 
                 <!-- CONTROL ACTIONS - PLAYER IS BEING ATTACKED OR IS ATTACKING A TARGET -->
                 <action name="MoveToEnemyRunMeleeControlAttacked" weight="4">
                     <consideration class="TargetHasBuff, SCore" buffs="buffNPCModAttacking"/>
@@ -844,7 +844,7 @@
                     <consideration class="FailOnDistanceToLeader, Score" max_distance="30"/>
                     <consideration class="NotInWeaponRange, SCore" action_index="0" /> 
                     <consideration class="CanSeeTarget, SCore"/>
-                    <consideration class="SelfNotHasBuff, SCore" buffs="buffNPCModStopAttacking,buffHitStun"/>    
+                    <consideration class="SelfNotHasBuff, SCore" buffs="buffNPCModStopAttacking"/>    
                     <consideration class="NotHasOrder, SCore" order="Stay"/>
                 </action>
                 <action name="MeleeAttackEntityControlAttacked" weight="5">
@@ -853,7 +853,7 @@
                     <consideration class="FailOnDistanceToLeader, Score" max_distance="30"/>
                     <consideration class="InWeaponRange, SCore" action_index="0" /> 
                     <consideration class="CanSeeTarget, SCore"/>
-                    <consideration class="SelfNotHasBuff, SCore" buffs="buffNPCModStopAttacking,IsHealing,buffHitStun"/>    
+                    <consideration class="SelfNotHasBuff, SCore" buffs="buffNPCModStopAttacking"/>    
                 </action>
             </ai_package>    
 
