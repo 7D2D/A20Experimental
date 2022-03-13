@@ -716,18 +716,6 @@
 			<effect_group name="WeaponType"> 
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="EmptyHandUser"/>
 			</effect_group>
-			<!--<effect_group name="AddBrawlerProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkBrawler" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkBrawler" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkBrawler" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkBrawler" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>		-->	
 		</entity_class>	
 		
 		<!-- EmptyHand "weapon" template for bloodmoon -->
@@ -760,7 +748,6 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Tester" />	
 			<property name="LookAtAngle" value="60"/> 
-			<!--<property name="Mesh" value="#@modfolder:Resources/FemaleElvenArcherDark.unity3d?FemaleElvenArcherDark"/> -->
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Baker_X"/> 
 		</entity_class>	
 		<entity_class name="npcTestEmptyHandAdvanced" extends="npcAdvancedEmptyHandTemplate"> 
@@ -768,7 +755,6 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Tester" />	
 			<property name="LookAtAngle" value="60"/> 
-			<!--<property name="Mesh" value="#@modfolder:Resources/FemaleElvenArcherDark.unity3d?FemaleElvenArcherDark"/> -->
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Baker_X"/> 
 			<!--<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired"/> -->
 		</entity_class>			
@@ -792,18 +778,6 @@
 			<effect_group name="WeaponType"> 
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="ClubUser"/>
 			</effect_group>	
-			<!--<effect_group name="AddPummelPeteProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPummelPete" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPummelPete" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPummelPete" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPummelPete" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	-->
 		</entity_class>
 		
 		
@@ -848,18 +822,6 @@
 			<property name="ExperienceGain" value="600"/> 
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="KnifeUser"/>
 			</effect_group>	
-			<!--<effect_group name="AddDeepCutsProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeepCuts" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeepCuts" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeepCuts" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeepCuts" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>		-->
 		</entity_class>	
 		
 		<entity_class name="npcBMKnifeTemplate" extends="npcKnifeTemplate">
@@ -898,18 +860,6 @@
 			<effect_group name="WeaponType"> 
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="BatUser"/>
 			</effect_group>
-			<!--<effect_group name="AddPummelPeteProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPummelPete" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPummelPete" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPummelPete" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPummelPete" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	-->
 		</entity_class>	
 		
 		<entity_class name="npcBMBatTemplate" extends="npcBatTemplate">
@@ -950,18 +900,6 @@
 			<effect_group name="WeaponType"> 
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="AxeUser"/>
 			</effect_group>
-			<!--<effect_group name="AddDeepCutsProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeepCuts" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeepCuts" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeepCuts" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeepCuts" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>		-->	
 		</entity_class>		
 
 		<entity_class name="npcBMAxeTemplate" extends="npcAxeTemplate">
@@ -1003,18 +941,6 @@
 			<effect_group name="WeaponType"> 
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SpearUser"/>
 			</effect_group>	
-			<!--<effect_group name="AddJavelinMasterProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkJavelinMaster" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkJavelinMaster" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkJavelinMaster" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkJavelinMaster" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	-->			
 		</entity_class>		
 		
 		<entity_class name="npcBMSpearTemplate" extends="npcSpearTemplate">
@@ -1055,18 +981,6 @@
 			<effect_group name="WeaponType"> 
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="MacheteUser"/>
 			</effect_group>
-			<!--<effect_group name="AddDeepCutsProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeepCuts" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeepCuts" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeepCuts" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeepCuts" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	-->		
 		</entity_class>	
 		
 		<entity_class name="npcBMMacheteTemplate" extends="npcMacheteTemplate">
@@ -1108,23 +1022,11 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="PipePistolUser"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffReload"/> 
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBurst"/>				
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Magsize" operation="set" value="6"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Magsize" operation="set" value="6"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$roundsinmag" operation="set" value="6"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Burstsize" operation="set" value="3"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Burstsize" operation="set" value="3"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$burstrate" operation="set" value="3"/>
 			</effect_group>	
-			<!--<effect_group name="AddGunslingerProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkGunslinger" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkGunslinger" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkGunslinger" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkGunslinger" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	-->
 		</entity_class>	
 		
 		<entity_class name="npcBMPipePistolTemplate" extends="npcPipePistolTemplate">
@@ -1163,25 +1065,11 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="PistolUser"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffReload"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBurst"/>
-			<!--<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="Gunslinger"/> -->
-			<!--<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="Gunslinger"/> -->
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Magsize" operation="set" value="14"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Magsize" operation="set" value="14"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$roundsinmag" operation="set" value="14"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Burstsize" operation="set" value="7"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Burstsize" operation="set" value="7"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$burstrate" operation="set" value="7"/>				
 			</effect_group>
-			<!--<effect_group name="AddGunslingerProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkGunslinger" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkGunslinger" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkGunslinger" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkGunslinger" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	-->
 		</entity_class>		
 		
 		<entity_class name="npcBMPistolTemplate" extends="npcPistolTemplate">
@@ -1221,23 +1109,11 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="DPistolUser"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffReload"/> 
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBurst"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Magsize" operation="set" value="8"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Magsize" operation="set" value="8"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$roundsinmag" operation="set" value="8"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Burstsize" operation="set" value="4"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Burstsize" operation="set" value="4"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$burstrate" operation="set" value="4"/>				
 			</effect_group>	
-			<!--<effect_group name="AddGunslingerProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkGunslinger" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkGunslinger" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkGunslinger" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkGunslinger" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	-->
 		</entity_class>	
 
 		<entity_class name="npcBMDPistolTemplate" extends="npcDPistolTemplate">
@@ -1278,24 +1154,11 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SMGUser"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffReload"/> 
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBurst"/> 
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Magsize" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Magsize" operation="set" value="30"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$roundsinmag" operation="set" value="30"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Burstsize" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Burstsize" operation="set" value="10"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$burstrate" operation="set" value="10"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="reloadDelay" operation="set" value="3"/><!--  test cvar  -->
 			</effect_group>
-			<!--<effect_group name="AddGunslingerProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkGunslinger" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkGunslinger" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkGunslinger" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkGunslinger" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	-->
 		</entity_class>	
 		
 		<entity_class name="npcBMSMGTemplate" extends="npcSMGTemplate">
@@ -1336,23 +1199,11 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="M60User"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffReload"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBurst"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Magsize" operation="set" value="50"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Magsize" operation="set" value="50"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$roundsinmag" operation="set" value="50"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Burstsize" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Burstsize" operation="set" value="10"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$burstrate" operation="set" value="10"/>				
 			</effect_group>
-			<!--<effect_group name="AddMachineGunnerProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkMachineGunner" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkMachineGunner" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkMachineGunner" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkMachineGunner" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	-->
 		</entity_class>	
 		
 		<entity_class name="npcBMM60Template" extends="npcM60Template">
@@ -1392,23 +1243,11 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="AK47User"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffReload"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBurst"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Magsize" operation="set" value="30"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Magsize" operation="set" value="30"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$roundsinmag" operation="set" value="30"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Burstsize" operation="set" value="5"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Burstsize" operation="set" value="5"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$burstrate" operation="set" value="5"/>				
 			</effect_group>	
-			<!--<effect_group name="AddMachineGunnerProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkMachineGunner" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkMachineGunner" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkMachineGunner" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkMachineGunner" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>		-->
 		</entity_class>
 		
 		<entity_class name="npcBMAK47Template" extends="npcAK47Template">
@@ -1447,23 +1286,11 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="PipeMGUser"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffReload"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBurst"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Magsize" operation="set" value="20"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Magsize" operation="set" value="20"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$roundsinmag" operation="set" value="20"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Burstsize" operation="set" value="5"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Burstsize" operation="set" value="5"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$burstrate" operation="set" value="5"/>				
 			</effect_group>
-			<!--<effect_group name="AddMachineGunnerProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkMachineGunner" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkMachineGunner" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkMachineGunner" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkMachineGunner" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	-->
 		</entity_class>	
 
 		<entity_class name="npcBMPipeMGTemplate" extends="npcPipeMGTemplate">
@@ -1503,23 +1330,11 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="TRifleUser"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffReload"/> 
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBurst"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Magsize" operation="set" value="30"/>	
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Magsize" operation="set" value="30"/>	
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$roundsinmag" operation="set" value="30"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Burstsize" operation="set" value="10"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Burstsize" operation="set" value="10"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$burstrate" operation="set" value="10"/>				
 			</effect_group>
-			<!--<effect_group name="AddMachineGunnerProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkMachineGunner" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkMachineGunner" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkMachineGunner" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkMachineGunner" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	-->
 		</entity_class>	
 		
 		<entity_class name="npcBMTRifleTemplate" extends="npcTRifleTemplate">
@@ -1559,23 +1374,11 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="PipeRifleUser"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffReload"/> 
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBurst"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Magsize" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Magsize" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$roundsinmag" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Burstsize" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Burstsize" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$burstrate" operation="set" value="1"/>				
 			</effect_group>
-			<!--<effect_group name="AddDeadEyeProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeadEye" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeadEye" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeadEye" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeadEye" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	-->
         </entity_class>    
 
 		<entity_class name="npcBMPipeRifleTemplate" extends="npcPipeRifleTemplate">
@@ -1614,23 +1417,11 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="HRifleUser"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffReload"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBurst"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Magsize" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Magsize" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$roundsinmag" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Burstsize" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Burstsize" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$burstrate" operation="set" value="1"/>							
 			</effect_group>
-			<!--<effect_group name="AddDeadEyeProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeadEye" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeadEye" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeadEye" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeadEye" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	-->
         </entity_class> 
 
  		<entity_class name="npcBMHRifleTemplate" extends="npcHRifleTemplate">
@@ -1669,23 +1460,11 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="SRifleUser"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffReload"/> 
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBurst"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Magsize" operation="set" value="12"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Magsize" operation="set" value="12"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$roundsinmag" operation="set" value="12"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Burstsize" operation="set" value="3"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Burstsize" operation="set" value="3"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$burstrate" operation="set" value="3"/>							
 			</effect_group>
-			<!--<effect_group name="AddDeadEyeProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeadEye" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeadEye" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeadEye" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDeadEye" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>		-->	
         </entity_class>  
 
 		<entity_class name="npcBMSRifleTemplate" extends="npcSRifleTemplate">
@@ -1724,23 +1503,11 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="PipeShotgunUser"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffReload"/> 
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBurst"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Magsize" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Magsize" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$roundsinmag" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Burstsize" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Burstsize" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$burstrate" operation="set" value="1"/>							
 			</effect_group>	
-			<!--<effect_group name="AddBoomstickProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkBoomstick" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkBoomstick" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkBoomstick" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkBoomstick" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	-->
 		</entity_class> 
 
 		<entity_class name="npcBMPipeShotgunTemplate" extends="npcPipeShotgunTemplate">
@@ -1779,23 +1546,11 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="PShotgunUser"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffReload"/> 
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBurst"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Magsize" operation="set" value="8"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Magsize" operation="set" value="8"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$roundsinmag" operation="set" value="8"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Burstsize" operation="set" value="2"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Burstsize" operation="set" value="2"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$burstrate" operation="set" value="2"/>							
 			</effect_group>
-			<!--<effect_group name="AddBoomstickProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkBoomstick" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkBoomstick" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkBoomstick" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkBoomstick" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	-->
 		</entity_class> 
 		
 		<entity_class name="npcBMPShotgunTemplate" extends="npcPShotgunTemplate">
@@ -1834,23 +1589,11 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="AShotgunUser"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffReload"/> 
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBurst"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Magsize" operation="set" value="16"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Magsize" operation="set" value="16"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$roundsinmag" operation="set" value="16"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Burstsize" operation="set" value="4"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Burstsize" operation="set" value="4"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$burstrate" operation="set" value="4"/>							
 			</effect_group>
-			<!--<effect_group name="AddBoomstickProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkBoomstick" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkBoomstick" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkBoomstick" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkBoomstick" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	-->
 		</entity_class>
 
 		<entity_class name="npcBMAShotgunTemplate" extends="npcAShotgunTemplate">
@@ -1889,23 +1632,11 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="LBowUser"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffReload"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBurst"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Magsize" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Magsize" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$roundsinmag" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Burstsize" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Burstsize" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$burstrate" operation="set" value="1"/>							
 			</effect_group>	
-			<!--<effect_group name="AddArcheryProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkArchery" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkArchery" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkArchery" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkArchery" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	-->
 		</entity_class> 
 
 		<entity_class name="npcBMLBowTemplate" extends="npcLBowTemplate">
@@ -1948,23 +1679,11 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="XBowUser"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffReload"/> 
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBurst"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Magsize" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Magsize" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$roundsinmag" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Burstsize" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Burstsize" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$burstrate" operation="set" value="1"/>							
 			</effect_group>	
-			<!--<effect_group name="AddArcheryProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkArchery" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkArchery" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkArchery" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkArchery" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	-->
 		</entity_class>	
 		
 		<entity_class name="npcBMXBowTemplate" extends="npcXBowTemplate">
@@ -2006,23 +1725,11 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="RocketLUser"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffReload"/> 
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffBurst"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Magsize" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Magsize" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$roundsinmag" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="Burstsize" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Burstsize" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$burstrate" operation="set" value="1"/>				
 			</effect_group>
-			<!--<effect_group name="AddDemolitionsExpertProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDemolitionsExpert" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDemolitionsExpert" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDemolitionsExpert" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkDemolitionsExpert" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	-->
 			<property name="AIPackages" value="NPCBasicNoChat, NPCRangedBasic"/> 
 		</entity_class>	
 
@@ -2882,19 +2589,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
-			<!-- Give the nurse some various degrees of education -->
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	
 			<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired, NPCMedic"/> 			
 		</entity_class>	
 		
@@ -2920,19 +2614,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>		
-			<!-- Give the nurse some various degrees of education -->
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	
 			<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired, NPCMedic"/> 				
 		</entity_class>
 		
@@ -2958,19 +2639,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
-						<!-- Give the nurse some various degrees of education -->
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	
 			<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired, NPCMedic"/> 					
 		</entity_class>	
 		
@@ -2996,18 +2664,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>
 			<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired, NPCMedic"/> 				
 		</entity_class>	
 		
@@ -3033,18 +2689,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>				
 		</entity_class>			
 		
 		<entity_class name="npcNurseBat" extends="npcAdvancedBatTemplate"> 
@@ -3070,19 +2714,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>
-			<effect_group name="AddHealthProgression">
-				<!-- <triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="NPCevade"/> Testing  -->
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	
 			<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired, NPCMedic"/> 				
 		</entity_class>			
 		
@@ -3108,18 +2739,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	
 			<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired, NPCMedic"/> 				
 		</entity_class>	
 		
@@ -3146,18 +2765,6 @@
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>		
 			<property name="WalkType" value="7"/>
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	
 			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 	
 		</entity_class>	
 		
@@ -3183,18 +2790,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	
 			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 
 		</entity_class>
 		
@@ -3220,18 +2815,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	
 			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class>			
 		
@@ -3257,18 +2840,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	
 			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class>				
 		
@@ -3295,18 +2866,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	
 			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class>	
 
@@ -3332,18 +2891,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>
 			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class>
 
@@ -3369,18 +2916,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	
 			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class>
 		
@@ -3406,18 +2941,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	
 			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class>	
 
@@ -3444,18 +2967,6 @@
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
 			<property name="WalkType" value="7"/>
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	
 			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class>    	
 		
@@ -3483,18 +2994,6 @@
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
 			<property name="WalkType" value="7"/>
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	
 			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class>    		
 		
@@ -3521,18 +3020,6 @@
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
 			<property name="WalkType" value="7"/>
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	
 			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class> 
 		
@@ -3558,18 +3045,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>		
 			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class> 		
 		
@@ -3595,18 +3070,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>		
 			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class> 
 		
@@ -3632,18 +3095,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	
 			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class> 		
 		
@@ -3669,18 +3120,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>		
 			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class>	
 		
@@ -3706,18 +3145,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>	
 			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class> 
 		
@@ -3743,18 +3170,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>
-			<effect_group name="AddHealthProgression">
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="2">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="3">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
-				</triggered_effect>
-				<triggered_effect trigger="onSelfFirstSpawn" action="SetProgressionLevel" progression_name="perkPhysician" level="4">
-					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				</triggered_effect>
-			</effect_group>				
 			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCMedic, NPCHired"/>
 		</entity_class> 	
 		
