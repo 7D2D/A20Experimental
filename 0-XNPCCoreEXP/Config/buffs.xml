@@ -6,34 +6,6 @@
 			<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffNPCModVerifyCurrentActions"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffNPCModVerifyCurrentActions"/>
 		</effect_group>
-		
-		<effect_group name="LeaderLevelUpdate"> <!-- Communicate Leaders Level to nearby NPCs -->
-                <triggered_effect trigger="onSelfBuffUpdate" target="selfAOE" range="60" action="ModifyCVar" cvar="varNPCModLeaderLevel" operation="set" value="20">
-                    <requirement name="CVarCompare" target="other" cvar="Leader" operation="Equals" value="@EntityID" />
-                    <requirement name="CVarCompare" target="self" cvar="$LastPlayerLevel" operation="GTE" value="20" />
-                    <requirement name="CVarCompare" target="self" cvar="$LastPlayerLevel" operation="LT" value="40" />        
-                </triggered_effect>
-                <triggered_effect trigger="onSelfBuffUpdate" target="selfAOE" range="60" action="ModifyCVar" cvar="varNPCModLeaderLevel" operation="set" value="40">
-                    <requirement name="CVarCompare" target="other" cvar="Leader" operation="Equals" value="@EntityID" />
-                    <requirement name="CVarCompare" target="self" cvar="$LastPlayerLevel" operation="GTE" value="40" />
-                    <requirement name="CVarCompare" target="self" cvar="$LastPlayerLevel" operation="LT" value="60" />        
-                </triggered_effect>
-				<triggered_effect trigger="onSelfBuffUpdate" target="selfAOE" range="60" action="ModifyCVar" cvar="varNPCModLeaderLevel" operation="set" value="60">
-                    <requirement name="CVarCompare" target="other" cvar="Leader" operation="Equals" value="@EntityID" />
-                    <requirement name="CVarCompare" target="self" cvar="$LastPlayerLevel" operation="GTE" value="60" />
-                    <requirement name="CVarCompare" target="self" cvar="$LastPlayerLevel" operation="LT" value="80" />        
-                </triggered_effect>
-                <triggered_effect trigger="onSelfBuffUpdate" target="selfAOE" range="60" action="ModifyCVar" cvar="varNPCModLeaderLevel" operation="set" value="80">
-                    <requirement name="CVarCompare" target="other" cvar="Leader" operation="Equals" value="@EntityID" />
-                    <requirement name="CVarCompare" target="self" cvar="$LastPlayerLevel" operation="GTE" value="80" />
-                    <requirement name="CVarCompare" target="self" cvar="$LastPlayerLevel" operation="LT" value="100" />        
-                </triggered_effect>
-                <triggered_effect trigger="onSelfBuffUpdate" target="selfAOE" range="60" action="ModifyCVar" cvar="varNPCModLeaderLevel" operation="set" value="100">
-                    <requirement name="CVarCompare" target="other" cvar="Leader" operation="Equals" value="@EntityID" />
-                    <requirement name="CVarCompare" target="self" cvar="$LastPlayerLevel" operation="GTE" value="100" />
-                    <requirement name="CVarCompare" target="self" cvar="$LastPlayerLevel" operation="LT" value="120" />        
-                </triggered_effect>
-        </effect_group>
  	</append>
 	
 	<append xpath="/buffs/buff[@name='buffOrderDismiss']/effect_group" > 
@@ -54,31 +26,6 @@
 			<stack_type value="ignore"/>
 			<duration value="0"/>
 			<effect_group name="buffNPCModVerifyCurrentActions">
-				<!-- VERIFY HIRED NPC ACTIONS -->
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="selfAOE" range="60" buff="buffNPCModStopAttacking">
-					<requirement name="CVarCompare" target="other" cvar="Leader" operation="Equals" value="@EntityID" />
-					<requirement name="CVarCompare" cvar="varNPCModStopAttacking" operation="Equals" value="0" />
-				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="60" buff="buffNPCModStopAttacking">
-					<requirement name="CVarCompare" target="other" cvar="Leader" operation="Equals" value="@EntityID" />
-					<requirement name="CVarCompare" cvar="varNPCModStopAttacking" operation="Equals" value="1" />
-				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="selfAOE" range="60" buff="buffNPCModFullControlMode">
-					<requirement name="CVarCompare" target="other" cvar="Leader" operation="Equals" value="@EntityID" />
-					<requirement name="CVarCompare" cvar="varNPCModMode" operation="Equals" value="0" />
-				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="60" buff="buffNPCModThreatControlMode">
-					<requirement name="CVarCompare" target="other" cvar="Leader" operation="Equals" value="@EntityID" />
-					<requirement name="CVarCompare" cvar="varNPCModMode" operation="Equals" value="1" />
-				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="selfAOE" range="60" buff="buffNPCModThreatControlMode">
-					<requirement name="CVarCompare" target="other" cvar="Leader" operation="Equals" value="@EntityID" />
-					<requirement name="CVarCompare" cvar="varNPCModMode" operation="Equals" value="2" />
-				</triggered_effect>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="60" buff="buffNPCModFullControlMode">
-					<requirement name="CVarCompare" target="other" cvar="Leader" operation="Equals" value="@EntityID" />
-					<requirement name="CVarCompare" cvar="varNPCModMode" operation="Equals" value="2" />
-				</triggered_effect>
 				<!-- SET PLAYER ACTION DISPLAYS -->
 				<!-- HALT/RESUME -->
 					<!-- RESUME -->
@@ -221,7 +168,7 @@
 
 		<buff name="buffNPCStatusCheck" hidden="true" remove_on_death="true">
 			<stack_type value="ignore"/>
-			<update_rate value="1"/>
+			<update_rate value="2"/>
 			<effect_group>
 				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="25200"/> <!-- in seconds -->
 				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$dysenteryMaxDuration" operation="set" value="3600"/> <!-- in seconds -->
@@ -279,9 +226,50 @@
               <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="120"/>
                 <passive_effect name="DamageModifier" operation="perc_add" value="0.5"/>
             </effect_group> 
+			 <!-- Replacement for selfhealing -->
+			<effect_group name="NPCHealing">
+            <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="IsHealing">
+                <requirement name="!HasBuff" buff="IsHealing"/>
+                <requirement name="StatComparePercCurrentToMax" stat="health" operation="LTE" value=".8"/>
+                <requirement name="CVarCompare" cvar="$NPCModHealingCooldown" operation="LTE" value="0"/>
+            </triggered_effect>
+            <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$NPCModHealingCooldown" operation="add" value="-1">
+                <requirement name="CVarCompare" cvar="$NPCModHealingCooldown" operation="GT" value="0"/>
+            </triggered_effect>
+			</effect_group> 
+			<!-- VERIFICATION OF LEADER CONTROL -->
+			<effect_group name="NPCModUpdateLeaderControl">
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="NPCModUpdateLeaderControl">
+					<requirement name="CVarCompare" cvar="NPCModPreviousOrder" operation="NotEquals" value="@CurrentOrder" />
+				</triggered_effect>        
+			</effect_group> 
 		</buff>
+		
+		<buff name="NPCModUpdateLeaderControl" >
+            <stack_type value="ignore"/>
+            <duration value="1" />
+            <effect_group>
+                <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="NPCModPreviousOrder" operation="set" value="@CurrentOrder"/>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffNPCModStopAttacking">
+                    <requirement name="CVarCompare" target="other" cvar="EntityID" operation="Equals" value="@Leader" />
+                    <requirement name="CVarCompare" target="other" cvar="varNPCModStopAttacking" operation="Equals" value="0" />
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffNPCModStopAttacking">
+                    <requirement name="CVarCompare" target="other" cvar="EntityID" operation="Equals" value="@Leader" />
+                    <requirement name="CVarCompare" target="other" cvar="varNPCModStopAttacking" operation="Equals" value="1" />
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffNPCModFullControlMode">
+                    <requirement name="CVarCompare" target="other" cvar="EntityID" operation="Equals" value="@Leader" />
+                    <requirement name="CVarCompare" target="other" cvar="varNPCModMode" operation="Equals" value="1" />
+                </triggered_effect>
+                <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffNPCModFullControlMode">
+                    <requirement name="CVarCompare" target="other" cvar="EntityID" operation="Equals" value="@Leader" />
+                    <requirement name="CVarCompare" target="other" cvar="varNPCModMode" operation="Equals" value="0" />
+                </triggered_effect>
+            </effect_group>
+        </buff>
 	</append>	
-      
+	
 	<!-- Unity default is zero (0) for the property IsHuman.  Changing this value with a buff will change the animations from human to zombie.   -->
  
 	<!-- IsHuman Animator set to "0" (Unity default) for zombie, 1 for infected, 2 for Human, 3 for humanoid rigged animals.  Set WalkType to "7"	-->
@@ -1022,7 +1010,7 @@
 			<stack_type value="ignore"/>
 			<duration value="1"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="Timid" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$Timid" operation="set" value="1"/>
 			</effect_group>
 		</buff>	
 

@@ -299,7 +299,7 @@
 				<passive_effect name="StaminaMax" operation="base_set" value="2000"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10" />
 				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffBurningEnvironment,buffFatiguedTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/> 
-				<passive_effect name="BuffResistance" operation="base_set" value="1" tags="buffInjuryBleeding,buffInjuryBleedingZombie,buffLegSprained,buffLegBroken,buffArmSprained,buffPlayerFallingDamage,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger"/>
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffInjuryBleeding,buffInjuryBleedingZombie,buffLegSprained,buffLegBroken,buffArmSprained,buffPlayerFallingDamage,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger"/>
 				<passive_effect name="LandMineImmunity" operation="base_set" value="1"/> <!--  SCore add  -->
 			</effect_group>	
 			<effect_group name="IsNPC"> 
@@ -428,32 +428,7 @@
 				<requirement name="InBiome" biome="8"/>
 					<passive_effect name="DamageModifier" operation="perc_add" value="-.5"/>
 			</effect_group> 
-			 <!-- DAMAGE MODIFIER BASED ON LEADER LEVEL -->
-			 <effect_group name="EntityDamageLeaderLevel1">
-			   <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="20"/>
-			   <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="40"/>
-				 <passive_effect name="DamageModifier" operation="perc_add" value="0.1"/>
-			 </effect_group> 
-			 <effect_group name="EntityDamageLeaderLevel2">
-			   <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="40"/>
-			   <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="60"/>
-				 <passive_effect name="DamageModifier" operation="perc_add" value="0.2"/>
-			 </effect_group> 
-			 <effect_group name="EntityDamageLeaderLevel3">
-			   <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="60"/>
-			   <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="80"/>
-				 <passive_effect name="DamageModifier" operation="perc_add" value="0.3"/>
-			 </effect_group> 
-			 <effect_group name="EntityDamageLeaderLevel4">
-			   <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="80"/>
-			   <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="100"/>
-				 <passive_effect name="DamageModifier" operation="perc_add" value="0.4"/>
-			 </effect_group> 
-			 <effect_group name="EntityDamageLeaderLevel5">
-			   <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="100"/>
-			   <requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="120"/>
-				 <passive_effect name="DamageModifier" operation="perc_add" value="0.5"/>
-			 </effect_group> 
+			 
 			
 			<!-- HEALTH ADJUSTMENTS BASED ON GAME DIFFICULTY -->
             <effect_group name="GameDifficulty0">
@@ -481,101 +456,6 @@
                 <passive_effect name="HealthMax" operation="perc_add" value="1.5"/>
             </effect_group> 
 
-			 <!-- DAMAGE RESISTANCE BASED ON LEADER LEVEL -->
-			 <!-- LOW DR LEVELING -->
-			<effect_group name="PhysicalResistanceLeaderLevel1DRLow">
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="20"/>
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="40"/>
-				<requirement name="EntityTagCompare" tags="DRLow"/>
-					<passive_effect name="PhysicalDamageResist" operation="base_set" value="2.5"/>
-			</effect_group>
-			<effect_group name="PhysicalResistanceLeaderLevel2DRLow">
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="40"/>
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="60"/>
-				<requirement name="EntityTagCompare" target="self" tags="DRLow"/>
-					<passive_effect name="PhysicalDamageResist" operation="base_add" value="5"/>
-			</effect_group> 
-			<effect_group name="PhysicalResistanceLeaderLevel3DRLow">
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="60"/>
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="80"/>
-				<requirement name="EntityTagCompare" target="self" tags="DRLow"/>
-					<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.5"/>
-			</effect_group> 
-			<effect_group name="PhysicalResistanceLeaderLevel4DRLow">
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="80"/>
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="100"/>
-				<requirement name="EntityTagCompare" target="self" tags="DRLow"/>
-					<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
-			</effect_group> 
-			<effect_group name="PhysicalResistanceLeaderLevel5DRLow">
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="100"/>
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="120"/>
-				<requirement name="EntityTagCompare" target="self" tags="DRLow"/>
-					<passive_effect name="PhysicalDamageResist" operation="base_add" value="15"/>
-			</effect_group>	 
-			<!-- MID DR LEVELING -->
-			<effect_group name="PhysicalResistanceLeaderLevel1DRMid">
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="20"/>
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="40"/>
-				<requirement name="EntityTagCompare" target="self" tags="DRMid"/>
-					<passive_effect name="PhysicalDamageResist" operation="base_add" value="5"/>
-			</effect_group> 
-			<effect_group name="PhysicalResistanceLeaderLevel2DRMid">
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="40"/>
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="60"/>
-				<requirement name="EntityTagCompare" target="self" tags="DRMid"/>
-					<passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
-			</effect_group> 	 
-			<effect_group name="PhysicalResistanceLeaderLevel3DRMid">
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="60"/>
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="80"/>
-				<requirement name="EntityTagCompare" target="self" tags="DRMid"/>
-					<passive_effect name="PhysicalDamageResist" operation="base_add" value="15"/>
-			</effect_group> 
-			<effect_group name="PhysicalResistanceLeaderLevel4DRMid">
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="80"/>
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="100"/>
-				<requirement name="EntityTagCompare" target="self" tags="DRMid"/>
-					<passive_effect name="PhysicalDamageResist" operation="base_add" value="20"/>
-			</effect_group> 
-			<effect_group name="PhysicalResistanceLeaderLevel5DRMid">
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="100"/>
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="120"/>
-				<requirement name="EntityTagCompare" target="self" tags="DRMid"/>
-					<passive_effect name="PhysicalDamageResist" operation="base_add" value="25"/>
-			</effect_group>	 
-			<!-- HIGH DR LEVELING -->
-			<effect_group name="PhysicalResistanceLeaderLevel1DRHigh">
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="20"/>
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="40"/>
-				<requirement name="EntityTagCompare" target="self" tags="DRHigh"/>
-					<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.5"/>
-			</effect_group> 
-			<effect_group name="PhysicalResistanceLeaderLevel2DRHigh">
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="40"/>
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="60"/>
-				<requirement name="EntityTagCompare" target="self" tags="DRHigh"/>
-					<passive_effect name="PhysicalDamageResist" operation="base_add" value="15"/>
-			</effect_group> 
-			<effect_group name="PhysicalResistanceLeaderLevel3DRHigh">
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="60"/>
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="80"/>
-				<requirement name="EntityTagCompare" target="self" tags="DRHigh"/>
-					<passive_effect name="PhysicalDamageResist" operation="base_add" value="22.5"/>
-			</effect_group> 
-			<effect_group name="PhysicalResistanceLeaderLevel4DRHigh">
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="80"/>
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="100"/>
-				<requirement name="EntityTagCompare" target="self" tags="DRHigh"/>
-					<passive_effect name="PhysicalDamageResist" operation="base_add" value="30"/>
-			</effect_group> 
-			<effect_group name="PhysicalResistanceLeaderLevel5DRHigh">
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="GTE" value="100"/>
-				<requirement name="CVarCompare" cvar="varNPCModLeaderLevel" operation="LT" value="120"/>
-				<requirement name="EntityTagCompare" target="self" tags="DRHigh"/>
-					<passive_effect name="PhysicalDamageResist" operation="base_add" value="37.5"/>
-			</effect_group>
-	
 	 
 			<!-- REDUCE NPC DAMAGE TO PLAYER -->
 			<effect_group name="ReduceDamageToPlayers">
@@ -583,7 +463,21 @@
 				<requirement name="HoldingItemHasTags" tags="ranged,melee"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="-.2"/>
 			</effect_group>
-						
+			
+			<!-- Add Damage Resistance -->
+			<effect_group name="PhysicalResistanceLow">
+            <requirement name="EntityTagCompare" target="self" tags="DRLow"/>
+                <passive_effect name="PhysicalDamageResist" operation="base_add" value="10"/>
+			</effect_group> 
+			<effect_group name="PhysicalResistanceMid">
+				<requirement name="EntityTagCompare" target="self" tags="DRMid"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="20"/>
+			</effect_group> 
+			<effect_group name="PhysicalResistanceHigh">
+				<requirement name="EntityTagCompare" target="self" tags="DRHigh"/>
+					<passive_effect name="PhysicalDamageResist" operation="base_add" value="30"/>
+			</effect_group> 
+				
 			<!--  Customization properties for default, passive, basic characters  -->
 			
 			<property name="AIPackages" value="NPCBasicNoChat, NPCMeleeBasic"/>  
