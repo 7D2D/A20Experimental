@@ -154,7 +154,7 @@
 	<!-- Human Melee Basic Templates, non-hirable, no interactable, default neutral faction , change faction on character -->
 
 		<entity_class name="npcMeleeTemplate"> 
-			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Class" value="EntityNPC" /> 
 			<property name="SleeperInstantAwake" value="true" /> <!-- needed to make sure NPCs fully initialized on spawning in all sleeper volumes  -->
 			<property name="EntityType" value="Player"/>
 			<property name="Tags" value="entity,male,npc,melee"/> <!-- entity/sex/type/role/attacktype/name: Entity is required for code filtering, sex for sound filtering, type/role and Atype for buff filtering.  These DO NOT Extend! -->
@@ -362,69 +362,69 @@
 			<!-- SET FACTION CVARS : FuriousRamsay -->
             <effect_group name="SetFactionCVars">
                 <triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="respawn" operation="set" value="1"/>
-                <triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="varFactionBandit" operation="set" value="1">
+                <triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="$varFactionBandit" operation="set" value="1">
                     <requirement name="EntityTagCompare" target="self" tags="bandit,whisperer,mech"/>
                 </triggered_effect>
             </effect_group>  
 			<effect_group name="EntityDamageKillCount">
-			  <triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="varNumKills" operation="add" value="1"/>
+			  <triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="$varNumKills" operation="add" value="1"/>
 			</effect_group> 
 			
 			<!-- SET PASSIVE DAMAGE BUFFS/DEBUFFS -->
 			<!-- DAMAGE MODIFIER BASED ON NUMBER OF KILLS -->
 			<effect_group name="EntityDamageKillsLevel1">
-			  <requirement name="CVarCompare" cvar="varNumKills" operation="GT" value="0"/>
-			  <requirement name="CVarCompare" cvar="varNumKills" operation="LTE" value="20"/>
+			  <requirement name="CVarCompare" cvar="$varNumKills" operation="GT" value="0"/>
+			  <requirement name="CVarCompare" cvar="$varNumKills" operation="LTE" value="20"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="0.1"/>
 			</effect_group> 
 			<effect_group name="EntityDamageKillsLevel2">
-			  <requirement name="CVarCompare" cvar="varNumKills" operation="GT" value="20"/>
-			  <requirement name="CVarCompare" cvar="varNumKills" operation="LTE" value="50"/>
+			  <requirement name="CVarCompare" cvar="$varNumKills" operation="GT" value="20"/>
+			  <requirement name="CVarCompare" cvar="$varNumKills" operation="LTE" value="50"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="0.2"/>
 			</effect_group> 
 			<effect_group name="EntityDamageKillsLevel3">
-			  <requirement name="CVarCompare" cvar="varNumKills" operation="GT" value="50"/>
-			  <requirement name="CVarCompare" cvar="varNumKills" operation="LTE" value="100"/>
+			  <requirement name="CVarCompare" cvar="$varNumKills" operation="GT" value="50"/>
+			  <requirement name="CVarCompare" cvar="$varNumKills" operation="LTE" value="100"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="0.3"/>
 			</effect_group> 
 			<effect_group name="EntityDamageKillsLevel4">
-			  <requirement name="CVarCompare" cvar="varNumKills" operation="GT" value="100"/>
-			  <requirement name="CVarCompare" cvar="varNumKills" operation="LTE" value="200"/>
+			  <requirement name="CVarCompare" cvar="$varNumKills" operation="GT" value="100"/>
+			  <requirement name="CVarCompare" cvar="$varNumKills" operation="LTE" value="200"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="0.4"/>
 			</effect_group> 
 			<effect_group name="EntityDamageKillsLevel5">
-			  <requirement name="CVarCompare" cvar="varNumKills" operation="GT" value="200"/>
+			  <requirement name="CVarCompare" cvar="$varNumKills" operation="GT" value="200"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="0.5"/>
 			</effect_group> 
 			<!-- DAMAGE MODIFIER BASED ON TIME OF DAY -->
 			<effect_group name="EntityDamageAtNight">
-				<requirement name="CVarCompare" cvar="varFactionBandit" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="$varFactionBandit" operation="Equals" value="1"/>
 				<requirement name="IsNight"/>
 					<passive_effect name="DamageModifier" operation="perc_add" value="-.2"/>
 			</effect_group>                     
 			<!-- DAMAGE MODIFIER BASED ON BIOME DIFFICULTY -->
 			<effect_group name="EntityDamageInBiomeForest">
-				<requirement name="CVarCompare" cvar="varFactionBandit" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="$varFactionBandit" operation="Equals" value="1"/>
 				<requirement name="InBiome" biome="3"/>
 					<passive_effect name="DamageModifier" operation="perc_add" value="-.3"/>
 			</effect_group> 
 			<effect_group name="EntityDamageInBiomeDesert">
-				<requirement name="CVarCompare" cvar="varFactionBandit" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="$varFactionBandit" operation="Equals" value="1"/>
 				<requirement name="InBiome" biome="5"/>
 					<passive_effect name="DamageModifier" operation="perc_add" value="-.1"/>
 			</effect_group> 
 			<effect_group name="EntityDamageInBiomeSnow">
-				<requirement name="CVarCompare" cvar="varFactionBandit" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="$varFactionBandit" operation="Equals" value="1"/>
 				<requirement name="InBiome" biome="1"/>
 					<passive_effect name="DamageModifier" operation="perc_add" value=".25"/>
 			</effect_group> 
 			<effect_group name="EntityDamageInBiomeBurntForest">
-				<requirement name="CVarCompare" cvar="varFactionBandit" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="$varFactionBandit" operation="Equals" value="1"/>
 				<requirement name="InBiome" biome="9"/>
 					<passive_effect name="DamageModifier" operation="perc_add" value="-.5"/>
 			</effect_group> 
 			<effect_group name="EntityDamageInBiomeWasteland">
-				<requirement name="CVarCompare" cvar="varFactionBandit" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="$varFactionBandit" operation="Equals" value="1"/>
 				<requirement name="InBiome" biome="8"/>
 					<passive_effect name="DamageModifier" operation="perc_add" value="-.5"/>
 			</effect_group> 
@@ -479,8 +479,7 @@
 			</effect_group> 
 				
 			<!--  Customization properties for default, passive, basic characters  -->
-			
-			<property name="AIPackages" value="NPCBasicNoChat, NPCMeleeBasic"/>  
+
 			<property name="IsEnemyEntity" value="false"/> 
 			<property name="LootListAlive" value=""/> <!-- removing these two properties removes the E when alive and on death but disables the inventory  -->	
 			<property name="NPCID" value=""/> 
@@ -545,7 +544,6 @@
 				<property name="BoundaryBox" value="2.0,1.8,0.4" />
 				<property name="Center" value="0.0,0.9,0.0"/>
 				</property> -->
-			<property name="AIPackages" value="NPCBasicNoChat, NPCRangedBasic"/> 
 		</entity_class>	
 		
 		<!--  Template converting the above ranged template to bloodmoon enabled   -->
@@ -565,7 +563,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>
 		
 		<entity_class name="npcRangedAdvancedTemplate" extends="npcRangedTemplate"> 
@@ -574,7 +572,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>		
 		
 		
@@ -632,7 +630,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/> 
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>
 		
 		<!-- testing characters  -->
@@ -649,8 +647,8 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Tester" />	
 			<property name="LookAtAngle" value="60"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Baker_X"/> 
-			<!--<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired"/> -->
 		</entity_class>			
 		
 		<!--  Club  -->
@@ -694,7 +692,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>
 		
 		<!-- More weapons  -->
@@ -734,7 +732,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>
 		
 		<entity_class name="npcBatTemplate" extends="npcMeleeTemplate">
@@ -772,7 +770,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>
 		
 		
@@ -812,12 +810,9 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>
 
-
-		
-		
 		<entity_class name="npcSpearTemplate" extends="npcMeleeTemplate">
 			<property name="HideInSpawnMenu" value="true"/> 
 			<property name="Tags" value="entity,male,npc,melee"/>
@@ -853,11 +848,8 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>
-		
-		
-		
 		
 		<entity_class name="npcMacheteTemplate" extends="npcMeleeTemplate"><property name="HideInSpawnMenu" value="true"/> 
 			<property name="Tags" value="entity,male,npc,melee"/>
@@ -893,10 +885,8 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>
-		
-		
 		
 		<entity_class name="npcPipePistolTemplate" extends="npcRangedTemplate">
 			<property name="HideInSpawnMenu" value="true"/> 
@@ -939,7 +929,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>
 		
 		<entity_class name="npcPistolTemplate" extends="npcRangedTemplate"><property name="HideInSpawnMenu" value="true"/> 
@@ -982,7 +972,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>
 		
 	
@@ -1026,7 +1016,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>
 
 		
@@ -1071,7 +1061,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>		
 		
 		
@@ -1116,7 +1106,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>		
 	
 		<entity_class name="npcAK47Template" extends="npcRangedTemplate">
@@ -1160,7 +1150,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>		
 		
 		<entity_class name="npcPipeMGTemplate" extends="npcRangedTemplate"><property name="HideInSpawnMenu" value="true"/> 
@@ -1203,7 +1193,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>		
 		
 		
@@ -1247,7 +1237,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>		
 		
 
@@ -1291,7 +1281,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>		
 		
 		<entity_class name="npcHRifleTemplate" extends="npcRangedTemplate"><property name="HideInSpawnMenu" value="true"/> 
@@ -1334,7 +1324,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>  		
 		
 		<entity_class name="npcSRifleTemplate" extends="npcRangedTemplate"><property name="HideInSpawnMenu" value="true"/> 
@@ -1377,7 +1367,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>		
 
 		<entity_class name="npcPipeShotgunTemplate" extends="npcRangedTemplate"><property name="HideInSpawnMenu" value="true"/> 
@@ -1420,7 +1410,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class> 		
 	
 		<entity_class name="npcPShotgunTemplate" extends="npcRangedTemplate"><property name="HideInSpawnMenu" value="true"/> 
@@ -1463,7 +1453,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>		
 		
 		<entity_class name="npcAShotgunTemplate" extends="npcRangedTemplate"><property name="HideInSpawnMenu" value="true"/> 
@@ -1506,7 +1496,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>		
 
 		<entity_class name="npcLBowTemplate" extends="npcRangedTemplate"><property name="HideInSpawnMenu" value="true"/> 
@@ -1549,7 +1539,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>		
 		
 		<entity_class name="npcXBowTemplate" extends="npcRangedTemplate"><property name="HideInSpawnMenu" value="true"/> 
@@ -1596,7 +1586,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>		
 		
 		<entity_class name="npcRocketLTemplate" extends="npcRangedTemplate">
@@ -1622,9 +1612,8 @@
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Magsize" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$roundsinmag" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$Burstsize" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$burstrate" operation="set" value="1"/>				
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="$burstrate" operation="set" value="1"/>		
 			</effect_group>
-			<property name="AIPackages" value="NPCBasicNoChat, NPCRangedBasic"/> 
 		</entity_class>	
 
 		<entity_class name="npcBMRocketLTemplate" extends="npcRocketLTemplate">
@@ -1643,7 +1632,7 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired"/> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 		</entity_class>		
 		
 		<!--  NPC Animal templates  -->		
@@ -2483,7 +2472,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
-			<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired, NPCMedic"/> 			
 		</entity_class>	
 		
 		<entity_class name="npcNurseClub" extends="npcAdvancedClubTemplate"> 
@@ -2508,7 +2496,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>		
-			<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired, NPCMedic"/> 				
 		</entity_class>
 		
 		<entity_class name="npcNurseKnife" extends="npcAdvancedKnifeTemplate"> 
@@ -2533,7 +2520,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
-			<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired, NPCMedic"/> 					
 		</entity_class>	
 		
 		<entity_class name="npcNurseAxe" extends="npcAdvancedAxeTemplate"> 
@@ -2558,7 +2544,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
-			<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired, NPCMedic"/> 				
 		</entity_class>	
 		
 		<entity_class name="npcNurseSpear" extends="npcAdvancedSpearTemplate"> 
@@ -2608,7 +2593,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>
-			<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired, NPCMedic"/> 				
 		</entity_class>			
 		
 		<entity_class name="npcNurseMachete" extends="npcAdvancedMacheteTemplate"> 
@@ -2633,7 +2617,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
-			<property name="AIPackages" value="NPCBasic, NPCMelee, NPCHired, NPCMedic"/> 				
 		</entity_class>	
 		
 		<entity_class name="npcNurseSMG" extends="npcAdvancedSMGTemplate"> 
@@ -2659,7 +2642,6 @@
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>		
 			<property name="WalkType" value="7"/>
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 	
 		</entity_class>	
 		
 		<entity_class name="npcNurseM60" extends="npcAdvancedM60Template"> 
@@ -2684,7 +2666,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 
 		</entity_class>
 		
 		<entity_class name="npcNursePipePistol" extends="npcAdvancedPipePistolTemplate"> 
@@ -2709,7 +2690,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class>			
 		
 		<entity_class name="npcNursePistol" extends="npcAdvancedPistolTemplate"> 
@@ -2734,7 +2714,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class>				
 		
 		
@@ -2760,7 +2739,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class>	
 
 		<entity_class name="npcNursePipeMG" extends="npcAdvancedPipeMGTemplate"> 
@@ -2785,7 +2763,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class>
 
 		<entity_class name="npcNurseAK47" extends="npcAdvancedAK47Template"> 
@@ -2810,7 +2787,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class>
 		
 		<entity_class name="npcNurseTRifle" extends="npcAdvancedTRifleTemplate"> 
@@ -2835,7 +2811,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class>	
 
 		<entity_class name="npcNursePipeRifle" extends="npcAdvancedPipeRifleTemplate"> 
@@ -2861,7 +2836,6 @@
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
 			<property name="WalkType" value="7"/>
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class>    	
 		
 		
@@ -2888,7 +2862,6 @@
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
 			<property name="WalkType" value="7"/>
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class>    		
 		
 		<entity_class name="npcNurseSRifle" extends="npcAdvancedSRifleTemplate"> 
@@ -2914,7 +2887,6 @@
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
 			<property name="WalkType" value="7"/>
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class> 
 		
 		<entity_class name="npcNursePipeShotgun" extends="npcAdvancedPipeShotgunTemplate"> 
@@ -2939,7 +2911,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class> 		
 		
 		<entity_class name="npcNursePShotgun" extends="npcAdvancedPShotgunTemplate"> 
@@ -2964,7 +2935,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class> 
 		
 		<entity_class name="npcNurseAShotgun" extends="npcAdvancedAShotgunTemplate"> 
@@ -2989,7 +2959,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class> 		
 		
 		<entity_class name="npcNurseXBow" extends="npcAdvancedXBowTemplate"> 
@@ -3014,7 +2983,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class>	
 		
 		<entity_class name="npcNurseLBow" extends="npcAdvancedLBowTemplate"> 
@@ -3039,7 +3007,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>	
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCHired, NPCMedic"/> 			
 		</entity_class> 
 		
 		<entity_class name="npcNurseRocketL" extends="npcAdvancedRocketLTemplate"> 
@@ -3064,7 +3031,6 @@
 			<property name="SoundAlert" value="Player_Female/player2stamina"/>
 			<property name="SoundAttack" value="Player_Female/player2stamina"/>
 			<property name="SoundSense" value="Player_Female/player2stamina"/>
-			<property name="AIPackages" value="NPCBasic, NPCRanged, NPCMedic, NPCHired"/>
 		</entity_class> 	
 		
 		<!--  w  -->	
@@ -4215,5 +4181,99 @@
 			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="ZombieWalkChange"/>		
 		</effect_group>
 	</append>	
+
+	<!-- 2022-03-23 OPTIMIZATION CHANGES -->
+	<!-- 2022-03-23 OPTIMIZATION CHANGES -->
+	<!-- 2022-03-23 OPTIMIZATION CHANGES -->
+
+	<!-- ADJUST NPC RESISTANCES -->
+	<setattribute xpath="//entity_class[@name='npcMeleeTemplate']/effect_group[@name='Base Effects']/passive_effect[@name='BuffResistance' and @value='5']" name="tags">buffInfectionCatch,buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffInjuryConcussion,buffArmBroken,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffInjuryCrippled01,buffInjuryKnockdown01,buffInjuryKnockdown01,buffInjuryUnconscious,buffStayDownKO,buffRadiationCatch,buffRadiation03,buffRadiationNew,buffRadiationNew2,buffRadiationWeak,buffRadiationStrong,buffBurningEnvironment,buffBurningElement,buffBurningEnvironmentHack</setattribute>
+	<setattribute xpath="//entity_class[@name='npcMeleeTemplate']/effect_group[@name='Base Effects']/passive_effect[@name='BuffResistance' and @value='5']" name="tags">buffInjuryBleeding,buffInjuryBleedingZombie,buffPlayerFallingDamage</setattribute>
+	<setattribute xpath="//entity_class[@name='npcMeleeTemplate']/effect_group[@name='Base Effects']/passive_effect[@name='BuffResistance']" name="value">200</setattribute>
+
+	<remove xpath="//entity_class[starts-with(@name, 'npc')]/property[@name='AIPackages']"/>
 	
+	<!-- ASSOCIATE WEAPON-SPECIFIC UAI PACKAGES -->
+	<!-- BASIC TEMPLATE -->
+	<append xpath="/entity_classes/entity_class[@name='npcEmptyHandTemplate' or
+												@name='npcBatTemplate' or
+												@name='npcAxeTemplate' or
+												@name='npcClubTemplate' or
+												@name='npcKnifeTemplate' or
+												@name='npcSpearTemplate' or
+												@name='npcMacheteTemplate'
+												]">
+		<property name="AIPackages" value="NPCModBasicMeleeNoChat, NPCModNPCMeleeBasic"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='npcPipeShotgunTemplate' or
+												@name='npcPShotgunTemplate' or
+												@name='npcAShotgunTemplate'
+												]">
+		<property name="AIPackages" value="NPCModBasicRangedNoChat, NPCModNPCShortRangedBasic"/> 
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='npcPipePistolTemplate' or
+												@name='npcPipeMGTemplate' or
+												@name='npcPipeRifleTemplate' or
+												@name='npcPistolTemplate' or
+												@name='npcDPistolTemplate' or
+												@name='npcSMGTemplate' or
+												@name='npcM60Template' or
+												@name='npcAK47Template' or
+												@name='npcTRifleTemplate' or
+												@name='npcLBowTemplate' or
+												@name='npcXBowTemplate'
+												]">
+		<property name="AIPackages" value="NPCModBasicRangedNoChat, NPCModNPCMediumRangedBasic"/> 
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='npcHRifleTemplate' or
+												@name='npcSRifleTemplate' or
+												@name='npcRocketLTemplate'
+												]">
+		<property name="AIPackages" value="NPCModBasicRangedNoChat, NPCModNPCLongRangedBasic"/> 
+	</append>
+
+	<!-- ADVANCED TEMPLATES -->
+	<append xpath="/entity_classes/entity_class[@name='npcAdvancedEmptyHandTemplate' or
+												@name='npcAdvancedBatTemplate' or
+												@name='npcAdvancedAxeTemplate' or
+												@name='npcAdvancedClubTemplate' or
+												@name='npcAdvancedKnifeTemplate' or
+												@name='npcAdvancedSpearTemplate' or
+												@name='npcAdvancedMacheteTemplate'
+												]">
+		<property name="AIPackages" value="NPCModBasicMelee, NPCModNPCMelee, NPCHired"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='npcAdvancedPipeShotgunTemplate' or
+												@name='npcAdvancedPShotgunTemplate' or
+												@name='npcAdvancedAShotgunTemplate'
+												]">
+		<property name="AIPackages" value="NPCModBasicRanged, NPCModNPCShortRanged, NPCHired"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='npcAdvancedPipePistolTemplate' or
+												@name='npcAdvancedPipeMGTemplate' or
+												@name='npcAdvancedPipeRifleTemplate' or
+												@name='npcAdvancedPistolTemplate' or
+												@name='npcAdvancedDPistolTemplate' or
+												@name='npcAdvancedSMGTemplate' or
+												@name='npcAdvancedM60Template' or
+												@name='npcAdvancedAK47Template' or
+												@name='npcAdvancedTRifleTemplate' or
+												@name='npcAdvancedLBowTemplate' or
+												@name='npcAdvancedXBowTemplate'
+												]">
+		<property name="AIPackages" value="NPCModBasicRanged, NPCModNPCMediumRanged, NPCHired"/>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[@name='npcAdvancedHRifleTemplate' or
+												@name='npcAdvancedSRifleTemplate' or
+												@name='npcAdvancedRocketLTemplate'
+												]">
+		<property name="AIPackages" value="NPCModBasicRanged, NPCModNPCLongRanged, NPCHired"/>
+	</append>
+
 </configs>
