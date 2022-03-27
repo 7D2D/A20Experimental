@@ -154,7 +154,7 @@
 	<!-- Human Melee Basic Templates, non-hirable, no interactable, default neutral faction , change faction on character -->
 
 		<entity_class name="npcMeleeTemplate"> 
-			<property name="Class" value="EntityNPC" /> 
+			<property name="Class" value="EntityAliveSDX, SCore" /> 
 			<property name="SleeperInstantAwake" value="true" /> <!-- needed to make sure NPCs fully initialized on spawning in all sleeper volumes  -->
 			<property name="EntityType" value="Player"/>
 			<property name="Tags" value="entity,male,npc,melee"/> <!-- entity/sex/type/role/attacktype/name: Entity is required for code filtering, sex for sound filtering, type/role and Atype for buff filtering.  These DO NOT Extend! -->
@@ -479,12 +479,17 @@
 			</effect_group> 
 				
 			<!--  Customization properties for default, passive, basic characters  -->
-
-			<property name="IsEnemyEntity" value="false"/> 
-			<property name="LootListAlive" value=""/> <!-- removing these two properties removes the E when alive and on death but disables the inventory  -->	
-			<property name="NPCID" value=""/> 
-			<property name="Faction" value="whiteriver"/>
+		
+			<!-- removing these two properties removes the E when alive and on death but disables the inventory  -->	
 			
+			<property name="LootListAlive" value=""/> 
+			<property name="NPCID" value=""/> 
+			
+			<!--  Defaults for basic, dumb characters  -->
+			<property name="Hirable" value="false" /> <!--  This was added to all advanced tempates, Note: you still need the UAI Hired package  -->
+			<property name="IsQuestGiver" value="false" /> <!--  If you want quest giving, add this property set to true to that specific character  -->
+			<property name="IsEnemyEntity" value="false"/> 
+			<property name="Faction" value="whiteriver"/>
 			<!-- <property name="LootListAlive" value="traderNPC"/> --> <!-- removing this removes the E on death but disables NPC inventory  -->
 			
 			
@@ -564,6 +569,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>
 		
 		<entity_class name="npcRangedAdvancedTemplate" extends="npcRangedTemplate"> 
@@ -573,6 +579,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>		
 		
 		
@@ -631,6 +638,7 @@
 			<property name="LootListAlive" value="traderNPC"/> 
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>
 		
 		<!-- testing characters  -->
@@ -648,6 +656,7 @@
 			<property name="Names" value="Tester" />	
 			<property name="LookAtAngle" value="60"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Baker_X"/> 
 		</entity_class>			
 		
@@ -693,6 +702,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>
 		
 		<!-- More weapons  -->
@@ -732,7 +742,8 @@
 			<property name="Faction" value="whiteriver"/>
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
-			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Class" value="EntityAliveSDX, SCore" />
+			<property name="Hirable" value="true" />
 		</entity_class>
 		
 		<entity_class name="npcBatTemplate" extends="npcMeleeTemplate">
@@ -771,6 +782,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>
 		
 		
@@ -811,6 +823,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>
 
 		<entity_class name="npcSpearTemplate" extends="npcMeleeTemplate">
@@ -849,6 +862,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>
 		
 		<entity_class name="npcMacheteTemplate" extends="npcMeleeTemplate"><property name="HideInSpawnMenu" value="true"/> 
@@ -886,6 +900,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>
 		
 		<entity_class name="npcPipePistolTemplate" extends="npcRangedTemplate">
@@ -930,6 +945,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>
 		
 		<entity_class name="npcPistolTemplate" extends="npcRangedTemplate"><property name="HideInSpawnMenu" value="true"/> 
@@ -973,6 +989,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>
 		
 	
@@ -1017,6 +1034,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>
 
 		
@@ -1062,6 +1080,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>		
 		
 		
@@ -1107,6 +1126,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>		
 	
 		<entity_class name="npcAK47Template" extends="npcRangedTemplate">
@@ -1151,6 +1171,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>		
 		
 		<entity_class name="npcPipeMGTemplate" extends="npcRangedTemplate"><property name="HideInSpawnMenu" value="true"/> 
@@ -1194,6 +1215,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>		
 		
 		
@@ -1238,6 +1260,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>		
 		
 
@@ -1282,6 +1305,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>		
 		
 		<entity_class name="npcHRifleTemplate" extends="npcRangedTemplate"><property name="HideInSpawnMenu" value="true"/> 
@@ -1325,6 +1349,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>  		
 		
 		<entity_class name="npcSRifleTemplate" extends="npcRangedTemplate"><property name="HideInSpawnMenu" value="true"/> 
@@ -1368,6 +1393,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>		
 
 		<entity_class name="npcPipeShotgunTemplate" extends="npcRangedTemplate"><property name="HideInSpawnMenu" value="true"/> 
@@ -1411,6 +1437,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class> 		
 	
 		<entity_class name="npcPShotgunTemplate" extends="npcRangedTemplate"><property name="HideInSpawnMenu" value="true"/> 
@@ -1454,6 +1481,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>		
 		
 		<entity_class name="npcAShotgunTemplate" extends="npcRangedTemplate"><property name="HideInSpawnMenu" value="true"/> 
@@ -1497,6 +1525,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>		
 
 		<entity_class name="npcLBowTemplate" extends="npcRangedTemplate"><property name="HideInSpawnMenu" value="true"/> 
@@ -1540,6 +1569,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>		
 		
 		<entity_class name="npcXBowTemplate" extends="npcRangedTemplate"><property name="HideInSpawnMenu" value="true"/> 
@@ -1587,6 +1617,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>		
 		
 		<entity_class name="npcRocketLTemplate" extends="npcRangedTemplate">
@@ -1633,6 +1664,7 @@
 			<property name="LootListAlive" value="traderNPC"/>
 			<property name="NPCID" value="spheretest"/> 
 			<property name="Class" value="EntityAliveSDX, SCore" /> 
+			<property name="Hirable" value="true" />
 		</entity_class>		
 		
 		<!--  NPC Animal templates  -->		
@@ -1669,6 +1701,7 @@
 			<property name="AIPackages" value="NPCAnimalCompanion, NPCMeleeCompanion, NPCHiredCompanion "/>
             <property name="MaxViewAngle" value="360"/>
             <property name="NPCID" value="NPCAnimalGeneric"/> 
+			<property name="Hirable" value="true" />
 			<!-- if your animal is clipping walls, you can activate this and adjust size to fit your animal -->
             <!--<property class="Boundary" > 
                 <property name="BoundaryBox" value=".2,.3,1.1" />
@@ -1705,7 +1738,8 @@
 			<property name="MoveSpeed" value="0.3"/> 
 			<property name="MoveSpeedAggro" value="1.1,1.1"/> 
 			<property name="MoveSpeedPanic" value="1.1"/>
-			<property name="AIPackages" value="NPCAnimalBasic, NPCRanged, NPCHired"/><!-- Placeholder, will eventually make animal specific AI packages  -->
+			<property name="AIPackages" value="NPCAnimalCompanion, NPCRanged, NPCHiredCompanion"/><!-- Placeholder, will eventually make animal specific AI packages  -->
+			<property name="Hirable" value="true" />
 			<effect_group name="Base Effects">
 				<passive_effect name="HealthMax" operation="base_set" value="400"/>
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
@@ -1716,6 +1750,7 @@
 			<property name="HideInSpawnMenu" value="true"/>
 			<property name="Tags" value="entity,npc,animal"/>	
 			<property name="AvatarController" value="AvatarZombie01Controller"/>
+			<property name="Hirable" value="true" />
 		</entity_class>
 		
 		<!-- Dumb Animal Templates  -->	
@@ -2440,8 +2475,6 @@
 			<property name="HireCurrency" value="carBattery" />
 			<property name="HireCost" value="1" />
 		</entity_class> 
-
-
 
 	<!--  End Of Template Section  -->
 
