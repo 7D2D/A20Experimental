@@ -6,7 +6,6 @@
 			<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffNPCModVerifyCurrentActions"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffNPCModVerifyCurrentActions"/>
 		</effect_group>
-
 		<effect_group name="LeaderLevelUpdate"> <!-- Communicate Leaders Level to nearby NPCs -->
                 <triggered_effect trigger="onSelfBuffUpdate" target="selfAOE" range="60" action="ModifyCVar" cvar="varNPCModLeaderLevel" operation="set" value="20">
                     <requirement name="CVarCompare" target="other" cvar="Leader" operation="Equals" value="@EntityID" />
@@ -161,11 +160,11 @@
 			<stack_type value="ignore"/>
 			<duration value="0"/>
 		</buff>
-		<buff name="buffNPCModThreat" hidden="true">
+		<buff name="buffNPCModThreat" hidden="true" remove_on_death="true">
 			<stack_type value="ignore"/>
 			<duration value="0"/>
 		</buff>
-		<buff name="buffNPCModAttacking" hidden="true">
+		<buff name="buffNPCModAttacking" hidden="true" remove_on_death="true">
 			<stack_type value="replace"/>
 			<duration value="0"/>
 		</buff>
@@ -223,8 +222,8 @@
 			<stack_type value="ignore"/>
 			<update_rate value="2"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="25200"/> <!-- in seconds -->
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$dysenteryMaxDuration" operation="set" value="3600"/> <!-- in seconds -->
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="25200"/> <!-- in seconds -->
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="$dysenteryMaxDuration" operation="set" value="3600"/> <!-- in seconds -->
 
 				<!-- Remove particle effect if not on fire, this is a backup removal for remote clients -->
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveParticleEffectFromEntity" particle="p_onFire">
@@ -245,8 +244,8 @@
 				
 				<!-- Falling -->
 				<triggered_effect trigger="onSelfFallImpact" action="AddBuff" buff="buffPlayerFallingDamage">
-					<requirement name="CVarCompare" cvar="_fallSpeed" operation="GTE" value=".08"/> <!-- a bit over 1.5m while walking -->
-				</triggered_effect>
+					<requirement name="CVarCompare" cvar="_fallSpeed" operation="GTE" value=".08"/> 
+				</triggered_effect>  
 
 				<!-- Crouching -->
 				<triggered_effect trigger="onSelfCrouch" action="AddBuff" buff="buffCrouching"/>
@@ -293,10 +292,8 @@
 			<update_rate value="1"/>
 			<effect_group name="IsHuman">
 				<requirement name="!EntityTagCompare" tags="saveable"/>
-<!--				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="NPCSoundSys" /> -->
 				<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetFloat" property="IVar" value="0.0" />
 				<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetInt" property="IsHuman" value="2" /> <!-- need to make sure animator is initalized before ending this set  -->
-<!--				<triggered_effect trigger="onSelfBuffStart" action="AnimatorFireTrigger" property="MovementTrigger" value="true" /> -->
 				<triggered_effect trigger="onSelfBuffUpdate" action="AnimatorSetInt" property="IsHuman" value="2" /> 
 				<triggered_effect trigger="onSelfBuffUpdate" action="AnimatorSetFloat" property="IVar" value="0.0" /> 
 			</effect_group>
@@ -1029,18 +1026,15 @@
 		<buff name="NPCHit" hidden="true" remove_on_death="true" > <!-- note to self, we could use a buff that detects when targets are stunned/down  -->
 			<stack_type value="ignore"/>
 			<duration value="0"/>
-			<update_rate value=".1"/>
-			<effect_group>
-				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" buff="buffHitDelay" />
-			</effect_group>
+			<update_rate value="1"/>
 			<effect_group>
 				<requirement name="CVarCompare" cvar="_stunned" operation="Equals" value="0"/> 			
-				<triggered_effect trigger="onSelfBuffUpdate" action="AnimatorSetBool" property="IsStunned" value="false"/> <!-- unused so far  -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="AnimatorSetBool" property="IsStunned" value="false"/> 
  			</effect_group>		
 			<effect_group>
 				<requirement name="CVarCompare" cvar="_stunned" operation="GT" value="0"/> 			
 				<triggered_effect trigger="onSelfBuffUpdate" action="AnimatorSetBool" property="IsStunned" value="true"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffHitStun" />
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffHitStun" /> 
 			</effect_group>					
 		</buff>		
 	
@@ -1106,7 +1100,7 @@
 			<duration value="20"/>
 		</buff>
 		
-		<buff name="ActivityBuff"> <!-- This sets the IsBusy animation selection -->
+		<buff name="ActivityBuff"> 
 			<stack_type value="ignore"/>
 			<duration value="6"/>
 			<update_rate value="2"/>
@@ -1875,7 +1869,7 @@
 			<stack_type value="ignore"/>
 			<effect_group>
 			<!--	<passive_effect name="WalkSpeed" operation="base_set" value=".6"/> -->
-				<passive_effect name="RunSpeed" operation="base_set" value="1.6"/>
+				<passive_effect name="RunSpeed" operation="base_set" value="2.0"/>
 			</effect_group>
 		</buff>
 	</append>	

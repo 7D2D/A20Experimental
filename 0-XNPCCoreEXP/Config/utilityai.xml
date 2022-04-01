@@ -89,12 +89,12 @@
 				<action name="LeaderFollow" weight="2" >
 					<task class="FollowSDX, SCore" OnStartAddBuffs="NPCpegasus" OnStopRemoveBuffs="NPCpegasus"/>
 					<consideration class="HasOrder, SCore" order="Follow"/>
-					<consideration class="TargetDistance"  min="10" max="50" curve="threshold" />
+					<consideration class="TargetDistance" flip_x="true" min="7" max="50" curve="threshold" />
 				</action>
 				<action name="LeaderFollowSlow" weight="2" >
 					<task class="FollowSDX, SCore"/>
 					<consideration class="HasOrder, SCore" order="Follow"/>
-					<consideration class="TargetDistance"  min="4.5" max="10" curve="threshold"/>
+					<consideration class="TargetDistance" flip_x="true" min="4.5" max="7" curve="threshold"/>
 				</action>	
 			</ai_package>
 			

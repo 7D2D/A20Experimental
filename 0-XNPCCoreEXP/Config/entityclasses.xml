@@ -298,12 +298,11 @@
 				<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 				<passive_effect name="StaminaMax" operation="base_set" value="2000"/>
 				<passive_effect name="PhysicalDamageResist" operation="base_set" value="10" />
-				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffBurningEnvironment,buffFatiguedTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/> 
-				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffInjuryBleeding,buffInjuryBleedingZombie,buffLegSprained,buffLegBroken,buffArmSprained,buffPlayerFallingDamage,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger"/>
+				<passive_effect name="BuffResistance" operation="base_set" value="200" tags= "buffInfectionCatch,buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffInjuryConcussion,buffArmBroken,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffInjuryCrippled01,buffInjuryKnockdown01,buffInjuryKnockdown01,buffInjuryUnconscious,buffStayDownKO,buffRadiationCatch,buffRadiation03,buffRadiationNew,buffRadiationNew2,buffRadiationWeak,buffRadiationStrong,buffBurningEnvironment,buffBurningElement,buffBurningEnvironmentHack,buffInjuryBleeding,buffInjuryBleedingZombie,buffPlayerFallingDamage,buffLegSprained,buffLegBroken,buffArmSprained"/> 
 				<passive_effect name="LandMineImmunity" operation="base_set" value="1"/> <!--  SCore add  -->
 			</effect_group>	
 			<effect_group name="IsNPC"> 
-				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="IsHuman"/> 
+				<!-- <triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="IsHuman"/> Not needed except for Universal controllers -->
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffNPCStatusCheck"/> 
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffNPCStatusCheck"/> <!--  done twice intentionally, cause TFP notes say to.   -->
 				<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="NPCHit"/> 
@@ -317,7 +316,7 @@
 			<property name="MoveSpeedRand" value="-.2, .25"/> 
 			<effect_group>
 				<passive_effect name="WalkSpeed" operation="base_set" value=".5"/>
-				<passive_effect name="RunSpeed" operation="base_set" value="1.0"/> 
+				<passive_effect name="RunSpeed" operation="base_set" value="1.2"/> 
 				<passive_effect name="HealthChangeOT" operation="base_set" value="0.1"/>  <!-- heal x point of (red) health / minute -->
 				<passive_effect name="DamageModifier" operation="perc_set" value="1"/>
 				<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="head"/>
@@ -329,7 +328,8 @@
 				<passive_effect name="Mobility" operation="base_set" value="1"/> 
 				<passive_effect name="JumpStrength" operation="base_set" value="0.16"/> 
 			</effect_group>
-			<effect_group>
+			
+			<!-- <effect_group>
 				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="self" buff="buffCumChanceCH"/>
 				<triggered_effect trigger="onSelfSecondaryActionStart" action="AddBuff" buff="buffPowerAttackStaminaStunt">
 					<requirement name="HoldingItemHasTags" tags="melee"/>
@@ -353,7 +353,7 @@
 				<passive_effect name="BagSize" operation="base_set" value="45"/> 
 				<passive_effect name="ProjectileStickChance" operation="base_set" value=".5"/>
 				<passive_effect name="ProjectileStickChance" operation="perc_add" value="-2" tags="glass"/> 
-			</effect_group> 
+			</effect_group> -->
 			
 			<effect_group name="NPCMutualAidBuff"> <!--  damage one npc, others will respond to assist  -->
                 <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="other" buff="buffNPCModAttacking"/> 
@@ -490,7 +490,7 @@
 			<property name="IsQuestGiver" value="false" /> <!--  If you want quest giving, add this property set to true to that specific character  -->
 			<property name="IsEnemyEntity" value="false"/> 
 			<property name="Faction" value="whiteriver"/>
-			<!-- <property name="LootListAlive" value="traderNPC"/> --> <!-- removing this removes the E on death but disables NPC inventory  -->
+			
 			
 			
 			<!-- UAI overrides EAI if both exist -->
@@ -4216,13 +4216,6 @@
 	</append>	
 
 	<!-- 2022-03-23 OPTIMIZATION CHANGES -->
-	<!-- 2022-03-23 OPTIMIZATION CHANGES -->
-	<!-- 2022-03-23 OPTIMIZATION CHANGES -->
-
-	<!-- ADJUST NPC RESISTANCES -->
-	<setattribute xpath="//entity_class[@name='npcMeleeTemplate']/effect_group[@name='Base Effects']/passive_effect[@name='BuffResistance' and @value='5']" name="tags">buffInfectionCatch,buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffInjuryConcussion,buffArmBroken,buffInjuryStunned01,buffInjuryStunned02,buffInjuryStunned03,buffInjuryCrippled01,buffInjuryKnockdown01,buffInjuryKnockdown01,buffInjuryUnconscious,buffStayDownKO,buffRadiationCatch,buffRadiation03,buffRadiationNew,buffRadiationNew2,buffRadiationWeak,buffRadiationStrong,buffBurningEnvironment,buffBurningElement,buffBurningEnvironmentHack</setattribute>
-	<setattribute xpath="//entity_class[@name='npcMeleeTemplate']/effect_group[@name='Base Effects']/passive_effect[@name='BuffResistance' and @value='5']" name="tags">buffInjuryBleeding,buffInjuryBleedingZombie,buffPlayerFallingDamage</setattribute>
-	<setattribute xpath="//entity_class[@name='npcMeleeTemplate']/effect_group[@name='Base Effects']/passive_effect[@name='BuffResistance']" name="value">200</setattribute>
 
 	<remove xpath="//entity_class[starts-with(@name, 'npc')]/property[@name='AIPackages']"/>
 	
