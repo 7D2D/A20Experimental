@@ -40,7 +40,7 @@
 		
 		<set xpath="//entity_class[starts-with(@name, 'animalRabbit')]/property[@value='RunawayFromEntity']/@data">class=EntityPlayer,EntityZombie,EntityEnemyAnimal,EntityNPC;safeDistance=20</set> 
 		
-		<set xpath="//entity_class[starts-with(@name, 'animalBear')]/property[@value='ApproachAndAttackTarget']/@data">class=EntityAnimalStag,40,EntityPlayer,25,EntityZombie,30,EntityNPC,25,EntityEnemy,25,EntityEnemy,25</set> 
+		<set xpath="//entity_class[starts-with(@name, 'animalBear')]/property[@value='ApproachAndAttackTarget']/@data">class=EntityAnimalStag,40,EntityPlayer,25,EntityZombie,30,EntityNPC,25,EntityEnemy,25</set> 
 		
 		<set xpath="//entity_class[starts-with(@name, 'animalBear')]/property[@value='SetNearestEntityAsTarget']/@data">class=EntityPlayer,13,8,EntityAnimalStag,0,0,EntityZombie,0,0,EntityNPC,13,8</set> 
 		
