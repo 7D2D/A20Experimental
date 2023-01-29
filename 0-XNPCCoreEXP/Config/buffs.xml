@@ -1121,10 +1121,10 @@
 				<!--<triggered_effect trigger="onSelfBuffUpdate" action="LogMessage" message="=== looting or gathering"/> -->
 				<triggered_effect trigger="onSelfBuffUpdate" action="AnimatorSetBool" property="IsGathering" value="true"/>
 			</effect_group>	
-			<effect_group name="LootHighorLow" >
+			<!-- <effect_group name="LootHighorLow" >
 				<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetBool" property="IsCrouching" value="true"/> 
-				<requirement name="CVarCompare" cvar="focusBlockLocation" operation="LTE" value="0"/> <!-- Sets a cvar (Default is: focusBlockLocation, overridable by attribute cvar="" ) based on position. -1 below your feet. 0 at your feet, 1 at your eye level, and 2 over your head. 0 is default.  -->
-			</effect_group>
+				<requirement name="CVarCompare" cvar="focusBlockLocation" operation="LTE" value="0"/> -->  <!-- Sets a cvar (Default is: focusBlockLocation, overridable by attribute cvar="" ) based on position. -1 below your feet. 0 at your feet, 1 at your eye level, and 2 over your head. 0 is default.  
+			</effect_group> -->
 			<effect_group name="Finish">
 				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="ActivityCoolDown"/> 
 				<!--<triggered_effect trigger="onSelfBuffFinish" action="LogMessage" message="=== Finished my activity"/>-->
@@ -1602,7 +1602,7 @@
 			<stack_type value="ignore"/><duration value="0"/><update_rate value=".1"/> 
 				<effect_group>
 					<requirement name="CVarCompare" cvar="$burstrate" operation="GTE" value="1"/> <!-- Still bursting -->
-					<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar="$burstrate" operation="add" value="-1"/> <!-- use burstshot to decrement so bursts of >1 will be counted  -->
+					<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar="$burstrate" operation="add" value="-1"/> <!-- use burstshot to decrement so bursts of >1 will be counted  -->
 				</effect_group> 
 				<effect_group>
 					<requirement name="CVarCompare" cvar="$burstrate" operation="LTE" value="0"/> <!-- done bursting? -->
@@ -1625,15 +1625,15 @@
 			<stack_type value="ignore"/><duration value="0"/><update_rate value=".1"/> 
 				<effect_group>
 					<requirement name="CVarCompare" cvar="$roundsinmag" operation="GT" value="0"/> <!-- Still got bullets? -->
-					<triggered_effect trigger="onSelfRangedBurstShot" action="ModifyCVar" cvar="$roundsinmag" operation="add" value="-1"/> <!-- use burstshot to decrement rounds so bursts of >1 will be counted  -->
-					<!--<triggered_effect trigger="onSelfRangedBurstShot" action="CVarLogValue" cvar="$roundsinmag"/>--> 
+					<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar="$roundsinmag" operation="add" value="-1"/> <!-- use burstshot to decrement rounds so bursts of >1 will be counted  -->
+					<!--<triggered_effect trigger="onSelfRangedBurstShotStart" action="CVarLogValue" cvar="$roundsinmag"/>--> 
 				</effect_group> 
 				<effect_group>
 					<requirement name="CVarCompare" cvar="$roundsinmag" operation="LTE" value="0"/> <!-- Magazine empty? -->
 				<!--<triggered_effect trigger="onSelfBuffUpdate" action="LogMessage" message="   Reloading Anim Start"/>-->
 					<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffReloadDelay" /> 
 				</effect_group>	
-		</buff>	
+		</buff>
 		<buff name="buffReloadDelay" hidden="true">
 			<stack_type value="ignore"/><duration value=".5"/> <!-- provides a delay for the firing to end before setting the AnimatorsetBool   -->
 				<effect_group> 
@@ -2009,5 +2009,29 @@
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$NPCModHealingCooldown" operation="set" value="20"/>
 		</effect_group>
 	</set>
-
+	
+	<!--  Testing Blocing  -->
+	
+	<append xpath="/buffs">
+		
+		
+		<buff name="BlockAttack" icon="ui_game_symbol_radiation" icon_color="125,0,0" hidden="false"><stack_type value="ignore"/><duration value="1"/>
+			<effect_group name="Block Attack Buff">
+				<triggered_effect trigger="onSelfBuffStart" action="AnimatorSetBool" property="IsBlocking" value="true"/> 
+				<triggered_effect trigger="onSelfBuffFinish" action="AnimatorSetBool" property="IsBlocking" value="false"/> 
+				<passive_effect name="PhysicalDamageResist" operation="base_add" value="100"/>
+			</effect_group>
+		</buff> 
+		
+		<buff name="PlayerAttacks" icon="ui_game_symbol_radiation" icon_color="125,0,0" hidden="false"><stack_type value="ignore"/><duration value="0"/>
+			<effect_group name="Block Attack Buff">
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" target="other" buff="BlockAttack"/>
+			</effect_group>
+		</buff> 	
+		
+		
+		
+		
+	</append>
+	
 </configs>
