@@ -1780,7 +1780,7 @@
 			<property name="HandItem" value="meleeHandAnimalCoyote"/>
 			<property name="AITask-1" value="BreakBlock"/>
 			<property name="AITask-2" value="Territorial"/>
-			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityZombie,0,EntityNPC,0,EntityPlayer,0,EntitySurvivor,0,EntityBandit,0,EntityAnimalRabbit,8"/>
+			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityZombie,0,EntityNPC,0,EntityPlayer,0,EntitySurvivor,0,EntityBandit,0,EntityEnemy,0,EntityAnimalRabbit,8" />
 			<property name="AITask-4" value="ApproachSpot"/>
 			<property name="AITask-5" value="Look"/>
 			<property name="AITask-6" value="Wander"/>
@@ -1856,7 +1856,7 @@
 			<property name="MaxViewAngle" value="230"/>
 			<property name="NavObject" value="twitch_spawn,twitch_spawn_other,animaltracking_boar,clear_sleeper" />
 			<property name="AITask-1" value="BreakBlock"/>
-			<property name="AITask-2" value="ApproachAndAttackTarget" data="class=EntityZombie,0,EntityPlayer,0,EntitySurvivor,0,EntityBandit,0"/>
+			<property name="AITask-2" value="ApproachAndAttackTarget" data="class=EntityZombie,0,EntityPlayer,0,EntitySurvivor,0,EntityBandit,0,EntityEnemy,0" />
 			<property name="AITask-3" value="RunawayFromEntity" data="EntityZombie,EntityZombieDog,EntityZombieCop,EntityZombieCrawl"/>
 			<property name="AITask-4" value="RunawayWhenHurt" data="runChance=.3;healthPer=.3;healthPerMax=0.6"/>
 			<property name="AITask-5" value="Look"/>
